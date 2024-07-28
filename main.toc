@@ -1,0 +1,183 @@
+\selectlanguage *[]{french}
+\selectlanguage *[]{french}
+\select@language {french}
+\contentsline {chapter}{Dédicace}{I}{chapter*.1}%
+\select@language {french}
+\contentsline {chapter}{Remerciements}{II}{chapter*.2}%
+\select@language {french}
+\contentsline {chapter}{Résumé}{III}{chapter*.3}%
+\select@language {french}
+\contentsline {chapter}{Abstract}{IV}{chapter*.4}%
+\select@language {french}
+\select@language {french}
+\contentsline {chapter}{Introduction générale}{1}{chapter*.6}%
+\select@language {french}
+\contentsline {part}{I\hspace {1em}\bgroup \beginL \latintext Etude bibliographique\endL \egroup }{3}{part.1}%
+\select@language {french}
+\contentsline {chapter}{\numberline {1}\bgroup \beginL \latintext Apprentissage profond\endL \egroup }{4}{chapter.1}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }\bgroup \beginL \latintext Introduction\endL \egroup }{4}{section.1.1}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {2.1}\else \textLR {1.2}\fi }\bgroup \beginL \latintext Réseau de neurones artificiels\endL \egroup }{5}{section.1.2}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {3.1}\else \textLR {1.3}\fi }\bgroup \beginL \latintext Connexions et poids\endL \egroup }{5}{section.1.3}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {4.1}\else \textLR {1.4}\fi }\bgroup \beginL \latintext Fonction d'activation\endL \egroup }{6}{section.1.4}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {5.1}\else \textLR {1.5}\fi }\bgroup \beginL \latintext Couches dans un réseau de neurones\endL \egroup }{8}{section.1.5}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {6.1}\else \textLR {1.6}\fi }\bgroup \beginL \latintext Types de réseaux de neurones\endL \egroup }{10}{section.1.6}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {1.6.1}\else \textLR {1.6.1}\fi }\bgroup \beginL \latintext Réseaux feedforward\endL \egroup }{10}{subsection.1.6.1}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {2.6.1}\else \textLR {1.6.2}\fi }\bgroup \beginL \latintext Réseaux de neurones récurrents (RNN)\endL \egroup }{10}{subsection.1.6.2}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {3.6.1}\else \textLR {1.6.3}\fi }\bgroup \beginL \latintext Réseaux de neurones convolutifs (CNN)\endL \egroup }{11}{subsection.1.6.3}%
+\select@language {french}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Couche convolutive \endL \egroup }{12}{section*.12}%
+\select@language {french}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Couche pooling\endL \egroup }{13}{section*.14}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {4.6.1}\else \textLR {1.6.4}\fi }\bgroup \beginL \latintext Réseaux générateurs adversaires (GAN)\endL \egroup }{14}{subsection.1.6.4}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {5.6.1}\else \textLR {1.6.5}\fi }\bgroup \beginL \latintext Réseaux de neurones de transformation (Transformer)\endL \egroup }{14}{subsection.1.6.5}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {6.6.1}\else \textLR {1.6.6}\fi }\bgroup \beginL \latintext Réseaux résiduels (ResNet)\endL \egroup }{15}{subsection.1.6.6}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {7.6.1}\else \textLR {1.6.7}\fi }\bgroup \beginL \latintext Réseaux de neurones en graphe (GNN)\endL \egroup }{16}{subsection.1.6.7}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {7.1}\else \textLR {1.7}\fi }\bgroup \beginL \latintext Le processus d’apprentissage\endL \egroup }{17}{section.1.7}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {1.7.1}\else \textLR {1.7.1}\fi }\bgroup \beginL \latintext Descente de gradient\endL \egroup }{18}{subsection.1.7.1}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {2.7.1}\else \textLR {1.7.2}\fi }\bgroup \beginL \latintext Propagation de l’erreur\endL \egroup }{18}{subsection.1.7.2}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {3.7.1}\else \textLR {1.7.3}\fi }\bgroup \beginL \latintext Hyperparameters\endL \egroup }{19}{subsection.1.7.3}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {8.1}\else \textLR {1.8}\fi }\bgroup \beginL \latintext Types d’apprentissage\endL \egroup }{20}{section.1.8}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {1.8.1}\else \textLR {1.8.1}\fi }\bgroup \beginL \latintext Apprentissage supervisé\endL \egroup }{20}{subsection.1.8.1}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {2.8.1}\else \textLR {1.8.2}\fi }\bgroup \beginL \latintext Apprentissage non-supervisé\endL \egroup }{20}{subsection.1.8.2}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {3.8.1}\else \textLR {1.8.3}\fi }\bgroup \beginL \latintext Apprentissage semi-supervisé\endL \egroup }{21}{subsection.1.8.3}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {4.8.1}\else \textLR {1.8.4}\fi }\bgroup \beginL \latintext Apprentissage par renforcement\endL \egroup }{21}{subsection.1.8.4}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {9.1}\else \textLR {1.9}\fi }\bgroup \beginL \latintext Catégories de données\endL \egroup }{21}{section.1.9}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {10.1}\else \textLR {1.10}\fi }\bgroup \beginL \latintext Défis de l'apprentissage profond\endL \egroup }{22}{section.1.10}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {11.1}\else \textLR {1.11}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{23}{section.1.11}%
+\select@language {french}
+\contentsline {chapter}{\numberline {2}\bgroup \beginL \latintext Intelligence Artificielle Générative (GenAI)\endL \egroup }{24}{chapter.2}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }\bgroup \beginL \latintext Introduction\endL \egroup }{24}{section.2.1}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {2.2}\else \textLR {2.2}\fi }\bgroup \beginL \latintext Les Auto-Encodeurs Variationnels (VAE)\endL \egroup }{24}{section.2.2}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {1.2.2}\else \textLR {2.2.1}\fi }\bgroup \beginL \latintext Introduction\endL \egroup }{24}{subsection.2.2.1}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {2.2.2}\else \textLR {2.2.2}\fi }\bgroup \beginL \latintext Fonctionnement\endL \egroup }{25}{subsection.2.2.2}%
+\select@language {french}
+\contentsline {part}{II\hspace {1em}\bgroup \beginL \latintext Contribution\endL \egroup }{27}{part.2}%
+\select@language {french}
+\contentsline {chapter}{\numberline {3}\bgroup \beginL \latintext Conception\endL \egroup }{28}{chapter.3}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }\bgroup \beginL \latintext Introduction\endL \egroup }{28}{section.3.1}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {2.3}\else \textLR {3.2}\fi }\bgroup \beginL \latintext Vue globale de la solution\endL \egroup }{28}{section.3.2}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {3.3}\else \textLR {3.3}\fi }\bgroup \beginL \latintext Plongements des couches\endL \egroup }{30}{section.3.3}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {4.3}\else \textLR {3.4}\fi }\bgroup \beginL \latintext Choix des pourcentages d'élagage\endL \egroup }{31}{section.3.4}%
+\select@language {french}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Paramètres\endL \egroup }{32}{section*.24}%
+\select@language {french}
+\contentsline {subsubsection}{\bgroup \beginL \latintext FLOPs\endL \egroup }{32}{section*.25}%
+\select@language {french}
+\contentsline {subsubsection}{\bgroup \beginL \latintext FLOPS\endL \egroup }{32}{section*.26}%
+\select@language {french}
+\contentsline {subsubsection}{\bgroup \beginL \latintext MAC\endL \egroup }{33}{section*.27}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {1.4.3}\else \textLR {3.4.1}\fi }\bgroup \beginL \latintext Raisons d'utilisation des FLOPs\endL \egroup }{33}{subsection.3.4.1}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {2.4.3}\else \textLR {3.4.2}\fi }\bgroup \beginL \latintext Calcul des FLOPs\endL \egroup }{34}{subsection.3.4.2}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {5.3}\else \textLR {3.5}\fi }\bgroup \beginL \latintext Choix du type d'élagage\endL \egroup }{35}{section.3.5}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {6.3}\else \textLR {3.6}\fi }\bgroup \beginL \latintext Implémentation de l’apprentissage par renforcement\endL \egroup }{36}{section.3.6}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {1.6.3}\else \textLR {3.6.1}\fi }\bgroup \beginL \latintext Agent DDPG\endL \egroup }{37}{subsection.3.6.1}%
+\select@language {french}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Politique gaussienne\endL \egroup }{38}{section*.31}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {2.6.3}\else \textLR {3.6.2}\fi }\bgroup \beginL \latintext Équations Clés\endL \egroup }{39}{subsection.3.6.2}%
+\select@language {french}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Valeur cible (Target Value) pour le Critique\endL \egroup }{39}{section*.33}%
+\select@language {french}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Mise à jour du Critique\endL \egroup }{39}{section*.34}%
+\select@language {french}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Mise à jour de l'Acteur\endL \egroup }{40}{section*.35}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {3.6.3}\else \textLR {3.6.3}\fi }\bgroup \beginL \latintext Acteur-Critique\endL \egroup }{40}{subsection.3.6.3}%
+\select@language {french}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Réseau d'acteur (Actor Network)\endL \egroup }{40}{section*.37}%
+\select@language {french}
+\contentsline {subsubsection}{\bgroup \beginL \latintext Réseau de critique (Critic Network)\endL \egroup }{41}{section*.38}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {4.6.3}\else \textLR {3.6.4}\fi }\bgroup \beginL \latintext Protocole de recherche\endL \egroup }{41}{subsection.3.6.4}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {5.6.3}\else \textLR {3.6.5}\fi }\bgroup \beginL \latintext Mémoire de l'agent\endL \egroup }{42}{subsection.3.6.5}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {6.6.3}\else \textLR {3.6.6}\fi }\bgroup \beginL \latintext Processus d'entraînement de l'agent\endL \egroup }{42}{subsection.3.6.6}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {7.3}\else \textLR {3.7}\fi }\bgroup \beginL \latintext Réglage fin après l'élagage\endL \egroup }{44}{section.3.7}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {8.3}\else \textLR {3.8}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{44}{section.3.8}%
+\select@language {french}
+\contentsline {chapter}{\numberline {4}\bgroup \beginL \latintext Réalisation et tests\endL \egroup }{46}{chapter.4}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {1.4}\else \textLR {4.1}\fi }\bgroup \beginL \latintext Introduction\endL \egroup }{46}{section.4.1}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {2.4}\else \textLR {4.2}\fi }\bgroup \beginL \latintext Modèles et jeu de données utilisés\endL \egroup }{46}{section.4.2}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {1.2.4}\else \textLR {4.2.1}\fi }\bgroup \beginL \latintext CIFAR-10\endL \egroup }{46}{subsection.4.2.1}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {2.2.4}\else \textLR {4.2.2}\fi }\bgroup \beginL \latintext VGG-19\endL \egroup }{47}{subsection.4.2.2}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {3.2.4}\else \textLR {4.2.3}\fi }\bgroup \beginL \latintext ResNet-34\endL \egroup }{49}{subsection.4.2.3}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {3.4}\else \textLR {4.3}\fi }\bgroup \beginL \latintext Technologies utilisées\endL \egroup }{51}{section.4.3}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {1.3.4}\else \textLR {4.3.1}\fi }\bgroup \beginL \latintext Python\endL \egroup }{51}{subsection.4.3.1}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {4.4}\else \textLR {4.4}\fi }\bgroup \beginL \latintext Bibliothèque utilisées\endL \egroup }{51}{section.4.4}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {1.4.4}\else \textLR {4.4.1}\fi }\bgroup \beginL \latintext NumPy\endL \egroup }{51}{subsection.4.4.1}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {2.4.4}\else \textLR {4.4.2}\fi }\bgroup \beginL \latintext Matplotlib\endL \egroup }{52}{subsection.4.4.2}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {3.4.4}\else \textLR {4.4.3}\fi }\bgroup \beginL \latintext Pytorch\endL \egroup }{53}{subsection.4.4.3}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {4.4.4}\else \textLR {4.4.4}\fi }\bgroup \beginL \latintext Torchvision\endL \egroup }{53}{subsection.4.4.4}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {5.4.4}\else \textLR {4.4.5}\fi }\bgroup \beginL \latintext NNI\endL \egroup }{54}{subsection.4.4.5}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {5.4}\else \textLR {4.5}\fi }\bgroup \beginL \latintext Outils utilisés\endL \egroup }{55}{section.4.5}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {1.5.4}\else \textLR {4.5.1}\fi }\bgroup \beginL \latintext Google Colab\endL \egroup }{55}{subsection.4.5.1}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {2.5.4}\else \textLR {4.5.2}\fi }\bgroup \beginL \latintext Google Drive\endL \egroup }{55}{subsection.4.5.2}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {6.4}\else \textLR {4.6}\fi }\bgroup \beginL \latintext Tests et résultats\endL \egroup }{56}{section.4.6}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {1.6.4}\else \textLR {4.6.1}\fi }\bgroup \beginL \latintext VGG-19\endL \egroup }{57}{subsection.4.6.1}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {2.6.4}\else \textLR {4.6.2}\fi }\bgroup \beginL \latintext ResNet-34\endL \egroup }{58}{subsection.4.6.2}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {7.4}\else \textLR {4.7}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{59}{section.4.7}%
+\select@language {french}
+\contentsline {chapter}{Conclusion et perspectives}{61}{chapter*.56}%
+\select@language {french}
+\contentsline {chapter}{Bibliographie}{64}{chapter*.57}%

@@ -1,0 +1,12 @@
+
+la maintence prédictive pour les moteur electrique:
+
+
+la maintence prédictive c'est imporant de notre jour de envisager les pannes avant qui les machine tombent en pannes
+cela permtree de reduire les couts et le temps de maintence, dans le context des moteur elcterique qui subisiment plusier default electrique et méchanique  qui sont utilisé partout dans 
+l'industrei dans les transport et dans usine, et et qui cout tres chere pour, il envisage de faire la mainence prédictive en utilsant
+une approche de machine learning, et quand on parle sur les machine learning on parle tjr sur les donneset leur qualité et pour augmenter 
+la dataset sur des dvers moteur dans le marché en utilse generative IA pour generer des donnes qui sont simialaire de donner real, et ces donnes sont de type time series 
+ce qui  de geneative IA pour génere de de donnes commeles variational auto encoer et les generative adeversalles netowkr et LLM large langues model
+dans ce travial on génere les doones de type series tomprelle qui sont reallment tres proches des donnes real et ces donnes sont utilsé par 
+un autre model de classfication pour faire et prédire c'est un moteur vas tomber en pannes ou non 
