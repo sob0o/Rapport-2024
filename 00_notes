@@ -1,1 +1,2 @@
-hello github
+git comit -am "change 1"
+git push origin master 
