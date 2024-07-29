@@ -49,3 +49,4 @@ Thumbs.db
 # LaTeX build directories
 _build/
 aux/
+main.pdf
