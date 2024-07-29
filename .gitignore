@@ -29,3 +29,6 @@ main.aux
 *.fdb_latexmk
 *.fls
 *.log
+*.fdb_latexmk
+*.gz
+*.log
