@@ -32,3 +32,4 @@ main.aux
 *.fdb_latexmk
 *.gz
 *.log
+*.fls
