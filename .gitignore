@@ -49,3 +49,7 @@ Thumbs.db
 # LaTeX build directories
 _build/
 aux/
+*.blg
+main.blg
+main.log
+*.synctex(busy)
