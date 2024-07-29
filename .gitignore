@@ -33,3 +33,4 @@ main.aux
 *.gz
 *.log
 *.fls
+*.synctex(busy)
