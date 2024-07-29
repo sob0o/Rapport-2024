@@ -22,3 +22,10 @@ main.aux
 06-Art.aux
 05-Introduction.aux
 04-Acronymes.aux
+*.aux
+*.aux
+*.bcf
+*.bcf
+*.fdb_latexmk
+*.fls
+*.log
