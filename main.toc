@@ -70,7 +70,7 @@
 \select@language {french}
 \contentsline {section}{\numberline {\if@rl \I {11.1}\else \textLR {1.11}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{23}{section.1.11}%
 \select@language {french}
-\contentsline {chapter}{\numberline {2}\bgroup \beginL \latintext Intelligence Artificielle Générative(GenAI) hello world test \endL \egroup }{24}{chapter.2}%
+\contentsline {chapter}{\numberline {2}\bgroup \beginL \latintext Intelligence Artificielle Générative(GenAI)\endL \egroup }{24}{chapter.2}%
 \select@language {french}
 \contentsline {section}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }\bgroup \beginL \latintext Introduction\endL \egroup }{24}{section.2.1}%
 \select@language {french}
