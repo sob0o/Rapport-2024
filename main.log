@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.7.26)  3 AUG 2024 23:43
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.7.26)  4 AUG 2024 15:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1157,7 +1157,13 @@ LaTeX Warning: Label `equ:couche' multiply defined.
 LaTeX Warning: Label `fig:markov' multiply defined.
 
 
-LaTeX Warning: Label `fig:gan' multiply defined.
+LaTeX Warning: Label `fig:unet' multiply defined.
+
+
+LaTeX Warning: Label `fig:transformer' multiply defined.
+
+
+LaTeX Warning: Label `fig:transformer' multiply defined.
 
 ) (09-Conception.aux) (10-Realisation.aux) (11-Conclusion.aux))
 \openout1 = `main.aux'.
@@ -1354,3 +1360,2825 @@ File: 00-Page-de-garde.pdf Graphic file (type pdf)
 
 
 ]
+\openout2 = `01-Dedicace.aux'.
+
+ (01-Dedicace.tex
+
+[1
+
+
+])
+\openout2 = `02-Remerciements.aux'.
+
+ (02-Remerciements.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+Overfull \hbox (12.41864pt too wide) in paragraph at lines 9--10
+[]\TU/lmr/m/n/12 Nous exprimons également nos profonds remerciements à \TU/lmr/bx/n/12 M. Ali TFAILY \TU/lmr/m/n/12 et \TU/lmr/bx/n/12 M.Souhib
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+
+
+[2
+
+
+
+
+
+])
+\openout2 = `03-Resume.aux'.
+
+ (03-Resume.tex
+
+[3
+
+
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 65--69
+
+ []
+
+)
+
+[4
+
+
+] (main.toc
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+
+
+Package polyglossia Warning: Failed to patch part for French on input line 1.
+
+LaTeX Info: Redefining \rmfamily on input line 2.
+LaTeX Info: Redefining \sffamily on input line 2.
+LaTeX Info: Redefining \ttfamily on input line 2.
+
+Package polyglossia Warning: Failed to patch part for French on input line 2.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+(C:\Users\kacem\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+ (C:\Users\kacem\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+[5
+
+
+]
+
+LaTeX Info: Redefining \rmfamily on input line 201.
+LaTeX Info: Redefining \sffamily on input line 201.
+LaTeX Info: Redefining \ttfamily on input line 201.
+LaTeX Info: Redefining \rmfamily on input line 201.
+LaTeX Info: Redefining \sffamily on input line 201.
+LaTeX Info: Redefining \ttfamily on input line 201.
+[6])
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 266.
+LaTeX Info: Redefining \sffamily on input line 266.
+LaTeX Info: Redefining \ttfamily on input line 266.
+LaTeX Info: Redefining \rmfamily on input line 266.
+LaTeX Info: Redefining \sffamily on input line 266.
+LaTeX Info: Redefining \ttfamily on input line 266.
+[7] (main.lof
+LaTeX Info: Redefining \rmfamily on input line 2.
+LaTeX Info: Redefining \sffamily on input line 2.
+LaTeX Info: Redefining \ttfamily on input line 2.
+LaTeX Info: Redefining \rmfamily on input line 4.
+LaTeX Info: Redefining \sffamily on input line 4.
+LaTeX Info: Redefining \ttfamily on input line 4.
+LaTeX Info: Redefining \rmfamily on input line 6.
+LaTeX Info: Redefining \sffamily on input line 6.
+LaTeX Info: Redefining \ttfamily on input line 6.
+LaTeX Info: Redefining \rmfamily on input line 8.
+LaTeX Info: Redefining \sffamily on input line 8.
+LaTeX Info: Redefining \ttfamily on input line 8.
+LaTeX Info: Redefining \rmfamily on input line 10.
+LaTeX Info: Redefining \sffamily on input line 10.
+LaTeX Info: Redefining \ttfamily on input line 10.
+LaTeX Info: Redefining \rmfamily on input line 12.
+LaTeX Info: Redefining \sffamily on input line 12.
+LaTeX Info: Redefining \ttfamily on input line 12.
+LaTeX Info: Redefining \rmfamily on input line 14.
+LaTeX Info: Redefining \sffamily on input line 14.
+LaTeX Info: Redefining \ttfamily on input line 14.
+LaTeX Info: Redefining \rmfamily on input line 16.
+LaTeX Info: Redefining \sffamily on input line 16.
+LaTeX Info: Redefining \ttfamily on input line 16.
+LaTeX Info: Redefining \rmfamily on input line 18.
+LaTeX Info: Redefining \sffamily on input line 18.
+LaTeX Info: Redefining \ttfamily on input line 18.
+LaTeX Info: Redefining \rmfamily on input line 20.
+LaTeX Info: Redefining \sffamily on input line 20.
+LaTeX Info: Redefining \ttfamily on input line 20.
+LaTeX Info: Redefining \rmfamily on input line 22.
+LaTeX Info: Redefining \sffamily on input line 22.
+LaTeX Info: Redefining \ttfamily on input line 22.
+LaTeX Info: Redefining \rmfamily on input line 25.
+LaTeX Info: Redefining \sffamily on input line 25.
+LaTeX Info: Redefining \ttfamily on input line 25.
+LaTeX Info: Redefining \rmfamily on input line 27.
+LaTeX Info: Redefining \sffamily on input line 27.
+LaTeX Info: Redefining \ttfamily on input line 27.
+LaTeX Info: Redefining \rmfamily on input line 29.
+LaTeX Info: Redefining \sffamily on input line 29.
+LaTeX Info: Redefining \ttfamily on input line 29.
+LaTeX Info: Redefining \rmfamily on input line 31.
+LaTeX Info: Redefining \sffamily on input line 31.
+LaTeX Info: Redefining \ttfamily on input line 31.
+LaTeX Info: Redefining \rmfamily on input line 33.
+LaTeX Info: Redefining \sffamily on input line 33.
+LaTeX Info: Redefining \ttfamily on input line 33.
+LaTeX Info: Redefining \rmfamily on input line 35.
+LaTeX Info: Redefining \sffamily on input line 35.
+LaTeX Info: Redefining \ttfamily on input line 35.
+LaTeX Info: Redefining \rmfamily on input line 37.
+LaTeX Info: Redefining \sffamily on input line 37.
+LaTeX Info: Redefining \ttfamily on input line 37.
+LaTeX Info: Redefining \rmfamily on input line 39.
+LaTeX Info: Redefining \sffamily on input line 39.
+LaTeX Info: Redefining \ttfamily on input line 39.
+LaTeX Info: Redefining \rmfamily on input line 42.
+LaTeX Info: Redefining \sffamily on input line 42.
+LaTeX Info: Redefining \ttfamily on input line 42.
+LaTeX Info: Redefining \rmfamily on input line 44.
+LaTeX Info: Redefining \sffamily on input line 44.
+LaTeX Info: Redefining \ttfamily on input line 44.
+LaTeX Info: Redefining \rmfamily on input line 45.
+LaTeX Info: Redefining \sffamily on input line 45.
+LaTeX Info: Redefining \ttfamily on input line 45.
+LaTeX Info: Redefining \rmfamily on input line 50.
+LaTeX Info: Redefining \sffamily on input line 50.
+LaTeX Info: Redefining \ttfamily on input line 50.
+LaTeX Info: Redefining \rmfamily on input line 52.
+LaTeX Info: Redefining \sffamily on input line 52.
+LaTeX Info: Redefining \ttfamily on input line 52.
+LaTeX Info: Redefining \rmfamily on input line 53.
+LaTeX Info: Redefining \sffamily on input line 53.
+LaTeX Info: Redefining \ttfamily on input line 53.
+LaTeX Info: Redefining \rmfamily on input line 55.
+LaTeX Info: Redefining \sffamily on input line 55.
+LaTeX Info: Redefining \ttfamily on input line 55.
+LaTeX Info: Redefining \rmfamily on input line 57.
+LaTeX Info: Redefining \sffamily on input line 57.
+LaTeX Info: Redefining \ttfamily on input line 57.
+LaTeX Info: Redefining \rmfamily on input line 59.
+LaTeX Info: Redefining \sffamily on input line 59.
+LaTeX Info: Redefining \ttfamily on input line 59.
+LaTeX Info: Redefining \rmfamily on input line 61.
+LaTeX Info: Redefining \sffamily on input line 61.
+LaTeX Info: Redefining \ttfamily on input line 61.
+LaTeX Info: Redefining \rmfamily on input line 63.
+LaTeX Info: Redefining \sffamily on input line 63.
+LaTeX Info: Redefining \ttfamily on input line 63.
+LaTeX Info: Redefining \rmfamily on input line 65.
+LaTeX Info: Redefining \sffamily on input line 65.
+LaTeX Info: Redefining \ttfamily on input line 65.
+LaTeX Info: Redefining \rmfamily on input line 67.
+LaTeX Info: Redefining \sffamily on input line 67.
+LaTeX Info: Redefining \ttfamily on input line 67.
+
+
+[8
+
+]
+LaTeX Info: Redefining \rmfamily on input line 69.
+LaTeX Info: Redefining \sffamily on input line 69.
+LaTeX Info: Redefining \ttfamily on input line 69.
+LaTeX Info: Redefining \rmfamily on input line 71.
+LaTeX Info: Redefining \sffamily on input line 71.
+LaTeX Info: Redefining \ttfamily on input line 71.
+LaTeX Info: Redefining \rmfamily on input line 73.
+LaTeX Info: Redefining \sffamily on input line 73.
+LaTeX Info: Redefining \ttfamily on input line 73.
+LaTeX Info: Redefining \rmfamily on input line 74.
+LaTeX Info: Redefining \sffamily on input line 74.
+LaTeX Info: Redefining \ttfamily on input line 74.
+LaTeX Info: Redefining \rmfamily on input line 76.
+LaTeX Info: Redefining \sffamily on input line 76.
+LaTeX Info: Redefining \ttfamily on input line 76.
+LaTeX Info: Redefining \rmfamily on input line 77.
+LaTeX Info: Redefining \sffamily on input line 77.
+LaTeX Info: Redefining \ttfamily on input line 77.
+)
+\tf@lof=\write7
+\openout7 = `main.lof'.
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 268.
+LaTeX Info: Redefining \sffamily on input line 268.
+LaTeX Info: Redefining \ttfamily on input line 268.
+LaTeX Info: Redefining \rmfamily on input line 268.
+LaTeX Info: Redefining \sffamily on input line 268.
+LaTeX Info: Redefining \ttfamily on input line 268.
+[9] (main.lot
+LaTeX Info: Redefining \rmfamily on input line 2.
+LaTeX Info: Redefining \sffamily on input line 2.
+LaTeX Info: Redefining \ttfamily on input line 2.
+LaTeX Info: Redefining \rmfamily on input line 3.
+LaTeX Info: Redefining \sffamily on input line 3.
+LaTeX Info: Redefining \ttfamily on input line 3.
+LaTeX Info: Redefining \rmfamily on input line 4.
+LaTeX Info: Redefining \sffamily on input line 4.
+LaTeX Info: Redefining \ttfamily on input line 4.
+LaTeX Info: Redefining \rmfamily on input line 5.
+LaTeX Info: Redefining \sffamily on input line 5.
+LaTeX Info: Redefining \ttfamily on input line 5.
+LaTeX Info: Redefining \rmfamily on input line 6.
+LaTeX Info: Redefining \sffamily on input line 6.
+LaTeX Info: Redefining \ttfamily on input line 6.
+LaTeX Info: Redefining \rmfamily on input line 7.
+LaTeX Info: Redefining \sffamily on input line 7.
+LaTeX Info: Redefining \ttfamily on input line 7.
+LaTeX Info: Redefining \rmfamily on input line 8.
+LaTeX Info: Redefining \sffamily on input line 8.
+LaTeX Info: Redefining \ttfamily on input line 8.
+LaTeX Info: Redefining \rmfamily on input line 9.
+LaTeX Info: Redefining \sffamily on input line 9.
+LaTeX Info: Redefining \ttfamily on input line 9.
+LaTeX Info: Redefining \rmfamily on input line 10.
+LaTeX Info: Redefining \sffamily on input line 10.
+LaTeX Info: Redefining \ttfamily on input line 10.
+LaTeX Info: Redefining \rmfamily on input line 11.
+LaTeX Info: Redefining \sffamily on input line 11.
+LaTeX Info: Redefining \ttfamily on input line 11.
+LaTeX Info: Redefining \rmfamily on input line 12.
+LaTeX Info: Redefining \sffamily on input line 12.
+LaTeX Info: Redefining \ttfamily on input line 12.
+LaTeX Info: Redefining \rmfamily on input line 14.
+LaTeX Info: Redefining \sffamily on input line 14.
+LaTeX Info: Redefining \ttfamily on input line 14.
+LaTeX Info: Redefining \rmfamily on input line 15.
+LaTeX Info: Redefining \sffamily on input line 15.
+LaTeX Info: Redefining \ttfamily on input line 15.
+LaTeX Info: Redefining \rmfamily on input line 16.
+LaTeX Info: Redefining \sffamily on input line 16.
+LaTeX Info: Redefining \ttfamily on input line 16.
+LaTeX Info: Redefining \rmfamily on input line 17.
+LaTeX Info: Redefining \sffamily on input line 17.
+LaTeX Info: Redefining \ttfamily on input line 17.
+LaTeX Info: Redefining \rmfamily on input line 18.
+LaTeX Info: Redefining \sffamily on input line 18.
+LaTeX Info: Redefining \ttfamily on input line 18.
+LaTeX Info: Redefining \rmfamily on input line 19.
+LaTeX Info: Redefining \sffamily on input line 19.
+LaTeX Info: Redefining \ttfamily on input line 19.
+LaTeX Info: Redefining \rmfamily on input line 20.
+LaTeX Info: Redefining \sffamily on input line 20.
+LaTeX Info: Redefining \ttfamily on input line 20.
+LaTeX Info: Redefining \rmfamily on input line 21.
+LaTeX Info: Redefining \sffamily on input line 21.
+LaTeX Info: Redefining \ttfamily on input line 21.
+LaTeX Info: Redefining \rmfamily on input line 23.
+LaTeX Info: Redefining \sffamily on input line 23.
+LaTeX Info: Redefining \ttfamily on input line 23.
+LaTeX Info: Redefining \rmfamily on input line 24.
+LaTeX Info: Redefining \sffamily on input line 24.
+LaTeX Info: Redefining \ttfamily on input line 24.
+LaTeX Info: Redefining \rmfamily on input line 26.
+LaTeX Info: Redefining \sffamily on input line 26.
+LaTeX Info: Redefining \ttfamily on input line 26.
+LaTeX Info: Redefining \rmfamily on input line 30.
+LaTeX Info: Redefining \sffamily on input line 30.
+LaTeX Info: Redefining \ttfamily on input line 30.
+LaTeX Info: Redefining \rmfamily on input line 31.
+LaTeX Info: Redefining \sffamily on input line 31.
+LaTeX Info: Redefining \ttfamily on input line 31.
+LaTeX Info: Redefining \rmfamily on input line 33.
+LaTeX Info: Redefining \sffamily on input line 33.
+LaTeX Info: Redefining \ttfamily on input line 33.
+LaTeX Info: Redefining \rmfamily on input line 34.
+LaTeX Info: Redefining \sffamily on input line 34.
+LaTeX Info: Redefining \ttfamily on input line 34.
+LaTeX Info: Redefining \rmfamily on input line 35.
+LaTeX Info: Redefining \sffamily on input line 35.
+LaTeX Info: Redefining \ttfamily on input line 35.
+LaTeX Info: Redefining \rmfamily on input line 36.
+LaTeX Info: Redefining \sffamily on input line 36.
+LaTeX Info: Redefining \ttfamily on input line 36.
+LaTeX Info: Redefining \rmfamily on input line 37.
+LaTeX Info: Redefining \sffamily on input line 37.
+LaTeX Info: Redefining \ttfamily on input line 37.
+LaTeX Info: Redefining \rmfamily on input line 38.
+LaTeX Info: Redefining \sffamily on input line 38.
+LaTeX Info: Redefining \ttfamily on input line 38.
+LaTeX Info: Redefining \rmfamily on input line 39.
+LaTeX Info: Redefining \sffamily on input line 39.
+LaTeX Info: Redefining \ttfamily on input line 39.
+LaTeX Info: Redefining \rmfamily on input line 40.
+LaTeX Info: Redefining \sffamily on input line 40.
+LaTeX Info: Redefining \ttfamily on input line 40.
+LaTeX Info: Redefining \rmfamily on input line 41.
+LaTeX Info: Redefining \sffamily on input line 41.
+LaTeX Info: Redefining \ttfamily on input line 41.
+LaTeX Info: Redefining \rmfamily on input line 42.
+LaTeX Info: Redefining \sffamily on input line 42.
+LaTeX Info: Redefining \ttfamily on input line 42.
+LaTeX Info: Redefining \rmfamily on input line 43.
+LaTeX Info: Redefining \sffamily on input line 43.
+LaTeX Info: Redefining \ttfamily on input line 43.
+LaTeX Info: Redefining \rmfamily on input line 45.
+LaTeX Info: Redefining \sffamily on input line 45.
+LaTeX Info: Redefining \ttfamily on input line 45.
+LaTeX Info: Redefining \rmfamily on input line 46.
+LaTeX Info: Redefining \sffamily on input line 46.
+LaTeX Info: Redefining \ttfamily on input line 46.
+LaTeX Info: Redefining \rmfamily on input line 48.
+LaTeX Info: Redefining \sffamily on input line 48.
+LaTeX Info: Redefining \ttfamily on input line 48.
+)
+\tf@lot=\write8
+\openout8 = `main.lot'.
+
+
+
+[10
+
+]
+\openout2 = `04-Acronymes.aux'.
+
+ (04-Acronymes.tex
+
+LaTeX Warning: Hyper reference `acro:AI' on page XI undefined on input line 4.
+
+
+LaTeX Warning: Hyper reference `acro:AI' on page XI undefined on input line 4.
+
+
+LaTeX Warning: Hyper reference `acro:GenAI' on page XI undefined on input line 7.
+
+
+LaTeX Warning: Hyper reference `acro:GenAI' on page XI undefined on input line 7.
+
+
+LaTeX Warning: Hyper reference `acro:ReLU' on page XI undefined on input line 10.
+
+
+LaTeX Warning: Hyper reference `acro:ReLU' on page XI undefined on input line 10.
+
+
+LaTeX Warning: Hyper reference `acro:ANN' on page XI undefined on input line 15.
+
+
+LaTeX Warning: Hyper reference `acro:ANN' on page XI undefined on input line 15.
+
+
+LaTeX Warning: Hyper reference `acro:DL' on page XI undefined on input line 18.
+
+
+LaTeX Warning: Hyper reference `acro:DL' on page XI undefined on input line 18.
+
+
+LaTeX Warning: Hyper reference `acro:ML' on page XI undefined on input line 21.
+
+
+LaTeX Warning: Hyper reference `acro:ML' on page XI undefined on input line 21.
+
+
+LaTeX Warning: Hyper reference `acro:GAN' on page XI undefined on input line 24.
+
+
+LaTeX Warning: Hyper reference `acro:GAN' on page XI undefined on input line 24.
+
+
+LaTeX Warning: Hyper reference `acro:LLM' on page XI undefined on input line 27.
+
+
+LaTeX Warning: Hyper reference `acro:LLM' on page XI undefined on input line 27.
+
+
+LaTeX Warning: Hyper reference `acro:VAE' on page XI undefined on input line 30.
+
+
+LaTeX Warning: Hyper reference `acro:VAE' on page XI undefined on input line 30.
+
+
+LaTeX Warning: Hyper reference `acro:CNN' on page XI undefined on input line 34.
+
+
+LaTeX Warning: Hyper reference `acro:CNN' on page XI undefined on input line 34.
+
+
+LaTeX Warning: Hyper reference `acro:RNN' on page XI undefined on input line 38.
+
+
+LaTeX Warning: Hyper reference `acro:RNN' on page XI undefined on input line 38.
+
+
+LaTeX Warning: Hyper reference `acro:LSTM' on page XI undefined on input line 42.
+
+
+LaTeX Warning: Hyper reference `acro:LSTM' on page XI undefined on input line 42.
+
+
+LaTeX Warning: Hyper reference `acro:MDP' on page XI undefined on input line 46.
+
+
+LaTeX Warning: Hyper reference `acro:MDP' on page XI undefined on input line 46.
+
+
+LaTeX Warning: Hyper reference `acro:NLP ' on page XI undefined on input line 59.
+
+
+LaTeX Warning: Hyper reference `acro:NLP ' on page XI undefined on input line 59.
+
+
+LaTeX Warning: Hyper reference `acro:GD' on page XI undefined on input line 68.
+
+
+LaTeX Warning: Hyper reference `acro:GD' on page XI undefined on input line 68.
+
+
+LaTeX Warning: Hyper reference `acro:MLP' on page XI undefined on input line 71.
+
+
+LaTeX Warning: Hyper reference `acro:MLP' on page XI undefined on input line 71.
+
+)
+
+[11
+
+
+
+
+]
+\openout2 = `05-Introduction.aux'.
+
+ (05-Introduction.tex
+
+[1
+
+
+
+
+
+])
+
+LaTeX Info: Redefining \rmfamily on input line 283.
+LaTeX Info: Redefining \sffamily on input line 283.
+LaTeX Info: Redefining \ttfamily on input line 283.
+LaTeX Info: Redefining \rmfamily on input line 283.
+LaTeX Info: Redefining \sffamily on input line 283.
+LaTeX Info: Redefining \ttfamily on input line 283.
+[2]
+\openout2 = `06-Art.aux'.
+
+ (06-Art.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1.
+
+
+
+[3
+
+
+
+
+]
+Chapitre 1.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 5.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 5.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 5.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 5.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Overfull \hbox (0.50916pt too wide) in paragraph at lines 23--24
+[]\TU/lmr/m/n/12 Il existe trois grandes catégories d’apprentissage automatique : \TU/lmr/m/it/12 supervisé\TU/lmr/m/n/12 , \TU/lmr/m/it/12 non-supervisé
+ []
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 31.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 31.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 31.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 31.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+[4
+
+]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 50.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 50.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 50.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 50.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 59.
+LaTeX Info: Redefining \sffamily on input line 59.
+LaTeX Info: Redefining \ttfamily on input line 59.
+LaTeX Info: Redefining \rmfamily on input line 59.
+LaTeX Info: Redefining \sffamily on input line 59.
+LaTeX Info: Redefining \ttfamily on input line 59.
+[5]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 66.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 66.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 66.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 66.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+File: images_pfe/neurone.png Graphic file (type bmp)
+<images_pfe/neurone.png>
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 100.
+LaTeX Info: Redefining \sffamily on input line 100.
+LaTeX Info: Redefining \ttfamily on input line 100.
+LaTeX Info: Redefining \rmfamily on input line 100.
+LaTeX Info: Redefining \sffamily on input line 100.
+LaTeX Info: Redefining \ttfamily on input line 100.
+[6]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 125.
+LaTeX Info: Redefining \sffamily on input line 125.
+LaTeX Info: Redefining \ttfamily on input line 125.
+LaTeX Info: Redefining \rmfamily on input line 125.
+LaTeX Info: Redefining \sffamily on input line 125.
+LaTeX Info: Redefining \ttfamily on input line 125.
+[7]
+File: images_pfe/functions.png Graphic file (type bmp)
+<images_pfe/functions.png>
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 140.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 140.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 140.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 140.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 158.
+LaTeX Info: Redefining \sffamily on input line 158.
+LaTeX Info: Redefining \ttfamily on input line 158.
+LaTeX Info: Redefining \rmfamily on input line 158.
+LaTeX Info: Redefining \sffamily on input line 158.
+LaTeX Info: Redefining \ttfamily on input line 158.
+[8]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+File: images_pfe/network.png Graphic file (type bmp)
+<images_pfe/network.png>
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 202.
+LaTeX Info: Redefining \sffamily on input line 202.
+LaTeX Info: Redefining \ttfamily on input line 202.
+LaTeX Info: Redefining \rmfamily on input line 202.
+LaTeX Info: Redefining \sffamily on input line 202.
+LaTeX Info: Redefining \ttfamily on input line 202.
+[9]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 205.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 205.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 205.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 205.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 210.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 210.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 210.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 210.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 231.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 231.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 231.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 231.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 237.
+LaTeX Info: Redefining \sffamily on input line 237.
+LaTeX Info: Redefining \ttfamily on input line 237.
+LaTeX Info: Redefining \rmfamily on input line 237.
+LaTeX Info: Redefining \sffamily on input line 237.
+LaTeX Info: Redefining \ttfamily on input line 237.
+[10]
+File: images_pfe/rnn.jpg Graphic file (type bmp)
+<images_pfe/rnn.jpg>
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 269.
+LaTeX Info: Redefining \sffamily on input line 269.
+LaTeX Info: Redefining \ttfamily on input line 269.
+LaTeX Info: Redefining \rmfamily on input line 269.
+LaTeX Info: Redefining \sffamily on input line 269.
+LaTeX Info: Redefining \ttfamily on input line 269.
+[11]
+File: images_pfe/lstm.png Graphic file (type bmp)
+<images_pfe/lstm.png>
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 309.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 309.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 309.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 309.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 314.
+LaTeX Info: Redefining \sffamily on input line 314.
+LaTeX Info: Redefining \ttfamily on input line 314.
+LaTeX Info: Redefining \rmfamily on input line 314.
+LaTeX Info: Redefining \sffamily on input line 314.
+LaTeX Info: Redefining \ttfamily on input line 314.
+[12]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+File: images_pfe/cnn.png Graphic file (type bmp)
+<images_pfe/cnn.png>
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 345.
+LaTeX Info: Redefining \sffamily on input line 345.
+LaTeX Info: Redefining \ttfamily on input line 345.
+LaTeX Info: Redefining \rmfamily on input line 345.
+LaTeX Info: Redefining \sffamily on input line 345.
+LaTeX Info: Redefining \ttfamily on input line 345.
+[13]
+File: images_pfe/layerconv.png Graphic file (type bmp)
+<images_pfe/layerconv.png>
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+File: images_pfe/pooling.png Graphic file (type bmp)
+<images_pfe/pooling.png>
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 375.
+LaTeX Info: Redefining \sffamily on input line 375.
+LaTeX Info: Redefining \ttfamily on input line 375.
+LaTeX Info: Redefining \rmfamily on input line 375.
+LaTeX Info: Redefining \sffamily on input line 375.
+LaTeX Info: Redefining \ttfamily on input line 375.
+[14]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 378.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 378.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 378.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 378.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+File: images_pfe/residual-net.png Graphic file (type bmp)
+<images_pfe/residual-net.png>
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 398.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 398.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 398.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 398.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 403.
+LaTeX Info: Redefining \sffamily on input line 403.
+LaTeX Info: Redefining \ttfamily on input line 403.
+LaTeX Info: Redefining \rmfamily on input line 403.
+LaTeX Info: Redefining \sffamily on input line 403.
+LaTeX Info: Redefining \ttfamily on input line 403.
+[15]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+File: images_pfe/gnn.jpg Graphic file (type bmp)
+<images_pfe/gnn.jpg>
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 424.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 424.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 424.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 424.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 431.
+LaTeX Info: Redefining \sffamily on input line 431.
+LaTeX Info: Redefining \ttfamily on input line 431.
+LaTeX Info: Redefining \rmfamily on input line 431.
+LaTeX Info: Redefining \sffamily on input line 431.
+LaTeX Info: Redefining \ttfamily on input line 431.
+[16]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 460.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 460.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 460.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 460.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 478.
+LaTeX Info: Redefining \sffamily on input line 478.
+LaTeX Info: Redefining \ttfamily on input line 478.
+LaTeX Info: Redefining \rmfamily on input line 478.
+LaTeX Info: Redefining \sffamily on input line 478.
+LaTeX Info: Redefining \ttfamily on input line 478.
+[17]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 481.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 481.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 481.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 481.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+File: images_pfe/gd.png Graphic file (type bmp)
+<images_pfe/gd.png>
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 503.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 503.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 503.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 503.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 513.
+LaTeX Info: Redefining \sffamily on input line 513.
+LaTeX Info: Redefining \ttfamily on input line 513.
+LaTeX Info: Redefining \rmfamily on input line 513.
+LaTeX Info: Redefining \sffamily on input line 513.
+LaTeX Info: Redefining \ttfamily on input line 513.
+[18]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 523.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 523.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 523.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 523.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 531.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 531.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 531.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 531.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 545.
+LaTeX Info: Redefining \sffamily on input line 545.
+LaTeX Info: Redefining \ttfamily on input line 545.
+LaTeX Info: Redefining \rmfamily on input line 545.
+LaTeX Info: Redefining \sffamily on input line 545.
+LaTeX Info: Redefining \ttfamily on input line 545.
+[19]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 546.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 546.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 546.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 546.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 563.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 563.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 563.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 563.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 577.
+LaTeX Info: Redefining \sffamily on input line 577.
+LaTeX Info: Redefining \ttfamily on input line 577.
+LaTeX Info: Redefining \rmfamily on input line 577.
+LaTeX Info: Redefining \sffamily on input line 577.
+LaTeX Info: Redefining \ttfamily on input line 577.
+[20]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 578.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 578.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 578.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 578.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 588.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 588.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 588.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 588.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 604.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 604.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 604.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 604.
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 611.
+LaTeX Info: Redefining \sffamily on input line 611.
+LaTeX Info: Redefining \ttfamily on input line 611.
+LaTeX Info: Redefining \rmfamily on input line 611.
+LaTeX Info: Redefining \sffamily on input line 611.
+LaTeX Info: Redefining \ttfamily on input line 611.
+[21]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 624.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 624.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 624.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 624.
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 639.
+LaTeX Info: Redefining \sffamily on input line 639.
+LaTeX Info: Redefining \ttfamily on input line 639.
+LaTeX Info: Redefining \rmfamily on input line 639.
+LaTeX Info: Redefining \sffamily on input line 639.
+LaTeX Info: Redefining \ttfamily on input line 639.
+[22]
+
+LaTeX Info: Redefining \rmfamily on input line 640.
+LaTeX Info: Redefining \sffamily on input line 640.
+LaTeX Info: Redefining \ttfamily on input line 640.
+LaTeX Info: Redefining \rmfamily on input line 640.
+LaTeX Info: Redefining \sffamily on input line 640.
+LaTeX Info: Redefining \ttfamily on input line 640.
+[23]
+Chapitre 2.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 644.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 644.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 644.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 644.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 645.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 645.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 645.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 645.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 674.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 674.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 674.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 674.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 675.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 675.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 675.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 675.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+[24
+
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 688.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 688.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 688.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 688.
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 745.
+LaTeX Info: Redefining \sffamily on input line 745.
+LaTeX Info: Redefining \ttfamily on input line 745.
+LaTeX Info: Redefining \rmfamily on input line 745.
+LaTeX Info: Redefining \sffamily on input line 745.
+LaTeX Info: Redefining \ttfamily on input line 745.
+[25]
+File: images_pfe/vae_1.png Graphic file (type bmp)
+<images_pfe/vae_1.png>
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 771.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 771.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 771.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 771.
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 785.
+LaTeX Info: Redefining \sffamily on input line 785.
+LaTeX Info: Redefining \ttfamily on input line 785.
+LaTeX Info: Redefining \rmfamily on input line 785.
+LaTeX Info: Redefining \sffamily on input line 785.
+LaTeX Info: Redefining \ttfamily on input line 785.
+[26]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 827.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 827.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 827.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 827.
+
+
+Overfull \hbox (4.79254pt too wide) in paragraph at lines 829--829
+[]\TU/lmr/bx/n/14.4 Introduction aux Réseaux Antagonistes Génératifs (GANs) 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 829.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 829.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 829.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 829.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Underfull \vbox (badness 2495) has occurred while \output is active []
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 840.
+LaTeX Info: Redefining \sffamily on input line 840.
+LaTeX Info: Redefining \ttfamily on input line 840.
+LaTeX Info: Redefining \rmfamily on input line 840.
+LaTeX Info: Redefining \sffamily on input line 840.
+LaTeX Info: Redefining \ttfamily on input line 840.
+[27]
+Overfull \hbox (26.14772pt too wide) in paragraph at lines 841--841
+[]\TU/lmr/bx/n/14.4 Fonctionnement des Réseaux Antagonistes Génératifs (GANs) 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 841.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 841.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 841.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 841.
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 886.
+LaTeX Info: Redefining \sffamily on input line 886.
+LaTeX Info: Redefining \ttfamily on input line 886.
+LaTeX Info: Redefining \rmfamily on input line 886.
+LaTeX Info: Redefining \sffamily on input line 886.
+LaTeX Info: Redefining \ttfamily on input line 886.
+[28]
+
+LaTeX Info: Redefining \rmfamily on input line 939.
+LaTeX Info: Redefining \sffamily on input line 939.
+LaTeX Info: Redefining \ttfamily on input line 939.
+LaTeX Info: Redefining \rmfamily on input line 939.
+LaTeX Info: Redefining \sffamily on input line 939.
+LaTeX Info: Redefining \ttfamily on input line 939.
+[29]
+File: images_pfe/gan_1.png Graphic file (type bmp)
+<images_pfe/gan_1.png>
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 955.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 955.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 955.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 955.
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 985.
+LaTeX Info: Redefining \sffamily on input line 985.
+LaTeX Info: Redefining \ttfamily on input line 985.
+LaTeX Info: Redefining \rmfamily on input line 985.
+LaTeX Info: Redefining \sffamily on input line 985.
+LaTeX Info: Redefining \ttfamily on input line 985.
+[30]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+File: images_pfe/thisperson.png Graphic file (type bmp)
+<images_pfe/thisperson.png>
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1011.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1011.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1011.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1011.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1012.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1012.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1012.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1012.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 1022.
+LaTeX Info: Redefining \sffamily on input line 1022.
+LaTeX Info: Redefining \ttfamily on input line 1022.
+LaTeX Info: Redefining \rmfamily on input line 1022.
+LaTeX Info: Redefining \sffamily on input line 1022.
+LaTeX Info: Redefining \ttfamily on input line 1022.
+[31]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+File: images_pfe/markov.png Graphic file (type bmp)
+<images_pfe/markov.png>
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1040.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1040.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1040.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1040.
+
+File: images_pfe/Unet.png Graphic file (type bmp)
+<images_pfe/Unet.png>
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 1065.
+LaTeX Info: Redefining \sffamily on input line 1065.
+LaTeX Info: Redefining \ttfamily on input line 1065.
+LaTeX Info: Redefining \rmfamily on input line 1065.
+LaTeX Info: Redefining \sffamily on input line 1065.
+LaTeX Info: Redefining \ttfamily on input line 1065.
+[32]
+
+LaTeX Info: Redefining \rmfamily on input line 1110.
+LaTeX Info: Redefining \sffamily on input line 1110.
+LaTeX Info: Redefining \ttfamily on input line 1110.
+LaTeX Info: Redefining \rmfamily on input line 1110.
+LaTeX Info: Redefining \sffamily on input line 1110.
+LaTeX Info: Redefining \ttfamily on input line 1110.
+[33]
+File: images_pfe/diffusion_process.png Graphic file (type bmp)
+<images_pfe/diffusion_process.png>
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1148.
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 1152.
+LaTeX Info: Redefining \sffamily on input line 1152.
+LaTeX Info: Redefining \ttfamily on input line 1152.
+LaTeX Info: Redefining \rmfamily on input line 1152.
+LaTeX Info: Redefining \sffamily on input line 1152.
+LaTeX Info: Redefining \ttfamily on input line 1152.
+[34]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 1171.
+LaTeX Info: Redefining \sffamily on input line 1171.
+LaTeX Info: Redefining \ttfamily on input line 1171.
+LaTeX Info: Redefining \rmfamily on input line 1171.
+LaTeX Info: Redefining \sffamily on input line 1171.
+LaTeX Info: Redefining \ttfamily on input line 1171.
+[35]
+File: images_pfe/sd_images.png Graphic file (type bmp)
+<images_pfe/sd_images.png>
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1185.
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 1201.
+LaTeX Info: Redefining \sffamily on input line 1201.
+LaTeX Info: Redefining \ttfamily on input line 1201.
+LaTeX Info: Redefining \rmfamily on input line 1201.
+LaTeX Info: Redefining \sffamily on input line 1201.
+LaTeX Info: Redefining \ttfamily on input line 1201.
+[36]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1204.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1204.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1204.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1204.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1216.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1216.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1216.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1216.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1228.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1228.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1228.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1228.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Overfull \hbox (22.3717pt too wide) in paragraph at lines 1253--1257
+ []\TU/lmr/bx/n/12 Bloc d’Encodage[][] \TU/lmr/m/n/12 Un bloc d’encodage transforme une séquence d’entrée $[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 x[]; x[]; [] ; x[]\OT1/cmr/m/n/12 )$
+ []
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 1257.
+LaTeX Info: Redefining \sffamily on input line 1257.
+LaTeX Info: Redefining \ttfamily on input line 1257.
+LaTeX Info: Redefining \rmfamily on input line 1257.
+LaTeX Info: Redefining \sffamily on input line 1257.
+LaTeX Info: Redefining \ttfamily on input line 1257.
+[37]
+Overfull \hbox (5.22905pt too wide) in paragraph at lines 1269--1274
+ []\TU/lmr/bx/n/12 Bloc de Décodage[][] \TU/lmr/m/n/12 Un bloc de décodage génère la séquence de sortie $[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 y[]; y[]; [] ; y[]\OT1/cmr/m/n/12 )$\TU/lmr/m/n/12 ,
+ []
+
+File: images_pfe/transformer-architecture.png Graphic file (type bmp)
+<images_pfe/transformer-architecture.png>
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 1281.
+LaTeX Info: Redefining \sffamily on input line 1281.
+LaTeX Info: Redefining \ttfamily on input line 1281.
+LaTeX Info: Redefining \rmfamily on input line 1281.
+LaTeX Info: Redefining \sffamily on input line 1281.
+LaTeX Info: Redefining \ttfamily on input line 1281.
+[38]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1283.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1301.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1301.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1301.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1301.
+
+
+Underfull \vbox (badness 3690) has occurred while \output is active []
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 1311.
+LaTeX Info: Redefining \sffamily on input line 1311.
+LaTeX Info: Redefining \ttfamily on input line 1311.
+LaTeX Info: Redefining \rmfamily on input line 1311.
+LaTeX Info: Redefining \sffamily on input line 1311.
+LaTeX Info: Redefining \ttfamily on input line 1311.
+[39]
+
+LaTeX Info: Redefining \rmfamily on input line 1312.
+LaTeX Info: Redefining \sffamily on input line 1312.
+LaTeX Info: Redefining \ttfamily on input line 1312.
+LaTeX Info: Redefining \rmfamily on input line 1312.
+LaTeX Info: Redefining \sffamily on input line 1312.
+LaTeX Info: Redefining \ttfamily on input line 1312.
+[40]
+Chapitre 3.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1312.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1312.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1312.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1312.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1313.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1313.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1313.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1313.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1350.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1350.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1350.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1350.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1352.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1352.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1352.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1352.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[41
+
+]
+Overfull \hbox (7.60922pt too wide) in paragraph at lines 1357--1366
+[]\TU/lmr/m/n/12 La maintenance corrective intervient généralement après l’échec de l’équipement, lorsque
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1367.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1367.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1367.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1367.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1383.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1383.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1383.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1383.
+
+Missing character: There is no ​ in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 1402.
+LaTeX Info: Redefining \sffamily on input line 1402.
+LaTeX Info: Redefining \ttfamily on input line 1402.
+LaTeX Info: Redefining \rmfamily on input line 1402.
+LaTeX Info: Redefining \sffamily on input line 1402.
+LaTeX Info: Redefining \ttfamily on input line 1402.
+[42]
+File: images_pfe/predictive.png Graphic file (type bmp)
+<images_pfe/predictive.png>
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Underfull \hbox (badness 8038) in paragraph at lines 1417--1418
+\TU/lmr/m/n/12 vés de réparation d’ur-
+ []
+
+
+Underfull \hbox (badness 1953) in paragraph at lines 1419--1420
+[]|\TU/lmr/m/n/12 Coûts supplémentaires en
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 1421--1421
+\TU/lmr/m/n/12 non planifiés, prolonge la
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 1421--1421
+\TU/lmr/m/n/12 durée de vie des équipe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1421--1422
+[]|\TU/lmr/m/n/12 Nécessite des investisse-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1421--1422
+\TU/lmr/m/n/12 veillance, ainsi que des
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1421--1422
+\TU/lmr/m/n/12 compétences analytiques
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1428.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1428.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1428.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1428.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1430.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1430.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1430.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1430.
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 1449.
+LaTeX Info: Redefining \sffamily on input line 1449.
+LaTeX Info: Redefining \ttfamily on input line 1449.
+LaTeX Info: Redefining \rmfamily on input line 1449.
+LaTeX Info: Redefining \sffamily on input line 1449.
+LaTeX Info: Redefining \ttfamily on input line 1449.
+[43]
+File: images_pfe/motor.jpg Graphic file (type bmp)
+<images_pfe/motor.jpg>
+)
+
+LaTeX Info: Redefining \rmfamily on input line 284.
+LaTeX Info: Redefining \sffamily on input line 284.
+LaTeX Info: Redefining \ttfamily on input line 284.
+LaTeX Info: Redefining \rmfamily on input line 284.
+LaTeX Info: Redefining \sffamily on input line 284.
+LaTeX Info: Redefining \ttfamily on input line 284.
+[44]
+\openout2 = `09-Conception.aux'.
+
+ (09-Conception.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1.
+
+
+
+[45
+
+
+
+
+]
+Chapitre 4.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 7.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 7.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 7.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 7.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 11.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 11.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 11.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 11.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 20.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 20.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 20.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 20.
+
+
+
+[46
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 54.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 54.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 54.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 54.
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 69.
+LaTeX Info: Redefining \sffamily on input line 69.
+LaTeX Info: Redefining \ttfamily on input line 69.
+LaTeX Info: Redefining \rmfamily on input line 69.
+LaTeX Info: Redefining \sffamily on input line 69.
+LaTeX Info: Redefining \ttfamily on input line 69.
+[47]
+
+LaTeX Info: Redefining \rmfamily on input line 69.
+LaTeX Info: Redefining \sffamily on input line 69.
+LaTeX Info: Redefining \ttfamily on input line 69.
+LaTeX Info: Redefining \rmfamily on input line 69.
+LaTeX Info: Redefining \sffamily on input line 69.
+LaTeX Info: Redefining \ttfamily on input line 69.
+[48]
+Chapitre 5.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 69.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 69.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 69.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 69.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 76.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 76.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 76.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 76.
+
+)
+
+[49
+
+]
+\openout2 = `10-Realisation.aux'.
+
+ (10-Realisation.tex
+Chapitre 6.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 7.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 7.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 7.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 7.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 9.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+File: images_pfe/cifar-10-classes.png Graphic file (type bmp)
+<images_pfe/cifar-10-classes.png>
+
+
+[50
+
+
+
+
+]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 23.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 29.
+LaTeX Info: Redefining \sffamily on input line 29.
+LaTeX Info: Redefining \ttfamily on input line 29.
+LaTeX Info: Redefining \rmfamily on input line 29.
+LaTeX Info: Redefining \sffamily on input line 29.
+LaTeX Info: Redefining \ttfamily on input line 29.
+[51]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 80.
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 82.
+LaTeX Info: Redefining \sffamily on input line 82.
+LaTeX Info: Redefining \ttfamily on input line 82.
+LaTeX Info: Redefining \rmfamily on input line 82.
+LaTeX Info: Redefining \sffamily on input line 82.
+LaTeX Info: Redefining \ttfamily on input line 82.
+[52]
+File: images_pfe/residual-bloc.png Graphic file (type bmp)
+<images_pfe/residual-bloc.png>
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+File: images_pfe/vgg-19-and-resnet-34.png Graphic file (type bmp)
+<images_pfe/vgg-19-and-resnet-34.png>
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 102.
+LaTeX Info: Redefining \sffamily on input line 102.
+LaTeX Info: Redefining \ttfamily on input line 102.
+LaTeX Info: Redefining \rmfamily on input line 102.
+LaTeX Info: Redefining \sffamily on input line 102.
+LaTeX Info: Redefining \ttfamily on input line 102.
+[53]
+
+LaTeX Info: Redefining \rmfamily on input line 102.
+LaTeX Info: Redefining \sffamily on input line 102.
+LaTeX Info: Redefining \ttfamily on input line 102.
+LaTeX Info: Redefining \rmfamily on input line 102.
+LaTeX Info: Redefining \sffamily on input line 102.
+LaTeX Info: Redefining \ttfamily on input line 102.
+[54]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 106.
+
+File: images_pfe/python.png Graphic file (type bmp)
+<images_pfe/python.png>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 119.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 119.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 119.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 119.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 121.
+
+File: images_pfe/numpy.png Graphic file (type bmp)
+<images_pfe/numpy.png>
+
+
+LaTeX Info: Redefining \rmfamily on input line 129.
+LaTeX Info: Redefining \sffamily on input line 129.
+LaTeX Info: Redefining \ttfamily on input line 129.
+LaTeX Info: Redefining \rmfamily on input line 129.
+LaTeX Info: Redefining \sffamily on input line 129.
+LaTeX Info: Redefining \ttfamily on input line 129.
+[55
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 135.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 135.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 135.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 135.
+
+File: images_pfe/matplotlib.png Graphic file (type bmp)
+<images_pfe/matplotlib.png>
+
+
+LaTeX Info: Redefining \rmfamily on input line 146.
+LaTeX Info: Redefining \sffamily on input line 146.
+LaTeX Info: Redefining \ttfamily on input line 146.
+LaTeX Info: Redefining \rmfamily on input line 146.
+LaTeX Info: Redefining \sffamily on input line 146.
+LaTeX Info: Redefining \ttfamily on input line 146.
+[56]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 147.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 147.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 147.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 147.
+
+File: images_pfe/pytorch.png Graphic file (type bmp)
+<images_pfe/pytorch.png>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 160.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 160.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 160.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 160.
+
+File: images_pfe/torchvision.png Graphic file (type bmp)
+<images_pfe/torchvision.png>
+
+
+LaTeX Info: Redefining \rmfamily on input line 168.
+LaTeX Info: Redefining \sffamily on input line 168.
+LaTeX Info: Redefining \ttfamily on input line 168.
+LaTeX Info: Redefining \rmfamily on input line 168.
+LaTeX Info: Redefining \sffamily on input line 168.
+LaTeX Info: Redefining \ttfamily on input line 168.
+[57]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 173.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 173.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 173.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 173.
+
+File: images_pfe/nni.png Graphic file (type bmp)
+<images_pfe/nni.png>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 186.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 186.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 186.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 186.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 188.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 188.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 188.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 188.
+
+File: images_pfe/colab.png Graphic file (type bmp)
+<images_pfe/colab.png>
+
+
+LaTeX Info: Redefining \rmfamily on input line 195.
+LaTeX Info: Redefining \sffamily on input line 195.
+LaTeX Info: Redefining \ttfamily on input line 195.
+LaTeX Info: Redefining \rmfamily on input line 195.
+LaTeX Info: Redefining \sffamily on input line 195.
+LaTeX Info: Redefining \ttfamily on input line 195.
+[58]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 201.
+
+File: images_pfe/drive.png Graphic file (type bmp)
+<images_pfe/drive.png>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 214.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 214.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 214.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 214.
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 216.
+LaTeX Info: Redefining \sffamily on input line 216.
+LaTeX Info: Redefining \ttfamily on input line 216.
+LaTeX Info: Redefining \rmfamily on input line 216.
+LaTeX Info: Redefining \sffamily on input line 216.
+LaTeX Info: Redefining \ttfamily on input line 216.
+[59]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 230.
+LaTeX Info: Redefining \sffamily on input line 230.
+LaTeX Info: Redefining \ttfamily on input line 230.
+LaTeX Info: Redefining \rmfamily on input line 230.
+LaTeX Info: Redefining \sffamily on input line 230.
+LaTeX Info: Redefining \ttfamily on input line 230.
+[60]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 232.
+
+
+Overfull \hbox (1.98125pt too wide) in paragraph at lines 236--249
+[][][][] 
+ []
+
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+File: images_pfe/vgg-channels.png Graphic file (type bmp)
+<images_pfe/vgg-channels.png>
+
+
+LaTeX Info: Redefining \rmfamily on input line 265.
+LaTeX Info: Redefining \sffamily on input line 265.
+LaTeX Info: Redefining \ttfamily on input line 265.
+LaTeX Info: Redefining \rmfamily on input line 265.
+LaTeX Info: Redefining \sffamily on input line 265.
+LaTeX Info: Redefining \ttfamily on input line 265.
+[61
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 268.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 268.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 268.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 268.
+
+
+Overfull \hbox (1.98125pt too wide) in paragraph at lines 272--285
+[][][][] 
+ []
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 291.
+LaTeX Info: Redefining \sffamily on input line 291.
+LaTeX Info: Redefining \ttfamily on input line 291.
+LaTeX Info: Redefining \rmfamily on input line 291.
+LaTeX Info: Redefining \sffamily on input line 291.
+LaTeX Info: Redefining \ttfamily on input line 291.
+[62]
+File: images_pfe/resnet-pruning.png Graphic file (type bmp)
+<images_pfe/resnet-pruning.png>
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 301.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 301.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 301.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 301.
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 306.
+LaTeX Info: Redefining \sffamily on input line 306.
+LaTeX Info: Redefining \ttfamily on input line 306.
+LaTeX Info: Redefining \rmfamily on input line 306.
+LaTeX Info: Redefining \sffamily on input line 306.
+LaTeX Info: Redefining \ttfamily on input line 306.
+[63])
+
+LaTeX Info: Redefining \rmfamily on input line 288.
+LaTeX Info: Redefining \sffamily on input line 288.
+LaTeX Info: Redefining \ttfamily on input line 288.
+LaTeX Info: Redefining \rmfamily on input line 288.
+LaTeX Info: Redefining \sffamily on input line 288.
+LaTeX Info: Redefining \ttfamily on input line 288.
+[64]
+\openout2 = `11-Conclusion.aux'.
+
+ (11-Conclusion.tex
+
+[65
+
+
+
+
+]
+Underfull \vbox (badness 1383) has occurred while \output is active []
+
+
+
+LaTeX Info: Redefining \rmfamily on input line 42.
+LaTeX Info: Redefining \sffamily on input line 42.
+LaTeX Info: Redefining \ttfamily on input line 42.
+LaTeX Info: Redefining \rmfamily on input line 42.
+LaTeX Info: Redefining \sffamily on input line 42.
+LaTeX Info: Redefining \ttfamily on input line 42.
+[66])
+
+LaTeX Info: Redefining \rmfamily on input line 289.
+LaTeX Info: Redefining \sffamily on input line 289.
+LaTeX Info: Redefining \ttfamily on input line 289.
+LaTeX Info: Redefining \rmfamily on input line 289.
+LaTeX Info: Redefining \sffamily on input line 289.
+LaTeX Info: Redefining \ttfamily on input line 289.
+[67]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+[68
+
+
+
+]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 296.
+LaTeX Info: Redefining \sffamily on input line 296.
+LaTeX Info: Redefining \ttfamily on input line 296.
+LaTeX Info: Redefining \rmfamily on input line 296.
+LaTeX Info: Redefining \sffamily on input line 296.
+LaTeX Info: Redefining \ttfamily on input line 296.
+[69]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+LaTeX Info: Redefining \rmfamily on input line 298.
+LaTeX Info: Redefining \sffamily on input line 298.
+LaTeX Info: Redefining \ttfamily on input line 298.
+LaTeX Info: Redefining \rmfamily on input line 298.
+LaTeX Info: Redefining \sffamily on input line 298.
+LaTeX Info: Redefining \ttfamily on input line 298.
+[70]
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+
+
+[71
+
+] (main.aux (01-Dedicace.aux) (02-Remerciements.aux) (03-Resume.aux) (04-Acronymes.aux) (05-Introduction.aux) (06-Art.aux) (09-Conception.aux) (10-Realisation.aux) (11-Conclusion.aux))
+ ***********
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-05-27>
+ ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 050A8FF1D1C809F976B81CA4D921A336;15651.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 31011 strings out of 409034
+ 594037 string characters out of 5756841
+ 1944560 words of memory out of 5000000
+ 53174 multiletter control sequences out of 15000+600000
+ 574843 words of font info for 107 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 93i,17n,107p,1502b,5876s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.pdf (83 pages).

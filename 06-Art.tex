@@ -1018,16 +1018,16 @@ dernières années, ces modèles ont attiré l'attention pour leur remarquable
 capacité à générer des données synthétiques de haute qualité, les positionnant
 comme une alternative prometteuse aux techniques plus établies telles que les
 Réseaux Antagonistes Génératifs (GANs) et les Autoencodeurs Variationnels
-(VAEs) [\cite{ho2020denoising}].
+(VAEs) [\cite{dhariwal2021diffusion}].
 
 La fondation conceptuelle des modèles de diffusion s'inspire des processus de
 diffusion physique, où les particules migrent des régions de haute
-concentration vers des zones de moindre concentration. Ces modèles sont
-également basés sur les chaînes de Markov comme illustré dans la figure (2.4), un concept clé en probabilité qui
-décrit une série de transitions d'état où chaque état dépend uniquement de
-l'état précédent. Dans le contexte des données, ce principe est exploité pour
-affiner progressivement les données bruitées en représentations réalistes
-[\cite{yang2022diffusion}].
+concentration vers des zones de moindre concentration [\cite{ho2020denoising}]
+. Ces modèles sont également basés sur les chaînes de Markov comme illustré
+dans la figure (2.4), un concept clé en probabilité qui décrit une série de
+transitions d'état où chaque état dépend uniquement de l'état précédent. Dans
+le contexte des données, ce principe est exploité pour affiner progressivement
+les données bruitées en représentations réalistes [\cite{yang2022diffusion}].
 
 \begin{figure}[hbt!]
 	\centering
@@ -1036,7 +1036,6 @@ affiner progressivement les données bruitées en représentations réalistes
 	\label{fig:markov}
 \end{figure}
 \FloatBarrier
-
 
 \subsection{Fonctionnement des Modèles de Diffusion}
 
@@ -1057,6 +1056,13 @@ données originales. Cette méthode en deux phases, combinée à l'utilisation d
 réseau de neurones pour le débruitage, permet de modéliser et de générer des
 données synthétiques de haute qualité de manière efficace et contrôlée.
 
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=12cm]{images_pfe/Unet.png}
+	\caption{ Le processus d'entraînement d'un UNet pour prédire le bruit ajouté à l'image. [\cite{nichol2021improved}].}
+	\label{fig:unet}
+\end{figure}
+\FloatBarrier
 
 Les modèles de diffusion utilisent un processus en deux étapes : le bruitage
 (noising, également appelé \textit{Forward Process}) et le débruitage
@@ -1139,15 +1145,58 @@ p_\theta \) :
 	\mathcal{L} = \mathbb{E}_q \left[ \sum_{t=1}^T D_{KL}(q(x_{t-1} | x_t, x_0) \| p_\theta(x_{t-1} | x_t)) \right]
 \]
 
-\subsubsection{Conclusion}
+\subsection{Applications des Modéles de Diffusion}
+Les modèles de diffusion ont trouvé des applications dans divers domaines grâce
+à leur capacité à générer des données synthétiques de haute qualité. Voici
+quelques-unes des applications les plus remarquables :
 
-Les étapes de bruitage et de débruitage dans les modèles de diffusion
-permettent de transformer des données réelles en bruit gaussien et inversement.
-La formulation mathématique de ces étapes repose sur des distributions normales
-et des chaînes de Markov, et l'entraînement du modèle vise à minimiser la
-divergence entre les distributions réelles et générées. Ces processus sont
-cruciaux pour les applications de génération de données synthétiques de haute
-qualité dans divers domaines de l'apprentissage automatique.
+\begin{itemize}
+	\item \textbf{Génération d'images} : Les modèles de diffusion sont largement utilisés pour la génération d'images réalistes à partir de bruit aléatoire. Ils permettent de créer des images de haute qualité qui peuvent être utilisées dans le domaine de l'art, du design, et même dans la production de contenu multimédia.
+
+	\item \textbf{Synthèse vocale} : Ces modèles sont également appliqués dans la génération de voix synthétiques, offrant des améliorations significatives dans la clarté et la naturalité de la voix produite, utilisée dans les assistants vocaux et les technologies de lecture automatique.
+
+	\item \textbf{Création de vidéos} : En transformant des séquences de bruit en vidéos cohérentes, les modèles de diffusion peuvent générer des animations et des vidéos synthétiques, ouvrant de nouvelles possibilités dans le divertissement et la publicité.
+
+	\item \textbf{Traitement et amélioration d'images} : Les modèles de diffusion peuvent être utilisés pour restaurer des images bruitées, améliorer la résolution des images, et effectuer des transformations d'image avancées telles que la colorisation et le changement de style.
+
+	\item \textbf{Séries temporelles} : On peut aussi utiliser les modèles de diffusion pour d'autres types de données comme les séries temporelles. Ils peuvent aider à la prévision, à la détection d'anomalies et à la génération de nouvelles séries temporelles synthétiques [\cite{yang2023survey}].
+\end{itemize}
+
+Parmi les applications ayant connu un succès notable, on trouve :
+
+\begin{itemize}
+	\item \textbf{Stable Diffusion} : n modèle de diffusion qui a gagné en popularité pour sa capacité à générer des images d’une qualité exceptionnelle et son utilisation dans divers projets artistiques et commerciaux. Stable Diffusion est particulièrement apprécié pour sa flexibilité et sa robustesse, permettant aux artistes et aux créateurs de générer des œuvres d'art numériques impressionnantes avec un niveau de détail et de réalisme sans précédent. En outre, il est utilisé dans des industries telles que le design graphique, la publicité et même la production cinématographique, démontrant sa vaste applicabilité commerciale.
+
+	\item \textbf{DALL-E de OpenAI} : Ce modèle est capable de créer des images à partir de descriptions textuelles, révolutionnant ainsi la manière dont nous concevons et interagissons avec les images générées par l’intelligence artificielle. DALL-E peut interpréter des descriptions textuelles complexes et générer des images correspondantes, ce qui ouvre de nouvelles possibilités en matière de création de contenu visuel. Par exemple, il peut créer des images de concepts ou d'objets inexistants basés uniquement sur des descriptions verbales, ce qui est extrêmement utile pour le prototypage, l'illustration de concepts et l'innovation créative. DALL-E a été salué pour sa capacité à comprendre et à visualiser des idées abstraites, rendant la technologie accessible et utile pour les designers, les artistes et les innovateurs.
+\end{itemize}
+
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=12cm]{images_pfe/sd_images.png}
+	\caption{Exemple d’images générée par DALL-E2. [\cite{ramesh2022hierarchical}].}
+	\label{fig:unet}
+\end{figure}
+\FloatBarrier
+
+Ces applications démontrent la polyvalence et l'efficacité des modèles de
+diffusion, faisant d'eux des outils indispensables dans l'arsenal de
+l'intelligence artificielle moderne.
+
+\subsection{Conclusion}
+
+En conclusion, les modèles de diffusion représentent une avancée significative
+dans le domaine des modèles génératifs au sein de l'apprentissage automatique.
+En s'appuyant sur un processus en deux étapes, le Forward Process et le Reverse
+Process, ces modèles parviennent à transformer des données réelles en une
+distribution de bruit et à les reconvertir en données réalistes de haute
+qualité. L'utilisation d'un réseau de neurones pour le débruitage améliore
+encore l'efficacité et la précision du processus. Grâce à leur capacité à
+générer des données synthétiques fiables, les modèles de diffusion se
+positionnent comme une alternative prometteuse et robuste aux techniques
+traditionnelles telles que les Réseaux Antagonistes Génératifs et les
+Autoencodeurs Variationnels. Leur évolution continue et leur adoption
+croissante témoignent de leur potentiel immense et de leur pertinence dans
+divers domaines d'application de l'intelligence artificielle.
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Large Language Models%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
@@ -1260,26 +1309,165 @@ texte. Les modèles avancés comme GPT-3 de OpenAI démontrent le potentiel éno
 des Transformers lorsqu’ils sont mis à l’échelle avec des milliards de
 paramètres.
 
-\subsection{Réseaux de neurones de transformation (Transformer)}
-Les réseaux de neurones de transformation (Transformers) sont une architecture
-de réseau de neurones conçue par Google. Il sont utilises principalement pour
-le traitement du langage naturel, la traduction du texte et la génération de
-texte.
+\chapter{Maintenance prédictive des moteurs électriques}
+\section{Introduction}
 
-\medskip
-De ce fait, les Transformers ressemblent aux réseaux récurrents (RNN) mais la principale différence entre eux est que les Transformers n'utilisent pas de couches récurrentes pour modéliser les dépendances séquentielles. Au lieu de cela, ils utilisent une technique appelée "self-attention", qui permet au modèle de s'auto-atténuer sur les parties importantes de l'entrée [\cite{attention_is_all_you_need}].
+La maintenance prédictive est devenue une approche incontournable pour la
+gestion efficace des équipements industriels, en particulier les moteurs
+électriques. Avec l'avènement de l'Industrie 4.0 et l'intégration croissante de
+l'Internet des Objets (IoT) et de l'intelligence artificielle (IA) dans les
+processus industriels, la maintenance prédictive permet d'anticiper les
+défaillances potentielles avant qu'elles ne se produisent, assurant ainsi une
+continuité opérationnelle optimale et une réduction significative des coûts de
+maintenance [\cite{Mrozek2023}].
 
-\medskip
-Dans un réseau de neurones à auto-attention, chaque mot ou token en entrée est représenté par un vecteur, et ces vecteurs sont utilisés pour calculer les scores d'attention entre les différentes parties de l'entrée. Ces scores sont ensuite utilisés pour pondérer les vecteurs en entrée, en mettant plus d'importance sur les parties les plus pertinentes [\cite{attention_is_all_you_need}].
+Les moteurs électriques, étant au cœur de nombreuses applications
+industrielles, représentent des composants critiques dont la fiabilité et
+l'efficacité doivent être constamment surveillées. La maintenance prédictive
+pour ces moteurs repose sur l'analyse en temps réel de diverses données
+opérationnelles telles que les vibrations, les températures, les courants
+électriques et les niveaux de bruit. Grâce à des capteurs avancés et à des
+algorithmes sophistiqués, il est possible de détecter des anomalies subtiles et
+d'identifier les signes précurseurs de défaillances mécaniques ou électriques
+[\cite{Bentivogli2023}].
 
-\medskip
-Les Transformers ont contribué significativement aux avancées récentes dans le domaine du traitement du langage naturel, en particulier dans la traduction automatique et de la génération de texte. Les modèles les plus avancés, telles que GPT-3 de OpenAI ou Bard de Google, utilisent des architectures de Transformers massives avec des milliards de paramètres.
+L'adoption de la maintenance prédictive apporte plusieurs avantages majeurs.
+Elle permet non seulement d'améliorer la durée de vie des moteurs électriques,
+mais aussi de planifier les interventions de maintenance de manière plus
+stratégique, évitant ainsi les arrêts imprévus et minimisant les perturbations
+de la production. De plus, cette approche contribue à une gestion plus durable
+des ressources en réduisant les déchets et en optimisant l'utilisation de
+l'énergie.
+
+Dans ce chapitre, nous explorerons en détail les principes fondamentaux de la
+maintenance prédictive appliquée aux moteurs électriques. Nous examinerons les
+technologies et outils utilisés pour la collecte et l'analyse des données,
+ainsi que les différentes méthodes d'interprétation des signaux pour prévoir
+les défaillances. Enfin, nous discuterons des défis et des perspectives
+d'avenir de cette approche, mettant en lumière son rôle crucial dans la
+transformation numérique de l'industrie.
+
+\section{Types de Maintenance}
+
+\subsection{Maintenance Corrective}
+La maintenance corrective est réalisée après la détection d’une panne ou d’une
+défaillance. Son objectif est de remettre l’équipement en état de fonctionner
+en corrigeant le défaut[\cite{Sezdi2019}].
+
+La maintenance corrective intervient généralement après l'échec de
+l'équipement, lorsque celui-ci cesse de fonctionner comme prévu. Elle est
+souvent utilisée dans les industries où le coût de l'arrêt non planifié est
+moins critique ou où les équipements ne peuvent pas être surveillés en continu.
+Par exemple, dans certaines installations de production manufacturière, les
+interventions correctives peuvent être tolérées si les pièces de rechange sont
+facilement disponibles et si les réparations peuvent être effectuées
+rapidement. Cette méthode est également courante dans les petites entreprises
+où les ressources pour une maintenance plus proactive peuvent être limitées.
+
+\subsection{Maintenance Préventive}
+La maintenance préventive est effectuée régulièrement selon un calendrier
+prédéfini ou en fonction du temps ou du nombre de cycles d’utilisation,
+indépendamment de l’état de l’équipement. Elle vise à réduire la probabilité de
+défaillance [\cite{Sezdi2019}].
+
+La maintenance préventive repose sur des inspections et des services réguliers
+pour éviter les pannes inattendues. Cette méthode est largement adoptée dans
+les industries telles que l'aérospatiale, l'automobile et les centrales
+électriques où la fiabilité et la sécurité sont critiques. Par exemple, dans
+l'industrie aéronautique, les avions subissent des inspections régulières et
+des entretiens programmés pour garantir la sécurité des vols et prévenir les
+pannes en vol. De même, dans les centrales électriques, des programmes de
+maintenance préventive stricts sont mis en place pour assurer un fonctionnement
+continu et sûr des générateurs et des turbines.
+
+\subsection{Maintenance Prédictive}
+La maintenance prédictive repose sur la surveillance en temps réel et l’analyse
+des données de l’équipement pour anticiper les pannes avant qu’elles ne
+surviennent. Elle utilise des techniques telles que la vibration, l’analyse
+d’huile, l’imagerie thermique, et les données de performance​
+[\cite{Bentivogli2023, Sangeetha2017}].
+
+La maintenance prédictive vise à identifier les signes avant-coureurs de
+défaillances potentielles en utilisant des technologies avancées. Les capteurs
+IoT, les analyses de données et les algorithmes d'apprentissage automatique
+sont employés pour surveiller les conditions des équipements en temps réel.
+Cette approche est particulièrement utile dans les industries telles que le
+pétrole et le gaz, la production d'énergie et la fabrication de haute
+précision. Par exemple, dans les centrales éoliennes, les systèmes de
+maintenance prédictive surveillent les vibrations et les températures des
+composants critiques pour prévenir les pannes coûteuses et prolonger la durée
+de vie des équipements. Dans l'industrie manufacturière, elle permet de
+maintenir la qualité des produits et d'optimiser les cycles de production en
+réduisant les temps d'arrêt imprévus.
 
 \begin{figure}[hbt!]
 	\centering
-	\includegraphics[width=12cm]{images_pfe/transformer-architecture.png}
-	\caption{Architecture d'un reseau de neurones de transformation (Transformer) [\cite{attention_is_all_you_need}].}
-	\label{fig:gan}
+	\includegraphics[width=12cm]{images_pfe/predictive.png}
+	\caption{Stratégies de maintenance montrant les différentes étapes du processus de réparation avant et après la défaillance potentielle de l'équipement. [\cite{Mrozek2023}].}
+	\label{fig:transformer}
 \end{figure}
 \FloatBarrier
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|l|p{5cm}|p{5cm}|}
+		\hline
+		\textbf{Type de Maintenance} & \textbf{Avantages}                                                                                                                                            & \textbf{Inconvénients}                                                                                                                   \\
+		\hline
+		\textbf{Corrective}          & Simple à planifier, nécessite moins de surveillance continue                                                                                                  & Arrêts imprévus, coûts élevés de réparation d’urgence, et perturbations importantes de la production                                     \\
+		\hline
+		\textbf{Préventive}          & Réduit les risques de pannes imprévues, améliore la fiabilité de l’équipement                                                                                 & Coûts supplémentaires en raison de l’entretien d’équipements encore en bon état, nécessite une planification rigoureuse                  \\
+		\hline
+		\textbf{Prédictive}          & Permet de planifier les interventions de manière optimale, minimise les arrêts non planifiés, prolonge la durée de vie des équipements, et optimise les coûts & Nécessite des investissements initiaux en capteurs et en technologie de surveillance, ainsi que des compétences analytiques spécialisées \\
+		\hline
+	\end{tabular}
+	\caption{Comparaison entre les Types de Maintenance}
+	\label{tab:comparaison-maintenance}
+\end{table}
+
+\section{Maintenance prédictive pour les  moteurs électriques }
+
+\subsection{Moteurs électriques}
+
+Les moteurs électriques sont des dispositifs essentiels qui convertissent
+l'énergie électrique en énergie mécanique, jouant un rôle crucial dans de
+nombreux aspects de la vie quotidienne et industrielle. Utilisés dans divers
+secteurs tels que la fabrication, le transport et les applications domestiques,
+les moteurs électriques permettent un contrôle précis, indispensable pour les
+applications industrielles nécessitant une régulation rigoureuse de la vitesse
+et du couple.
+
+Parmi les différents types de moteurs électriques, les moteurs asynchrones, ou
+moteurs à induction, occupent une place prépondérante. Inventés par Nikola
+Tesla, ces moteurs sont largement utilisés en raison de leur simplicité, de
+leur robustesse et de leur coût relativement bas. Un moteur asynchrone
+fonctionne sur le principe de l'induction électromagnétique : lorsqu'un courant
+alternatif traverse les bobines du stator, un champ magnétique tournant est
+créé, induisant un courant dans le rotor. Ce courant induit génère à son tour
+un champ magnétique qui interagit avec celui du stator, produisant un couple
+qui fait tourner le rotor.
+
+Ces moteurs sont utilisés dans une vaste gamme d'industries et d'applications.
+Dans l'industrie manufacturière, ils entraînent des convoyeurs, des broyeurs et
+des compresseurs. Dans les systèmes de traction, ils sont essentiels pour les
+trains et les véhicules électriques. De plus, dans les services publics, ils
+sont utilisés pour les pompes, les ventilateurs et les systèmes de ventilation
+et de climatisation. Les moteurs asynchrones se distinguent par leur fiabilité,
+leur capacité à fonctionner dans des conditions difficiles et leur maintenance
+relativement facile, ce qui en fait un choix privilégié pour de nombreuses
+applications industrielles et domestiques.
+
+
+
+\subsubsection{les moteurs asynchrones}
+
+
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=12cm]{images_pfe/motor.jpg}
+	\caption{La machine asynchrone triphasée, également appelée machine à induction[.}
+	\label{fig:transformer}
+\end{figure}
+\FloatBarrier
+
 

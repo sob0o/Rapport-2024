@@ -120,101 +120,119 @@
 \select@language {french}
 \contentsline {subsection}{\numberline {\if@rl \I {2.4.2}\else \textLR {2.4.2}\fi }\bgroup \beginL \latintext Fonctionnement des Modèles de Diffusion\endL \egroup }{32}{subsection.2.4.2}%
 \select@language {french}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Forward Process (Bruitage)\endL \egroup }{32}{section*.40}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Forward Process (Bruitage)\endL \egroup }{33}{section*.41}%
 \select@language {french}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Reverse Process (Débruitage)\endL \egroup }{33}{section*.41}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Reverse Process (Débruitage)\endL \egroup }{34}{section*.42}%
 \select@language {french}
-\contentsline {paragraph}{\bgroup \beginL \latintext Objectif d'Entraînement :\endL \egroup }{34}{section*.43}%
+\contentsline {paragraph}{\bgroup \beginL \latintext Objectif d'Entraînement :\endL \egroup }{34}{section*.44}%
 \select@language {french}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Conclusion\endL \egroup }{34}{section*.44}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.4.2}\else \textLR {2.4.3}\fi }\bgroup \beginL \latintext Applications des Modéles de Diffusion\endL \egroup }{35}{subsection.2.4.3}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {5.2}\else \textLR {2.5}\fi }\bgroup \beginL \latintext Large Language Models\endL \egroup }{35}{section.2.5}%
+\contentsline {subsection}{\numberline {\if@rl \I {4.4.2}\else \textLR {2.4.4}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{36}{subsection.2.4.4}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {1.5.2}\else \textLR {2.5.1}\fi }\bgroup \beginL \latintext Réseaux de Neurones de Transformation (Transformers)\endL \egroup }{35}{subsection.2.5.1}%
+\contentsline {section}{\numberline {\if@rl \I {5.2}\else \textLR {2.5}\fi }\bgroup \beginL \latintext Large Language Models\endL \egroup }{37}{section.2.5}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {2.5.2}\else \textLR {2.5.2}\fi }\bgroup \beginL \latintext Fonctionnement des Transformers\endL \egroup }{35}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.5.2}\else \textLR {2.5.1}\fi }\bgroup \beginL \latintext Réseaux de Neurones de Transformation (Transformers)\endL \egroup }{37}{subsection.2.5.1}%
 \select@language {french}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Self-Attention\endL \egroup }{35}{section*.45}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.5.2}\else \textLR {2.5.2}\fi }\bgroup \beginL \latintext Fonctionnement des Transformers\endL \egroup }{37}{subsection.2.5.2}%
 \select@language {french}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Architecture des Transformers\endL \egroup }{35}{section*.46}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Self-Attention\endL \egroup }{37}{section*.46}%
 \select@language {french}
-\contentsline {paragraph}{\bgroup \beginL \latintext Bloc d'Encodage\endL \egroup }{36}{section*.47}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Architecture des Transformers\endL \egroup }{37}{section*.47}%
 \select@language {french}
-\contentsline {paragraph}{\bgroup \beginL \latintext Bloc de Décodage\endL \egroup }{36}{section*.48}%
+\contentsline {paragraph}{\bgroup \beginL \latintext Bloc d'Encodage\endL \egroup }{38}{section*.48}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {3.5.2}\else \textLR {2.5.3}\fi }\bgroup \beginL \latintext Applications des Transformers\endL \egroup }{37}{subsection.2.5.3}%
+\contentsline {paragraph}{\bgroup \beginL \latintext Bloc de Décodage\endL \egroup }{38}{section*.49}%
 \select@language {french}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Traduction Automatique\endL \egroup }{37}{section*.50}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.5.2}\else \textLR {2.5.3}\fi }\bgroup \beginL \latintext Applications des Transformers\endL \egroup }{39}{subsection.2.5.3}%
 \select@language {french}
-\contentsline {subsubsection}{\bgroup \beginL \latintext Génération de Texte\endL \egroup }{37}{section*.51}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Traduction Automatique\endL \egroup }{39}{section*.51}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {4.5.2}\else \textLR {2.5.4}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{38}{subsection.2.5.4}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext Génération de Texte\endL \egroup }{39}{section*.52}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {5.5.2}\else \textLR {2.5.5}\fi }\bgroup \beginL \latintext Réseaux de neurones de transformation (Transformer)\endL \egroup }{38}{subsection.2.5.5}%
+\contentsline {subsection}{\numberline {\if@rl \I {4.5.2}\else \textLR {2.5.4}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{40}{subsection.2.5.4}%
 \select@language {french}
-\contentsline {part}{II\hspace {1em}\bgroup \beginL \latintext Contribution\endL \egroup }{40}{part.2}%
-\select@language {french}
-\contentsline {chapter}{\numberline {3}\bgroup \beginL \latintext Organisme d’accueil\endL \egroup }{41}{chapter.3}%
+\contentsline {chapter}{\numberline {3}\bgroup \beginL \latintext Maintenance prédictive des moteurs électriques\endL \egroup }{41}{chapter.3}%
 \select@language {french}
 \contentsline {section}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }\bgroup \beginL \latintext Introduction\endL \egroup }{41}{section.3.1}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {2.3}\else \textLR {3.2}\fi }\bgroup \beginL \latintext Présentation de l'organisme d'accueil\endL \egroup }{41}{section.3.2}%
+\contentsline {section}{\numberline {\if@rl \I {2.3}\else \textLR {3.2}\fi }\bgroup \beginL \latintext Types de Maintenance\endL \egroup }{42}{section.3.2}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {3.3}\else \textLR {3.3}\fi }\bgroup \beginL \latintext Services\endL \egroup }{42}{section.3.3}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.2.3}\else \textLR {3.2.1}\fi }\bgroup \beginL \latintext Maintenance Corrective\endL \egroup }{42}{subsection.3.2.1}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {4.3}\else \textLR {3.4}\fi }\bgroup \beginL \latintext Organigramme de l'entreprise\endL \egroup }{42}{section.3.4}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.2.3}\else \textLR {3.2.2}\fi }\bgroup \beginL \latintext Maintenance Préventive\endL \egroup }{42}{subsection.3.2.2}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {5.3}\else \textLR {3.5}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{42}{section.3.5}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.2.3}\else \textLR {3.2.3}\fi }\bgroup \beginL \latintext Maintenance Prédictive\endL \egroup }{42}{subsection.3.2.3}%
 \select@language {french}
-\contentsline {chapter}{\numberline {4}\bgroup \beginL \latintext Conception\endL \egroup }{44}{chapter.4}%
+\contentsline {section}{\numberline {\if@rl \I {3.3}\else \textLR {3.3}\fi }\bgroup \beginL \latintext Maintenance prédictive pour les moteurs électriques \endL \egroup }{43}{section.3.3}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {1.4}\else \textLR {4.1}\fi }\bgroup \beginL \latintext Introduction\endL \egroup }{44}{section.4.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.3.3}\else \textLR {3.3.1}\fi }\bgroup \beginL \latintext Moteurs électriques\endL \egroup }{43}{subsection.3.3.1}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {2.4}\else \textLR {4.2}\fi }\bgroup \beginL \latintext Vue globale de la solution\endL \egroup }{44}{section.4.2}%
+\contentsline {subsubsection}{\bgroup \beginL \latintext les moteurs asynchrones\endL \egroup }{44}{section*.55}%
 \select@language {french}
-\contentsline {chapter}{\numberline {5}\bgroup \beginL \latintext Réalisation et tests\endL \egroup }{45}{chapter.5}%
+\contentsline {part}{II\hspace {1em}\bgroup \beginL \latintext Contribution\endL \egroup }{45}{part.2}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {1.5}\else \textLR {5.1}\fi }\bgroup \beginL \latintext Introduction\endL \egroup }{45}{section.5.1}%
+\contentsline {chapter}{\numberline {4}\bgroup \beginL \latintext Organisme d’accueil\endL \egroup }{46}{chapter.4}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {2.5}\else \textLR {5.2}\fi }\bgroup \beginL \latintext Modèles et jeu de données utilisés\endL \egroup }{45}{section.5.2}%
+\contentsline {section}{\numberline {\if@rl \I {1.4}\else \textLR {4.1}\fi }\bgroup \beginL \latintext Introduction\endL \egroup }{46}{section.4.1}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {1.2.5}\else \textLR {5.2.1}\fi }\bgroup \beginL \latintext CIFAR-10\endL \egroup }{45}{subsection.5.2.1}%
+\contentsline {section}{\numberline {\if@rl \I {2.4}\else \textLR {4.2}\fi }\bgroup \beginL \latintext Présentation de l'organisme d'accueil\endL \egroup }{46}{section.4.2}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {2.2.5}\else \textLR {5.2.2}\fi }\bgroup \beginL \latintext VGG-19\endL \egroup }{46}{subsection.5.2.2}%
+\contentsline {section}{\numberline {\if@rl \I {3.4}\else \textLR {4.3}\fi }\bgroup \beginL \latintext Services\endL \egroup }{47}{section.4.3}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {3.2.5}\else \textLR {5.2.3}\fi }\bgroup \beginL \latintext ResNet-34\endL \egroup }{48}{subsection.5.2.3}%
+\contentsline {section}{\numberline {\if@rl \I {4.4}\else \textLR {4.4}\fi }\bgroup \beginL \latintext Organigramme de l'entreprise\endL \egroup }{47}{section.4.4}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {3.5}\else \textLR {5.3}\fi }\bgroup \beginL \latintext Technologies utilisées\endL \egroup }{50}{section.5.3}%
+\contentsline {section}{\numberline {\if@rl \I {5.4}\else \textLR {4.5}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{47}{section.4.5}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {1.3.5}\else \textLR {5.3.1}\fi }\bgroup \beginL \latintext Python\endL \egroup }{50}{subsection.5.3.1}%
+\contentsline {chapter}{\numberline {5}\bgroup \beginL \latintext Conception\endL \egroup }{49}{chapter.5}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {4.5}\else \textLR {5.4}\fi }\bgroup \beginL \latintext Bibliothèque utilisées\endL \egroup }{50}{section.5.4}%
+\contentsline {section}{\numberline {\if@rl \I {1.5}\else \textLR {5.1}\fi }\bgroup \beginL \latintext Introduction\endL \egroup }{49}{section.5.1}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {1.4.5}\else \textLR {5.4.1}\fi }\bgroup \beginL \latintext NumPy\endL \egroup }{50}{subsection.5.4.1}%
+\contentsline {section}{\numberline {\if@rl \I {2.5}\else \textLR {5.2}\fi }\bgroup \beginL \latintext Vue globale de la solution\endL \egroup }{49}{section.5.2}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {2.4.5}\else \textLR {5.4.2}\fi }\bgroup \beginL \latintext Matplotlib\endL \egroup }{51}{subsection.5.4.2}%
+\contentsline {chapter}{\numberline {6}\bgroup \beginL \latintext Réalisation et tests\endL \egroup }{50}{chapter.6}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {3.4.5}\else \textLR {5.4.3}\fi }\bgroup \beginL \latintext Pytorch\endL \egroup }{52}{subsection.5.4.3}%
+\contentsline {section}{\numberline {\if@rl \I {1.6}\else \textLR {6.1}\fi }\bgroup \beginL \latintext Introduction\endL \egroup }{50}{section.6.1}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {4.4.5}\else \textLR {5.4.4}\fi }\bgroup \beginL \latintext Torchvision\endL \egroup }{52}{subsection.5.4.4}%
+\contentsline {section}{\numberline {\if@rl \I {2.6}\else \textLR {6.2}\fi }\bgroup \beginL \latintext Modèles et jeu de données utilisés\endL \egroup }{50}{section.6.2}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {5.4.5}\else \textLR {5.4.5}\fi }\bgroup \beginL \latintext NNI\endL \egroup }{53}{subsection.5.4.5}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.2.6}\else \textLR {6.2.1}\fi }\bgroup \beginL \latintext CIFAR-10\endL \egroup }{50}{subsection.6.2.1}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {5.5}\else \textLR {5.5}\fi }\bgroup \beginL \latintext Outils utilisés\endL \egroup }{54}{section.5.5}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.2.6}\else \textLR {6.2.2}\fi }\bgroup \beginL \latintext VGG-19\endL \egroup }{51}{subsection.6.2.2}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {1.5.5}\else \textLR {5.5.1}\fi }\bgroup \beginL \latintext Google Colab\endL \egroup }{54}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.2.6}\else \textLR {6.2.3}\fi }\bgroup \beginL \latintext ResNet-34\endL \egroup }{53}{subsection.6.2.3}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {2.5.5}\else \textLR {5.5.2}\fi }\bgroup \beginL \latintext Google Drive\endL \egroup }{54}{subsection.5.5.2}%
+\contentsline {section}{\numberline {\if@rl \I {3.6}\else \textLR {6.3}\fi }\bgroup \beginL \latintext Technologies utilisées\endL \egroup }{55}{section.6.3}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {6.5}\else \textLR {5.6}\fi }\bgroup \beginL \latintext Tests et résultats\endL \egroup }{55}{section.5.6}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.3.6}\else \textLR {6.3.1}\fi }\bgroup \beginL \latintext Python\endL \egroup }{55}{subsection.6.3.1}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {1.6.5}\else \textLR {5.6.1}\fi }\bgroup \beginL \latintext VGG-19\endL \egroup }{56}{subsection.5.6.1}%
+\contentsline {section}{\numberline {\if@rl \I {4.6}\else \textLR {6.4}\fi }\bgroup \beginL \latintext Bibliothèque utilisées\endL \egroup }{55}{section.6.4}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {2.6.5}\else \textLR {5.6.2}\fi }\bgroup \beginL \latintext ResNet-34\endL \egroup }{57}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.4.6}\else \textLR {6.4.1}\fi }\bgroup \beginL \latintext NumPy\endL \egroup }{55}{subsection.6.4.1}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {7.5}\else \textLR {5.7}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{58}{section.5.7}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.4.6}\else \textLR {6.4.2}\fi }\bgroup \beginL \latintext Matplotlib\endL \egroup }{56}{subsection.6.4.2}%
 \select@language {french}
-\contentsline {chapter}{Conclusion et perspectives}{60}{chapter*.69}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.4.6}\else \textLR {6.4.3}\fi }\bgroup \beginL \latintext Pytorch\endL \egroup }{57}{subsection.6.4.3}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {4.4.6}\else \textLR {6.4.4}\fi }\bgroup \beginL \latintext Torchvision\endL \egroup }{57}{subsection.6.4.4}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {5.4.6}\else \textLR {6.4.5}\fi }\bgroup \beginL \latintext NNI\endL \egroup }{58}{subsection.6.4.5}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {5.6}\else \textLR {6.5}\fi }\bgroup \beginL \latintext Outils utilisés\endL \egroup }{59}{section.6.5}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {1.5.6}\else \textLR {6.5.1}\fi }\bgroup \beginL \latintext Google Colab\endL \egroup }{59}{subsection.6.5.1}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {2.5.6}\else \textLR {6.5.2}\fi }\bgroup \beginL \latintext Google Drive\endL \egroup }{59}{subsection.6.5.2}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {6.6}\else \textLR {6.6}\fi }\bgroup \beginL \latintext Tests et résultats\endL \egroup }{60}{section.6.6}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {1.6.6}\else \textLR {6.6.1}\fi }\bgroup \beginL \latintext VGG-19\endL \egroup }{61}{subsection.6.6.1}%
+\select@language {french}
+\contentsline {subsection}{\numberline {\if@rl \I {2.6.6}\else \textLR {6.6.2}\fi }\bgroup \beginL \latintext ResNet-34\endL \egroup }{62}{subsection.6.6.2}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {7.6}\else \textLR {6.7}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{63}{section.6.7}%
+\select@language {french}
+\contentsline {chapter}{Conclusion et perspectives}{65}{chapter*.73}%
 \select@language {french}
 \select@language {french}
-\contentsline {chapter}{Bibliographie}{65}{chapter*.73}%
+\contentsline {chapter}{Bibliographie}{71}{chapter*.77}%
