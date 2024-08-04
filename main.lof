@@ -43,36 +43,26 @@
 \contentsline {figure}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }{\ignorespaces Stratégies de maintenance montrant les différentes étapes du processus de réparation avant et après la défaillance potentielle de l'équipement. [\blx@tocontentsinit {0}\cite {Mrozek2023}].}}{43}{figure.caption.53}%
 \setforeignlanguage {french}
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {2.3}\else \textLR {3.2}\fi }{\ignorespaces La machine asynchrone triphasée, également appelée machine à induction[.}}{44}{figure.caption.56}%
+\contentsline {figure}{\numberline {\if@rl \I {2.3}\else \textLR {3.2}\fi }{\ignorespaces Principaux Composants d'un moteur asynchrone triphasé (Machine à Induction).}}{45}{figure.caption.56}%
+\setforeignlanguage {french}
+\contentsline {figure}{\numberline {\if@rl \I {3.3}\else \textLR {3.3}\fi }{\ignorespaces Principaux Composants d'un moteur asynchrone triphasé (Machine à Induction).}}{47}{figure.caption.69}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {1.6}\else \textLR {6.1}\fi }{\ignorespaces Les classes du jeu de données CIFAR-10.}}{51}{figure.caption.57}%
+\contentsline {figure}{\numberline {\if@rl \I {1.6}\else \textLR {6.1}\fi }{\ignorespaces Python.}}{58}{figure.caption.88}%
 \setforeignlanguage {french}
+\contentsline {figure}{\numberline {\if@rl \I {2.6}\else \textLR {6.2}\fi }{\ignorespaces NumPy.}}{59}{figure.caption.89}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {2.6}\else \textLR {6.2}\fi }{\ignorespaces Un bloc résiduel de base comme sur la figure \ref {fig:architectures} pour ResNet-34 [\blx@tocontentsinit {0}\cite {He_2016_CVPR}].}}{53}{figure.caption.59}%
+\contentsline {figure}{\numberline {\if@rl \I {3.6}\else \textLR {6.3}\fi }{\ignorespaces Matplotlib.}}{60}{figure.caption.90}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {3.6}\else \textLR {6.3}\fi }{\ignorespaces Les architectures des modèles utilisés. A gauche: le modèle VGG-19. Au milieu: un réseau simple de 34 couches. À droite: le modèle ResNet-34 [\blx@tocontentsinit {0}\cite {He_2016_CVPR}].}}{54}{figure.caption.60}%
+\contentsline {figure}{\numberline {\if@rl \I {4.6}\else \textLR {6.4}\fi }{\ignorespaces Pytorch.}}{60}{figure.caption.91}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {4.6}\else \textLR {6.4}\fi }{\ignorespaces Python.}}{55}{figure.caption.61}%
+\contentsline {figure}{\numberline {\if@rl \I {5.6}\else \textLR {6.5}\fi }{\ignorespaces Torchvision.}}{61}{figure.caption.92}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {5.6}\else \textLR {6.5}\fi }{\ignorespaces NumPy.}}{56}{figure.caption.62}%
+\contentsline {figure}{\numberline {\if@rl \I {6.6}\else \textLR {6.6}\fi }{\ignorespaces NNI (Neural Network Intelligence).}}{61}{figure.caption.93}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {6.6}\else \textLR {6.6}\fi }{\ignorespaces Matplotlib.}}{56}{figure.caption.63}%
+\contentsline {figure}{\numberline {\if@rl \I {7.6}\else \textLR {6.7}\fi }{\ignorespaces Google Colab.}}{62}{figure.caption.94}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {7.6}\else \textLR {6.7}\fi }{\ignorespaces Pytorch.}}{57}{figure.caption.64}%
-\setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {8.6}\else \textLR {6.8}\fi }{\ignorespaces Torchvision.}}{58}{figure.caption.65}%
-\setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {9.6}\else \textLR {6.9}\fi }{\ignorespaces NNI (Neural Network Intelligence).}}{58}{figure.caption.66}%
-\setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {10.6}\else \textLR {6.10}\fi }{\ignorespaces Google Colab.}}{59}{figure.caption.67}%
-\setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {11.6}\else \textLR {6.11}\fi }{\ignorespaces Google Drive.}}{59}{figure.caption.68}%
-\setforeignlanguage {french}
-\setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {12.6}\else \textLR {6.12}\fi }{\ignorespaces Statistiques des canaux restants dans les couches de convolution de VGG-19.}}{62}{figure.caption.70}%
-\setforeignlanguage {french}
-\setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {13.6}\else \textLR {6.13}\fi }{\ignorespaces Comparaison entre les taux d'élagage des FLOPs et des paramètres des trois méthodes d'élagage pour le réseau ResNet-34.}}{63}{figure.caption.72}%
+\contentsline {figure}{\numberline {\if@rl \I {8.6}\else \textLR {6.8}\fi }{\ignorespaces Google Drive.}}{63}{figure.caption.95}%
+\addvspace {10\p@ }

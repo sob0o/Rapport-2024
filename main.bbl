@@ -314,64 +314,6 @@
       \field{title}{Language models are few-shot learners}
       \field{year}{2020}
     \endentry
-    \entry{CHEN202135}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=879256616b4c7650821f9d2374504a9b}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Yanming},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=33581e0d33d61f1be88dfceea96c56ca}{%
-           family={Wen},
-           familyi={W\bibinitperiod},
-           given={Xiang},
-           giveni={X\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2e2ff87f9b12042fe800eec629e9053d}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Yiwen},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f41bbc46c4cca943fa2a0c3bf70c8a04}{%
-           family={Shi},
-           familyi={S\bibinitperiod},
-           given={Weisong},
-           giveni={W\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{26e81ef2af172f3685159588a41e830b}
-      \strng{fullhash}{64d53a1830f564d756db70dcf0ed43d2}
-      \strng{fullhashraw}{64d53a1830f564d756db70dcf0ed43d2}
-      \strng{bibnamehash}{26e81ef2af172f3685159588a41e830b}
-      \strng{authorbibnamehash}{26e81ef2af172f3685159588a41e830b}
-      \strng{authornamehash}{26e81ef2af172f3685159588a41e830b}
-      \strng{authorfullhash}{64d53a1830f564d756db70dcf0ed43d2}
-      \strng{authorfullhashraw}{64d53a1830f564d756db70dcf0ed43d2}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0925-2312}
-      \field{journaltitle}{Neurocomputing}
-      \field{title}{CCPrune: Collaborative channel pruning for learning compact convolutional networks}
-      \field{volume}{451}
-      \field{year}{2021}
-      \field{pages}{35\bibrangedash 45}
-      \range{pages}{11}
-      \verb{doi}
-      \verb https://doi.org/10.1016/j.neucom.2021.04.063
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0925231221006056
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0925231221006056
-      \endverb
-    \endentry
     \entry{dhariwal2021diffusion}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=4164e43d8cf919f5e3f8d80f5ea23f36}{%
@@ -1102,55 +1044,6 @@
       \field{title}{Auto-Encoding Variational Bayes}
       \field{year}{2012}
     \endentry
-    \entry{krizhevsky2009learning}{report}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=c5e3a676e2ac1164b3afcd539c131fc9}{%
-           family={Krizhevsky},
-           familyi={K\bibinitperiod},
-           given={Alex},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9a8750ccdb2a4cf14d2655face1ce016}{%
-           family={Hinton},
-           familyi={H\bibinitperiod},
-           given={Geoffrey},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{institution}{1}{%
-        {University of Toronto}%
-      }
-      \list{location}{1}{%
-        {Toronto, Ontario}%
-      }
-      \list{publisher}{1}{%
-        {Technical report, University of Toronto}%
-      }
-      \strng{namehash}{dd291871bfa8ee64447232f1cca429aa}
-      \strng{fullhash}{db1738a0374d10d152a785eb2a94ce8c}
-      \strng{fullhashraw}{db1738a0374d10d152a785eb2a94ce8c}
-      \strng{bibnamehash}{db1738a0374d10d152a785eb2a94ce8c}
-      \strng{authorbibnamehash}{db1738a0374d10d152a785eb2a94ce8c}
-      \strng{authornamehash}{dd291871bfa8ee64447232f1cca429aa}
-      \strng{authorfullhash}{db1738a0374d10d152a785eb2a94ce8c}
-      \strng{authorfullhashraw}{db1738a0374d10d152a785eb2a94ce8c}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{number}{0}
-      \field{title}{Learning multiple layers of features from tiny images}
-      \field{type}{techreport}
-      \field{year}{2009}
-      \verb{urlraw}
-      \verb https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf
-      \endverb
-      \verb{url}
-      \verb https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf
-      \endverb
-    \endentry
     \entry{kumaraswamy_2021}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f448ee2ebfd1f62108dca7f9a5975b51}{%
@@ -1182,63 +1075,6 @@
       \verb{doi}
       \verb 10.1016/b978-0-12-820601-0.00011-2
       \endverb
-    \endentry
-    \entry{lin2020channel}{article}{}{}
-      \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=a578ef5619ae9ba96647203b700560a0}{%
-           family={Lin},
-           familyi={L\bibinitperiod},
-           given={Mingbao},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f0dbd2a2fc01479ff581294d0322b708}{%
-           family={Ji},
-           familyi={J\bibinitperiod},
-           given={Rongrong},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=56a5598e06082938c7a8af33a5c8614f}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Yuxin},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=90bc7f8e943cbacc994c812f894a4dcf}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Baochang},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ef3cf54978f07dde4f4d32777e69931e}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Yongjian},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7734b80d050024ca0fefbde5a51e2473}{%
-           family={Tian},
-           familyi={T\bibinitperiod},
-           given={Yonghong},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{31cab5346bd4b4d26e5c8c3c0061044f}
-      \strng{fullhash}{ec1e9a4c522b958a7f033612567887c1}
-      \strng{fullhashraw}{ec1e9a4c522b958a7f033612567887c1}
-      \strng{bibnamehash}{31cab5346bd4b4d26e5c8c3c0061044f}
-      \strng{authorbibnamehash}{31cab5346bd4b4d26e5c8c3c0061044f}
-      \strng{authornamehash}{31cab5346bd4b4d26e5c8c3c0061044f}
-      \strng{authorfullhash}{ec1e9a4c522b958a7f033612567887c1}
-      \strng{authorfullhashraw}{ec1e9a4c522b958a7f033612567887c1}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2001.08565}
-      \field{title}{Channel pruning via automatic structure search}
-      \field{year}{2020}
     \endentry
     \entry{mcculloch_pitts_1943_nervous_activity}{article}{}{}
       \name{author}{2}{}{%
@@ -1279,57 +1115,6 @@
       \verb{doi}
       \verb 10.1007/bf02478259
       \endverb
-    \endentry
-    \entry{molchanov2016pruning}{article}{}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=8ac65f0c6a6050a1bdbe904e1f4a1cf9}{%
-           family={Molchanov},
-           familyi={M\bibinitperiod},
-           given={Pavlo},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=383607c1407181bff13dce5ec57621ec}{%
-           family={Tyree},
-           familyi={T\bibinitperiod},
-           given={Stephen},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9c6cb97b8c2c22b41d64c2c4f4520c11}{%
-           family={Karras},
-           familyi={K\bibinitperiod},
-           given={Tero},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=70c1210f7c167faac22c68d1db1d9175}{%
-           family={Aila},
-           familyi={A\bibinitperiod},
-           given={Timo},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=08129312c062dd971f82ea43031cdef0}{%
-           family={Kautz},
-           familyi={K\bibinitperiod},
-           given={Jan},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{055d297369a35d168e27eaaedf364f12}
-      \strng{fullhash}{016dcc9913110f9ed0a7fea61d6e310d}
-      \strng{fullhashraw}{016dcc9913110f9ed0a7fea61d6e310d}
-      \strng{bibnamehash}{055d297369a35d168e27eaaedf364f12}
-      \strng{authorbibnamehash}{055d297369a35d168e27eaaedf364f12}
-      \strng{authornamehash}{055d297369a35d168e27eaaedf364f12}
-      \strng{authorfullhash}{016dcc9913110f9ed0a7fea61d6e310d}
-      \strng{authorfullhashraw}{016dcc9913110f9ed0a7fea61d6e310d}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1611.06440}
-      \field{title}{Pruning convolutional neural networks for resource efficient inference}
-      \field{year}{2016}
     \endentry
     \entry{Mrozek2023}{article}{}{}
       \true{moreauthor}
@@ -1753,39 +1538,6 @@
       \verb{doi}
       \verb 10.1007/978-981-13-3705-5_25
       \endverb
-    \endentry
-    \entry{simonyan2014very}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=9d16b7284df92c9adaee86c37ab992df}{%
-           family={Simonyan},
-           familyi={S\bibinitperiod},
-           given={Karen},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c72fc39e94030f67717052309266a44d}{%
-           family={Zisserman},
-           familyi={Z\bibinitperiod},
-           given={Andrew},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{a90a2fabc80322eeadf67872d62faed2}
-      \strng{fullhash}{25d2f3c4577a6632d37f0126cc781232}
-      \strng{fullhashraw}{25d2f3c4577a6632d37f0126cc781232}
-      \strng{bibnamehash}{25d2f3c4577a6632d37f0126cc781232}
-      \strng{authorbibnamehash}{25d2f3c4577a6632d37f0126cc781232}
-      \strng{authornamehash}{a90a2fabc80322eeadf67872d62faed2}
-      \strng{authorfullhash}{25d2f3c4577a6632d37f0126cc781232}
-      \strng{authorfullhashraw}{25d2f3c4577a6632d37f0126cc781232}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1409.1556}
-      \field{title}{Very deep convolutional networks for large-scale image recognition}
-      \field{year}{2014}
     \endentry
     \entry{attention_is_all_you_need}{inproceedings}{}{}
       \name{author}{8}{}{%
