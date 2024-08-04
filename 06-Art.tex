@@ -23,7 +23,7 @@ Ils sont constitués de plusieurs couches de neurones artificiels cachées qui t
 Il existe trois grandes catégories d'apprentissage automatique : \textit{supervisé}, \textit{non-supervisé} et \textit{semi-supervisé}. Dans l'apprentissage supervisé, on utilise un ensemble de données étiquetées, tandis que dans l'apprentissage non-supervisé, on ne dispose pas d'un ensemble de données étiquetées. L'apprentissage semi-supervisé est une combinaison d'apprentissage supervisé et non-supervisé. Dans l'apprentissage semi-supervisé, un ensemble de données est étiqueté, mais la majorité des données sont non étiquetées [\cite{Goodfellow-et-al-2016}, \cite{bishop_2016}].
 
 \medskip
-Dans l'apprentissage profond, plusieurs types d'architecture existent, chacune adaptée à des tâches spécifiques. Parmi les plus courants, on trouve: les \textit{réseaux de neurones convolutionnels} (CNN), les \textit{réseaux de neurones récurrents} (RNN), les \textit{réseaux de neurones générateurs adversaires} (GAN) et les \textit{réseaux de neurones de transformation} (Transformer) [\cite{Goodfellow-et-al-2016}].
+Dans l'apprentissage profond, plusieurs types d'architecture existent, chacune adaptée à des tâches spécifiques. Parmi les plus courants, on trouve: les \textit{réseaux de neurones convolutionnels} (CNN), les \textit{réseaux de neurones récurrents} (RNN), les \textit{réseaux de neurones générateurs adversaires} (GANs) et les \textit{réseaux de neurones de transformation} (Transformer) [\cite{Goodfellow-et-al-2016}].
 
 \medskip
 Dans ce chapitre, nous allons expliquer brièvement les différentes notions en relation avec l’apprentissage profond, telles que les couches du réseau, les fonctions d’activation, les types de réseaux, les connexions et les poids, le processus d’apprentissage et les types d’apprentissage.
@@ -252,6 +252,60 @@ La capacité à conserver une mémoire des pas de temps précédents et à gére
 dépendances à long terme rend les réseaux récurrents utiles pour les tâches qui
 nécessitent de comprendre le contexte de la séquence d'entrée.
 
+\subsubsection{Réseaux récurrents à mémoire courtet long terme (LSTM) }
+
+Les réseaux de neurones récurrents à mémoire longue à court terme, ou Long
+Short-Term Memory (LSTM) en angalis , représentent une amélioration
+significative des réseaux de neurones récurrents traditionnels, conçue pour
+résoudre les problèmes d’évanouissement et d’explosion du gradient. Introduits
+par Hochreiter et Schmidhuber en 1997 dans [\cite{hochreiter1997long}], les
+réseaux LSTM intègrent des cellules mémoire capables
+
+de stocker et de conserver des informations tout au long du traitement d’une
+séquence. Ces cellules mémoire permettent de transporter des informations
+importantes grâce à trois types de portes : la porte d’entrée, la porte de
+sortie et la porte d’oubli. Ces portes jouent un rôle crucial en décidant
+quelles informations doivent être ajoutées, conservées ou oubliées.
+
+\textbf{Porte d'Entrée}: décide quelles nouvelles informations doivent être stockées dans la cellule de mémoire. Elle est définie par :
+
+\begin{equation}
+	i_t = \sigma(W_i \cdot [h_{t-1}, x_t] + b_i)
+\end{equation}
+
+où $\sigma$ représente la fonction sigmoïde, $W_i$ est le poids associé à la
+porte d'entrée, $h_{t-1}$ est l'état caché précédent, $x_t$ est l'entrée
+actuelle, et $b_i$ est le biais.
+
+\textbf{Porte d'Oubli}: contrôle quelles informations anciennes doivent être effacées de la cellule de mémoire. Elle est définie par :
+
+\begin{equation}
+	f_t = \sigma(W_f \cdot [h_{t-1}, x_t] + b_f)
+\end{equation}
+
+où $\sigma$ est la fonction sigmoïde, $W_f$ est le poids associé à la porte
+d'oubli, $h_{t-1}$ est l'état caché précédent, $x_t$ est l'entrée actuelle, et
+$b_f$ est le biais.
+
+\textbf{Porte de Sortie}: décide quelles informations de la cellule de mémoire sont utilisées pour calculer l'état caché actuel. Elle est définie par :
+
+\begin{equation}
+	o_t = \sigma(W_o \cdot [h_{t-1}, x_t] + b_o)
+\end{equation}
+
+où $\sigma$ est la fonction sigmoïde, $W_o$ est le poids associé à la porte de
+sortie, $h_{t-1}$ est l'état caché précédent, $x_t$ est l'entrée actuelle, et
+$b_o$ est le biais.
+
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=15cm]{images_pfe/lstm.png}
+	\caption{Architecture d'un bloc LSTM [\cite{fawaz2019long}].}
+	\label{fig:lstm}
+\end{figure}
+\FloatBarrier
+\medskip
+
 \subsection{Réseaux de neurones convolutifs (CNN)}
 L'architecture des réseaus de neurones convolutifs (CNN) est une architecture
 spéciale qui est bien adaptée à la tâche de classification d'images. Ces
@@ -320,50 +374,6 @@ Cependant, le pooling excessive peut entraîner une perte d'informations spatial
 \end{figure}
 \FloatBarrier
 \medskip
-
-\subsection{Réseaux générateurs adversaires (GAN)}
-Les GAN (Generative Adversarial Networks) sont utilisés afin de générer des
-données synthétiques, telles que des images, des vidéos ou des sons, qui
-ressemblent à des données réelles. Les GAN sont composés de deux parties: le
-générateur et le discriminant
-	[\cite{goodfellow_pouget-abadie_mirza_xu_warde-farley_ozair_courville_bengio_2020}].
-
-\medskip
-Le générateur prend comme entrée un vecteur de bruit aléatoire et produit en sortie une image synthétique, tandis que le discriminant en entrée prend une image et produit en sortie une probabilité qui indique si l'image est réelle ou synthétique. Les deux réseaux sont formés en même temps, avec le générateur essayant de tromper le discriminant en produisant des images synthétiques qui sont indiscernables des images réelles [\cite{goodfellow_pouget-abadie_mirza_xu_warde-farley_ozair_courville_bengio_2020}, \cite{feng_feng_chen_cao_zhang_jiao_yu_2020}].
-
-\medskip
-Les GAN sont capables de produire des résultats très proches des données réelles, allant de portraits d'humains à des paysages naturels, en passant par des objets et des bâtiments. Cependant, ils sont souvent difficiles à former et peuvent être instables, en particulier lorsque les données d'entrée sont complexes.
-
-\begin{figure}[hbt!]
-	\centering
-	\includegraphics[width=12cm]{images_pfe/gan.png}
-	\caption{Un modèle de réseau générateur adversaire (GAN) [\cite{feng_feng_chen_cao_zhang_jiao_yu_2020}].}
-	\label{fig:gan}
-\end{figure}
-\FloatBarrier
-
-\subsection{Réseaux de neurones de transformation (Transformer)}
-Les réseaux de neurones de transformation (Transformers) sont une architecture
-de réseau de neurones conçue par Google. Il sont utilises principalement pour
-le traitement du langage naturel, la traduction du texte et la génération de
-texte.
-
-\medskip
-De ce fait, les Transformers ressemblent aux réseaux récurrents (RNN) mais la principale différence entre eux est que les Transformers n'utilisent pas de couches récurrentes pour modéliser les dépendances séquentielles. Au lieu de cela, ils utilisent une technique appelée "self-attention", qui permet au modèle de s'auto-atténuer sur les parties importantes de l'entrée [\cite{attention_is_all_you_need}].
-
-\medskip
-Dans un réseau de neurones à auto-attention, chaque mot ou token en entrée est représenté par un vecteur, et ces vecteurs sont utilisés pour calculer les scores d'attention entre les différentes parties de l'entrée. Ces scores sont ensuite utilisés pour pondérer les vecteurs en entrée, en mettant plus d'importance sur les parties les plus pertinentes [\cite{attention_is_all_you_need}].
-
-\medskip
-Les Transformers ont contribué significativement aux avancées récentes dans le domaine du traitement du langage naturel, en particulier dans la traduction automatique et de la génération de texte. Les modèles les plus avancés, telles que GPT-3 de OpenAI ou Bard de Google, utilisent des architectures de Transformers massives avec des milliards de paramètres.
-
-\begin{figure}[hbt!]
-	\centering
-	\includegraphics[width=12cm]{images_pfe/transformer-architecture.png}
-	\caption{Architecture d'un reseau de neurones de transformation (Transformer) [\cite{attention_is_all_you_need}].}
-	\label{fig:gan}
-\end{figure}
-\FloatBarrier
 
 \subsection{Réseaux résiduels (ResNet)}
 Les réseaux résiduels ont été conçus par Microsoft afin de résoudre le problème
@@ -629,19 +639,15 @@ Dans ce qui suit, nous présenterons l'apprentissage profond et ses algorithmes.
 
 \clearpage
 
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Intelligence artificielle générative (GenAI) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\chapter{Intelligence Artificielle Générative(GenAI)}
+\chapter{Intelligence Artificielle Générative (GenAI)}
 \section{Introduction}
 
 Avec les avancées fulgurantes du deep learning, de nouvelles méthodes
 d'intelligence artificielle ont émergé, souvent désignées sous le terme de
 modèles génératifs. Ces technologies de pointe, telles que les auto-encodeurs
-variationnels, les réseaux adversariaux génératifs (GAN), les modèles de
+variationnels, les réseaux adversariaux génératifs (GANs), les modèles de
 diffusion, les transformers et les modèles de langage de grande taille (LLM)
 sont capables de produire des données d'une qualité impressionnante,
 ressemblant de manière frappante aux données réelles. Les données générées par
@@ -665,31 +671,33 @@ leur fonctionnement et à leur mise en œuvre. Nous aborderons les principes de
 base, les innovations récentes, et les applications potentielles de ces
 technologies révolutionnaires.
 
-
-
 \section{Les Auto-Encodeurs Variationnels (VAE)}
 \subsection{Introduction}
 
-Les auto-encodeurs variationnels (VAE) sont des modèles génératifs puissants, reconnus pour leur capacité à
-apprendre une représentation compacte et structurée des données. Cette approche a révolutionné le domaine de
-l'apprentissage non supervisé et des modèles génératifs. Les VAE appartiennent à la classe des modèles génératifs
-probabilistes, combinant les principes des autoencodeurs et des modèles de variational Bayes pour générer des 
-données nouvelles et similaires à celles d'un jeu de données d'entraînement. 
-Depuis leur introduction par Kingma et Welling en 2013 [\cite{kingma_welling_auto_encoding}] , les VAE ont connu un grand succès dans diverses applications, allant de la génération d'images à la synthèse de texte.
-
-
+Les auto-encodeurs variationnels (VAE) sont des modèles génératifs puissants,
+reconnus pour leur capacité à apprendre une représentation compacte et
+structurée des données. Cette approche a révolutionné le domaine de
+l'apprentissage non supervisé et des modèles génératifs. Les VAE appartiennent
+à la classe des modèles génératifs probabilistes, combinant les principes des
+autoencodeurs et des modèles de variational Bayes pour générer des données
+nouvelles et similaires à celles d'un jeu de données d'entraînement. Depuis
+leur introduction par Kingma et Welling en 2013
+	[\cite{kingma_welling_auto_encoding}] , les VAE ont connu un grand succès dans
+diverses applications, allant de la génération d'images à la synthèse de texte.
 
 \subsection{Fonctionnement}
-\textbf{L'Encodeur:}L'encodeur est responsable de la transformation des données d'entrée \(\mathbf{x}\) en une distribution 
-dans l'espace latent. Plus précisément, il mappe les données d'entrée à une distribution gaussienne paramétrée par 
-une moyenne \(\mu\) et une variance \(\sigma^2\). Cette distribution est souvent représentée comme :
+Les VAE sont composés de trois éléments principaux : l'encodeur, le décodeur et
+l'espace latent. Chacune de ces composantes joue un rôle crucial dans le
+fonctionnement global du modèle.
 
+\textbf{L'Encodeur:}L'encodeur est responsable de la transformation des données d'entrée \(\mathbf{x}\) en une distribution
+dans l'espace latent. Plus précisément, il mappe les données d'entrée à une distribution gaussienne paramétrée par
+une moyenne \(\mu\) et une variance \(\sigma^2\). Cette distribution est souvent représentée comme :
 
 \begin{equation}
 	q(\mathbf{z} \mid \mathbf{x}) = \mathcal{N}(\mathbf{z} \mid \mu(\mathbf{x}), \sigma^2(\mathbf{x}))
 	\label{equ:couche}
 \end{equation}
-
 
 où \(\mathbf{z}\) est la variable latente que l'encodeur cherche à estimer.
 
@@ -697,54 +705,581 @@ où \(\mathbf{z}\) est la variable latente que l'encodeur cherche à estimer.
 
 \textbf{Le Décodeur:}Le décodeur prend un échantillon \(\mathbf{z}\) de la distribution gaussienne dans
 l'espace latent et génère une reconstruction \(\hat{\mathbf{x}}\) des données d'entrée. Il modélise la distribution
- des données d'entrée conditionnellement à \(\mathbf{z}\) comme suit :
-
-
+des données d'entrée conditionnellement à \(\mathbf{z}\) comme suit :
 
 \begin{equation}
 	p(\mathbf{x} \mid \mathbf{z})
 	\label{equ:couche}
 \end{equation}
 
-
-Typiquement, le décodeur est un réseau neuronal qui produit les paramètres de cette distribution, 
-souvent supposée gaussienne ou Bernoulli selon la nature des données.
+Typiquement, le décodeur est un réseau neuronal qui produit les paramètres de
+cette distribution, souvent supposée gaussienne ou Bernoulli selon la nature
+des données.
 
 \medskip
 
-\textbf{L'Espace latent:}est la représentation comprimée et structurée des données d'entrée. 
+\textbf{L'Espace latent:}est la représentation comprimée et structurée des données d'entrée.
 Il est généralement conçu comme un espace continu, où chaque point de l'espace latent correspond à une instance
-possible de données générées. L'idée est que cet espace latent capture les caractéristiques essentielles 
-des données d'entrée de manière à permettre 
+possible de données générées. L'idée est que cet espace latent capture les caractéristiques essentielles
+des données d'entrée de manière à permettre
 la génération de nouvelles instances en échantillonnant de cet espace.
+
+L’objectif principal d’un VAE est d’optimiser une fonction de coût qui combine
+deux termes principaux : la divergence de Kullback-Leibler (KL) et la
+vraisemblance de reconstruction.
+
+\textbf{Divergence de Kullback-Leibler (KL)}: Ce terme mesure la différence entre la distribution latente approximée \( q(z | x) \) et la distribution prior \( p(z) \). La divergence KL est donnée par :
+\[
+	D_{KL}(q(z | x) \parallel p(z))
+\]
+où \( q(z | x) \) est la distribution gaussienne paramétrée par l'encodeur, et
+\( p(z) \) est généralement choisie comme une distribution normale standard.
+
+\subsection*{Vraisemblance de Reconstruction}
+
+Ce terme mesure la capacité du modèle à reconstruire les données d'entrée \( x
+\) à partir de la variable latente \( z \). Il est donné par la vraisemblance
+de \( x \) conditionnée par \( z \) :
+\[
+	\log p(x | z)
+\]
+
+\subsubsection*{Fonction de Perte VAE}
+
+La fonction de coût totale d'un VAE, également appelée fonction de perte VAE,
+combine ces deux termes. Elle peut être formulée comme suit :
+\[
+	\mathcal{L}(\theta, \phi; x) = - \mathbb{E}_{q_\phi(z | x)}[\log p_\theta(x | z)] + D_{KL}(q_\phi(z | x) \parallel p(z))
+\]
+où \( \theta \) et \( \phi \) sont les paramètres du décodeur et de l'encodeur
+respectivement. Le premier terme, \( - \mathbb{E}_{q_\phi(z | x)}[\log
+	p_\theta(x | z)] \), représente l'erreur de reconstruction, et le second terme,
+\( D_{KL}(q_\phi(z | x) \parallel p(z)) \), régularise la distribution latente
+pour qu'elle soit proche de la distribution prior.
+
+En optimisant cette fonction de perte, les VAE parviennent à apprendre des
+représentations latentes qui permettent une reconstruction fidèle des données
+d'entrée tout en assurant une régularité statistique dans l'espace latent.
 
 \begin{figure}[hbt!]
 	\centering
-	\includegraphics[width=10cm]{images_pfe/neurone.png}
-	\caption{Le fonctionnement d'un neurone artificiel [\cite{mcculloch_pitts_1943_nervous_activity}].}
-	\label{fig:fonctionnement-neurone}
+	\includegraphics[width=10cm]{images_pfe/vae_1.png}
+	\caption{Le fonctionnement d'un neurone artificiel [\cite{kingma_welling_auto_encoding}].}
+	\label{fig:VAE}
 \end{figure}
 
+\subsection{Applications des Auto-Encodeurs Variationnels (VAE)}
 
-\textbf{Fonction de Coût: }l'objectif d'un VAE est d'optimiser la fonction de coût qui combine deux termes principaux : la divergence de Kullback-Leibler (KL) entre la distribution latente approximée \( q(\mathbf{z} \mid \mathbf{x}) \) et la distribution prior \( p(\mathbf{z}) \), et la vraisemblance de reconstruction \( p(\mathbf{x} \mid \mathbf{z}) \). La fonction de coût totale, appelée la fonction de perte VAE, est donnée par :
+Les auto-encodeurs variationnels (VAE) ont démontré leur efficacité dans divers
+domaines grâce à leur capacité à apprendre des représentations latentes
+significatives. Voici quelques-unes des principales applications des VAE :
+
+\subsubsection{Génération d'Images}
+
+Les VAE sont largement utilisés pour générer des images réalistes. En apprenant
+une représentation latente des images d'entraînement, les VAE peuvent
+échantillonner de cet espace latent pour créer de nouvelles images qui
+partagent des caractéristiques similaires avec les données d'origine. Cela a
+des applications potentielles dans la création de contenu, la conception
+assistée par ordinateur et la synthèse d'images médicales.
+
+\subsubsection{Synthèse de Texte}
+
+Les VAE peuvent être appliqués à la génération de texte en apprenant les
+structures latentes des séquences de texte. Ils permettent de produire des
+phrases cohérentes et des paragraphes qui imitent le style et le contenu des
+textes d'entraînement. Cette technique est utile dans des domaines tels que la
+génération automatique de rapports, l'écriture créative assistée et la
+traduction automatique.
+
+\subsubsection{Compression de Données}
+
+Les VAE sont efficaces pour la compression de données, en particulier pour des
+données de grande dimension comme les images et les vidéos. En apprenant une
+représentation latente compacte, les VAE peuvent réduire la dimensionnalité des
+données tout en préservant leurs caractéristiques essentielles. Cela permet une
+transmission et un stockage plus efficaces des données compressées.
+
+\subsubsection{Détection d'Anomalies}
+
+Dans les systèmes de détection d'anomalies, les VAE peuvent être utilisés pour
+identifier des données aberrantes qui diffèrent significativement des données
+d'entraînement. En apprenant une distribution latente des données normales, le
+VAE peut détecter des échantillons qui ne correspondent pas à cette
+distribution, ce qui est particulièrement utile dans la surveillance de
+systèmes industriels, la cybersécurité et la détection de fraudes.
+
+\subsubsection{Imputation de Données Manquantes}
+
+Les VAE peuvent également être employés pour l'imputation de données
+manquantes. En apprenant la structure latente des données complètes, les VAE
+peuvent estimer les valeurs manquantes de manière cohérente avec les données
+observées. Cette application est cruciale dans des domaines tels que l'analyse
+de données médicales, les études socio-économiques et les bases de données
+incomplètes.
+
+En résumé, les VAE sont des outils polyvalents dans le domaine de
+l'apprentissage machine, avec des applications variées allant de la génération
+de contenu à la compression de données et à la détection d'anomalies. Leur
+capacité à apprendre des représentations latentes significatives permet de
+traiter efficacement une large gamme de problèmes complexes.
+
+\section{Réseaux Antagonistes Génératifs (GANs)}
+
+\subsection{Introduction aux Réseaux Antagonistes Génératifs (GANs)}
+
+Les réseaux antagonistes génératifs, ou Generative Adversarial Networks (GANs)
+en anglais, sont une classe de modèles génératifs introduite par Ian Goodfellow
+et ses collègues en 2014 [\cite{goodfellow2014generative}]. Les GANs se
+composent de deux réseaux de neurones concurrents : un générateur et un
+discriminateur. Le générateur cherche à produire des échantillons réalistes à
+partir d'un bruit aléatoire, tandis que le discriminateur tente de distinguer
+les échantillons réels des échantillons générés. Cette compétition incite les
+deux réseaux à s'améliorer simultanément, aboutissant à la génération de
+données de haute qualité.
+
+\subsection{Fonctionnement des Réseaux Antagonistes Génératifs (GANs)}
+
+Les GANs sont des modèles très performants et sont adaptés à plusieurs
+architectures variées. Cependant, ils se composent principalement de deux
+réseaux de neurones principaux :
+
+\subsubsection{Générateur}
+
+Le réseau générateur prend un vecteur de bruit \( z \) tiré d’une distribution
+uniforme ou normale et produit une donnée synthétique \( G(z) \).
+Mathématiquement, le générateur peut être représenté comme une fonction \( G :
+Z \rightarrow X \), où \( Z \) est l'espace du bruit et \( X \) est l'espace
+des données. L’objectif du générateur est de "tromper" le discriminateur en
+générant des données indiscernables des données réelles.
 
 \[
-\mathcal{L}(\mathbf{x}; \theta, \phi) = \text{KL}\left[q(\mathbf{z} \mid \mathbf{x}) \parallel p(\mathbf{z})\right] - \mathbb{E}_{q(\mathbf{z} \mid \mathbf{x})}[\log p(\mathbf{x} \mid \mathbf{z})]
+	G(z; \theta_g) : z \sim p_z(z) \rightarrow x = G(z)
+\]
+
+où \( \theta_g \) représente les paramètres du générateur, \( p_z(z) \) est la
+distribution du bruit (généralement uniforme ou normale), et \( x \) est la
+donnée synthétique générée.
+
+Le générateur apprend à partir des erreurs du discriminateur, en améliorant
+constamment la qualité des données générées. En d'autres termes, il essaie de
+maximiser la probabilité que le discriminateur classifie ses sorties comme
+étant des données réelles.
+
+\subsubsection{Discriminateur}
+
+Le réseau discriminateur reçoit soit une donnée réelle \( x \) soit une donnée
+générée \( G(z) \). Il sort une probabilité \( D(x) \) ou \( D(G(z)) \)
+indiquant si l’entrée est réelle ou générée. Mathématiquement, le
+discriminateur peut être représenté comme une fonction \( D : X \rightarrow [0,
+	1] \), où \( D(x) \) représente la probabilité que \( x \) soit une donnée
+réelle.
+
+\[
+	D(x; \theta_d) : x \rightarrow [0, 1]
+\]
+
+où \( \theta_d \) représente les paramètres du discriminateur. Le
+discriminateur est entraîné pour maximiser la probabilité d’assigner la bonne
+étiquette aux échantillons réels et générés. Il essaie de minimiser la
+probabilité d'être trompé par les fausses données produites par le générateur.
+
+Le discriminateur est, en essence, un classificateur binaire qui essaie de
+distinguer entre les données authentiques et celles générées.
+
+\subsubsection{Fonction de Perte}
+
+Les fonctions de perte pour le générateur et le discriminateur sont définies
+comme suit :
+
+\[
+	\mathcal{L}_D = -\mathbb{E}_{x \sim p_{data}}[\log D(x)] - \mathbb{E}_{z \sim p_z}[\log(1 - D(G(z)))]
+\]
+
+\[
+	\mathcal{L}_G = -\mathbb{E}_{z \sim p_z}[\log D(G(z))]
+\]
+
+Où :
+\begin{conditions}
+	\mathcal{L}_D & fonction de perte du discriminateur \\
+	\mathcal{L}_G & fonction de perte du générateur \\
+	x & donnée réelle tirée de la distribution \( p_{data} \) \\
+	z & vecteur de bruit tiré de la distribution \( p_z \) \\
+	D(x) & probabilité estimée par le discriminateur que \( x \) soit une donnée réelle \\
+	G(z) & donnée synthétique générée à partir du bruit \( z \)
+\end{conditions}
+
+L'objectif du générateur est de minimiser \( \mathcal{L}_G \), tandis que le
+discriminateur cherche à minimiser \( \mathcal{L}_D \). Plus formellement,
+l'objectif est de résoudre le problème de minimax suivant :
+
+\[
+	\min_G \max_D \mathbb{E}_{x \sim p_{data}}[\log D(x)] + \mathbb{E}_{z \sim p_z}[\log(1 - D(G(z)))]
+\]
+
+\subsubsection{Entraînement des GANs}
+
+L’entraînement des réseaux antagonistes génératifs (GANs) implique une série
+d'étapes répétitives où le générateur et le discriminateur sont mis à jour tour
+à tour pour améliorer leurs performances respectives. Le processus se déroule
+comme suit :
+
+L'entraînement des GANs se fait par les étapes suivantes :
+\begin{enumerate}
+	\item Tirer un échantillon de bruit \( z \) de la distribution \( p_z \).
+	\item Générer une donnée synthétique \( G(z) \) à partir du générateur.
+	\item Tirer un échantillon de données réelles \( x \) de la distribution de données
+	      \( p_{data} \).
+	\item Mettre à jour les poids du discriminateur \( D \) en minimisant la fonction de
+	      perte \( \mathcal{L}_D \).
+	\item Tirer un nouvel échantillon de bruit \( z \).
+	\item Mettre à jour les poids du générateur \( G \) en minimisant la fonction de
+	      perte \( \mathcal{L}_G \).
+	\item Répéter les étapes ci-dessus pour un nombre prédéfini d'itérations.
+\end{enumerate}
+
+En suivant ces étapes, les GANs sont entraînés pour générer des données
+synthétiques réalistes qui peuvent être utilisées dans diverses applications,
+telles que la génération d'images, la super-résolution d'images et la synthèse
+de texte.
+
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=12cm]{images_pfe/gan_1.png}
+	\caption{Un modèle de réseau générateur adversaire (GAN) [\cite{feng_feng_chen_cao_zhang_jiao_yu_2020}].}
+	\label{fig:gan}
+\end{figure}
+\FloatBarrier
+
+\subsection{Applications des GANs}
+
+Les GANs ont une variété d'applications dans différents domaines :
+
+\subsubsection{Génération d'Images}
+
+Les GANs sont largement utilisés pour générer des images réalistes. Ils ont été
+appliqués avec succès dans la création d'images de haute qualité, la génération
+de visages humains, et même la création artistique. Par exemple, les GAN
+peuvent générer des images de personnes qui n'existent pas en apprenant les
+caractéristiques des visages humains à partir de vastes bases de données
+d'images.
+
+\subsubsection{Super-Résolution d'Images}
+
+Les GANs sont également utilisés pour la super-résolution d'images,
+c'est-à-dire augmenter la résolution d'une image basse résolution. Le modèle
+SRGAN (Super-Resolution GAN) est un exemple où les GANs sont utilisés pour
+produire des images de haute résolution à partir d'images de basse résolution,
+améliorant ainsi les détails visuels et la clarté.
+
+\subsubsection{Synthèse de Texte et Traduction Automatique}
+
+Dans le traitement du langage naturel (NLP), les GANs sont appliqués à la
+génération de texte et à la traduction automatique. Les modèles basés sur les
+GAN peuvent générer des phrases cohérentes et contextuellement appropriées,
+imitant le style et le contenu des textes d'entraînement. Cela est
+particulièrement utile pour les applications comme les chatbots, la création de
+contenu textuel, et les systèmes de traduction.
+
+\subsubsection{ StyleGAN: This Person Does Not Exist}
+
+StyleGAN, ou Style-Based Generator Architecture for Generative Adversarial
+Networks, est un modèle génératif avancé développé par les chercheurs de
+NVIDIA[\cite{karras2019style}]. Il représente une avancée significative dans la
+génération d'images de haute qualité et photoréalistes, y compris les visages
+de personnes qui n'existent pas. StyleGAN a diverses applications, y compris
+dans l'industrie du divertissement, la réalité virtuelle et la recherche
+académique.
+
+\textbf{This Person Does Not Exist}: Un exemple frappant de l'application de StyleGAN est le site web "This Person Does Not Exist" [\cite{thispersondoesnotexist}]  . Ce site utilise un modèle StyleGAN pour générer de manière aléatoire des visages de personnes qui n'existent pas à chaque rechargement de la page.
+
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=12cm]{images_pfe/thisperson.png}
+	\caption{Quelques images générées par le modèle StyleGAN sur le site 'This Person Does Not Exist'[\cite{thispersondoesnotexist}].}
+	\label{fig:thisperson}
+\end{figure}
+\FloatBarrier
+
+En résumé, les GANs sont des outils puissants et polyvalents dans le domaine de
+l'apprentissage machine, avec des applications qui vont de la génération
+d'images à la traduction automatique. Leur capacité à apprendre et à générer
+des données réalistes ouvre de nombreuses perspectives dans divers domaines.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Diffusion Model%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Diffusion models}
+\subsection{Introduction}
+
+Les modèles de diffusion, également connus sous le nom de diffusion models,
+représentent une avancée significative dans le domaine des modèles génératifs
+au sein de l'apprentissage automatique. Émergents de manière proéminente ces
+dernières années, ces modèles ont attiré l'attention pour leur remarquable
+capacité à générer des données synthétiques de haute qualité, les positionnant
+comme une alternative prometteuse aux techniques plus établies telles que les
+Réseaux Antagonistes Génératifs (GANs) et les Autoencodeurs Variationnels
+(VAEs) [\cite{ho2020denoising}].
+
+La fondation conceptuelle des modèles de diffusion s'inspire des processus de
+diffusion physique, où les particules migrent des régions de haute
+concentration vers des zones de moindre concentration. Ces modèles sont
+également basés sur les chaînes de Markov comme illustré dans la figure (2.4), un concept clé en probabilité qui
+décrit une série de transitions d'état où chaque état dépend uniquement de
+l'état précédent. Dans le contexte des données, ce principe est exploité pour
+affiner progressivement les données bruitées en représentations réalistes
+[\cite{yang2022diffusion}].
+
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=12cm]{images_pfe/markov.png}
+	\caption{Chaîne de Markov du processus de diffusion [\cite{ho2020denoising}].}
+	\label{fig:markov}
+\end{figure}
+\FloatBarrier
+
+
+\subsection{Fonctionnement des Modèles de Diffusion}
+
+Les modèles de diffusion utilisent un processus en deux étapes cruciales : le
+bruitage (noising, également appelé Forward Process) et le débruitage
+(denoising, ou Reverse Process). Ces étapes sont essentielles pour transformer
+des données réelles en une distribution de bruit et inversement. Le Forward
+Process consiste à ajouter progressivement du bruit aux données réelles, les
+transformant ainsi en une séquence de données de plus en plus bruitées.
+Ensuite, le Reverse Process inverse ce processus en éliminant le bruit étape
+par étape, recréant des données réalistes à partir du bruit.
+
+Pour effectuer le débruitage, un réseau de neurones est utilisé. Ce réseau de
+neurones est entraîné à détecter et à éliminer le bruit à chaque étape du
+Reverse Process. Il apprend à prédire l'état précédent des données à partir de
+l'état actuel bruité, permettant ainsi de reconstruire progressivement les
+données originales. Cette méthode en deux phases, combinée à l'utilisation d'un
+réseau de neurones pour le débruitage, permet de modéliser et de générer des
+données synthétiques de haute qualité de manière efficace et contrôlée.
+
+
+Les modèles de diffusion utilisent un processus en deux étapes : le bruitage
+(noising, également appelé \textit{Forward Process}) et le débruitage
+(denoising, ou \textit{Reverse Process}). Ces étapes sont essentielles pour
+transformer des données réelles en une distribution de bruit et inversement.
+
+\subsubsection{Forward Process (Bruitage)}
+
+L'étape de bruitage ajoute progressivement du bruit gaussien aux données
+réelles. Ce processus est modélisé comme une chaîne de Markov où chaque état \(
+x_t \) dépend uniquement de l'état précédent \( x_{t-1} \).
+
+La transition conditionnelle pour le bruitage est donnée par :
+\[
+	q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t \mathbf{I})
 \]
 
 où :
+\begin{conditions}
+	x_t & \text{état des données à l'étape \( t \)} \\
+	\beta_t & \text{taux de bruitage (un hyperparamètre ou une fonction du temps)} \\
+	\mathcal{N} & \text{distribution normale gaussienne} \\
+	\mathbf{I} & \text{matrice identité}
+\end{conditions}
 
+La séquence complète des \( T \) étapes de bruitage est décrite par :
 \[
-\text{KL}\left[q(\mathbf{z} \mid \mathbf{x}) \parallel p(\mathbf{z})\right]
+	q(x_{1:T} | x_0) = \prod_{t=1}^T q(x_t | x_{t-1})
 \]
 
-mesure la divergence entre la distribution latente approximée et la distribution prior.
+\textbf{Explication du Forward Process :}
 
+\begin{itemize}
+	\item À chaque étape \( t \), une petite quantité de bruit gaussien est ajoutée à \( x_{t-1} \), produisant \( x_t \).
+	\item La moyenne de la distribution est \( \sqrt{1 - \beta_t} x_{t-1} \), indiquant
+	      que la contribution des données d'origine diminue progressivement.
+	\item La variance est \( \beta_t \), contrôlant la quantité de bruit ajouté.
+\end{itemize}
+
+\subsubsection{Reverse Process (Débruitage)}
+
+L'étape de débruitage consiste à inverser le processus de bruitage pour
+transformer le bruit gaussien en données réalistes. Cela se fait en utilisant
+un modèle génératif pour approximer la distribution inverse.
+
+La transition conditionnelle pour le débruitage est donnée par :
 \[
-\mathbb{E}_{q(\mathbf{z} \mid \mathbf{x})}[\log p(\mathbf{x} \mid \mathbf{z})]
+	p_\theta(x_{t-1} | x_t) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t), \Sigma_\theta(x_t, t))
 \]
 
-est l'espérance de la log-vraisemblance de la reconstruction des données données la variable latente.
+où :
+\begin{conditions}
+	p_\theta & \text{distribution paramétrée par les poids du modèle \( \theta \)} \\
+	\mu_\theta & \text{moyenne apprise par le modèle} \\
+	\Sigma_\theta & \text{covariance apprise par le modèle}
+\end{conditions}
 
-L'optimisation de cette fonction de coût permet au VAE d'apprendre à générer des données qui ressemblent aux données d'entrée tout en apprenant une représentation efficace dans l'espace latent.
-```
+\textbf{Explication du Reverse Process :}
+
+\begin{itemize}
+	\item Le modèle est entraîné pour prédire \( x_{t-1} \) à partir de \( x_t \).
+	\item La moyenne \( \mu_\theta(x_t, t) \) est une fonction paramétrée par \( \theta
+	      \), dépendant de \( x_t \) et du temps \( t \).
+	\item La covariance \( \Sigma_\theta(x_t, t) \) représente l'incertitude du modèle.
+\end{itemize}
+
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=12cm]{images_pfe/diffusion_process.png}
+	\caption{Illustration des Processus de Diffusion : Forward Process et Reverse Process.}
+	\label{fig:markov}
+\end{figure}
+\FloatBarrier
+
+\paragraph{Objectif d'Entraînement :}
+L'objectif est de minimiser la divergence de Kullback-Leibler (KL) entre la
+distribution réelle \( q \) et la distribution générée par le modèle \(
+p_\theta \) :
+\[
+	\mathcal{L} = \mathbb{E}_q \left[ \sum_{t=1}^T D_{KL}(q(x_{t-1} | x_t, x_0) \| p_\theta(x_{t-1} | x_t)) \right]
+\]
+
+\subsubsection{Conclusion}
+
+Les étapes de bruitage et de débruitage dans les modèles de diffusion
+permettent de transformer des données réelles en bruit gaussien et inversement.
+La formulation mathématique de ces étapes repose sur des distributions normales
+et des chaînes de Markov, et l'entraînement du modèle vise à minimiser la
+divergence entre les distributions réelles et générées. Ces processus sont
+cruciaux pour les applications de génération de données synthétiques de haute
+qualité dans divers domaines de l'apprentissage automatique.
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Large Language Models%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
+
+\section{Large Language Models}
+Les grands modèles de langage, également connus sous le nom de Large Language
+Models (LLM) en anglais, ont révolutionné le domaine de l'intelligence
+artificielle en réalisant des avancées significatives dans la génération et la
+compréhension du langage naturel. Leur capacité à analyser, traiter et produire
+du texte de manière contextuelle et cohérente a ouvert de nouvelles
+perspectives dans divers secteurs, notamment la traduction automatique, la
+création de contenu et l'assistance virtuelle [\cite{naveed2023overview}].
+Parmi les méthodes et techniques employées dans ces modèles de langage, les
+réseaux neuronaux de type transformeur occupent une place prépondérante. Ce
+type de réseau neuronal sera présenté en détail dans les pages suivantes.
+
+\subsection{Réseaux de Neurones de Transformation (Transformers)}
+
+Les réseaux de neurones de transformation, ou Transformers, sont une
+architecture de réseau de neurones introduite par Google. Ils sont
+principalement utilisés pour le traitement du langage naturel (NLP), la
+traduction de texte et la génération de texte. Les Transformers se distinguent
+des réseaux récurrents (RNN) par leur capacité à traiter les dépendances
+séquentielles sans utiliser de couches récurrentes. Au lieu de cela, ils
+exploitent une technique appelée \textit{self-attention}, permettant au modèle
+de se concentrer sur les parties importantes de l'entrée
+[\cite{attention_is_all_you_need}].
+
+\subsection{Fonctionnement des Transformers}
+
+\subsubsection{Self-Attention}
+
+Dans un réseau de neurones à auto-attention, chaque mot ou token en entrée est
+représenté par un vecteur. Ces vecteurs sont utilisés pour calculer les scores
+d’attention entre les différentes parties de l’entrée. La formule de
+l’attention pour une tête est donnée par :
+
+\begin{equation}
+	\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+\end{equation}
+
+où $Q$ (queries), $K$ (keys), et $V$ (values) sont des matrices dérivées des
+représentations d'entrée, et $d_k$ est la dimension des clés. Ces scores
+d'attention pondèrent les vecteurs en entrée, mettant plus d’importance sur les
+parties les plus pertinentes [\cite{attention_is_all_you_need}].
+
+\subsubsection{Architecture des Transformers}
+
+L'architecture des Transformers est composée de deux blocs principaux :
+l'encodeur et le décodeur.
+
+\paragraph{Bloc d'Encodage}
+
+Un bloc d'encodage transforme une séquence d'entrée $\mathbf{x} = (x_1, x_2,
+	\ldots, x_n)$ en une séquence de représentations contextuelles $\mathbf{h} =
+	(h_1, h_2, \ldots, h_n)$. Chaque couche d'encodage comprend deux sous-couches
+principales :
+
+\begin{itemize}
+	\item \textbf{Mécanisme d'Attention Multi-Têtes} : L'attention multi-têtes permet au modèle de se concentrer sur différentes parties de la séquence d'entrée pour chaque mot de sortie.
+	\item \textbf{Feed-Forward Network} : Une couche de réseau de neurones feed-forward est appliquée à chaque position de manière indépendante :
+	      \begin{equation}
+		      \text{FFN}(x) = \max(0, xW_1 + b_1)W_2 + b_2
+	      \end{equation}
+	      où $W_1$, $W_2$, $b_1$, et $b_2$ sont des paramètres appris.
+\end{itemize}
+
+\paragraph{Bloc de Décodage}
+
+Un bloc de décodage génère la séquence de sortie $\mathbf{y} = (y_1, y_2,
+	\ldots, y_m)$, en utilisant les représentations contextuelles de l'encodage et
+les sorties précédentes. Le bloc de décodage inclut également des sous-couches
+d'attention multi-têtes, ainsi que des mécanismes pour l'attention croisée
+entre les représentations de l'entrée et de la sortie.
+
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=12cm]{images_pfe/transformer-architecture.png}
+	\caption{Architecture d'un reseau de neurones de transformation (Transformer) [\cite{attention_is_all_you_need}].}
+	\label{fig:transformer}
+\end{figure}
+\FloatBarrier
+
+\subsection{Applications des Transformers}
+
+\subsubsection{Traduction Automatique}
+
+Les Transformers ont contribué de manière significative aux avancées récentes
+dans la traduction automatique. Leur capacité à gérer les dépendances à longue
+portée et à traiter les séquences en parallèle leur permet de surpasser les
+modèles récurrents traditionnels.
+
+\subsubsection{Génération de Texte}
+
+Les modèles GPT (Generative Pre-trained Transformer) de OpenAI, comme GPT-3,
+utilisent des architectures de Transformers massives avec des milliards de
+paramètres. Ces modèles sont capables de générer du texte de manière cohérente
+et contextuellement pertinente. Par exemple, GPT-3, avec ses 175 milliards de
+paramètres, peut produire des textes qui imitent le style et le contenu des
+textes d'entraînement [\cite{brown2020language}].
+
+\subsection{Conclusion}
+
+Les Transformers ont révolutionné le domaine du traitement du langage naturel
+grâce à leur architecture innovante basée sur le mécanisme de
+\textit{self-attention}. Leur capacité à gérer les dépendances séquentielles
+sans recourir à des couches récurrentes en fait des outils puissants pour des
+applications variées telles que la traduction automatique et la génération de
+texte. Les modèles avancés comme GPT-3 de OpenAI démontrent le potentiel énorme
+des Transformers lorsqu’ils sont mis à l’échelle avec des milliards de
+paramètres.
+
+\subsection{Réseaux de neurones de transformation (Transformer)}
+Les réseaux de neurones de transformation (Transformers) sont une architecture
+de réseau de neurones conçue par Google. Il sont utilises principalement pour
+le traitement du langage naturel, la traduction du texte et la génération de
+texte.
+
+\medskip
+De ce fait, les Transformers ressemblent aux réseaux récurrents (RNN) mais la principale différence entre eux est que les Transformers n'utilisent pas de couches récurrentes pour modéliser les dépendances séquentielles. Au lieu de cela, ils utilisent une technique appelée "self-attention", qui permet au modèle de s'auto-atténuer sur les parties importantes de l'entrée [\cite{attention_is_all_you_need}].
+
+\medskip
+Dans un réseau de neurones à auto-attention, chaque mot ou token en entrée est représenté par un vecteur, et ces vecteurs sont utilisés pour calculer les scores d'attention entre les différentes parties de l'entrée. Ces scores sont ensuite utilisés pour pondérer les vecteurs en entrée, en mettant plus d'importance sur les parties les plus pertinentes [\cite{attention_is_all_you_need}].
+
+\medskip
+Les Transformers ont contribué significativement aux avancées récentes dans le domaine du traitement du langage naturel, en particulier dans la traduction automatique et de la génération de texte. Les modèles les plus avancés, telles que GPT-3 de OpenAI ou Bard de Google, utilisent des architectures de Transformers massives avec des milliards de paramètres.
+
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=12cm]{images_pfe/transformer-architecture.png}
+	\caption{Architecture d'un reseau de neurones de transformation (Transformer) [\cite{attention_is_all_you_need}].}
+	\label{fig:gan}
+\end{figure}
+\FloatBarrier
+

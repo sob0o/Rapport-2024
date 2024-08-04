@@ -10,9 +10,6 @@
 \setforeignlanguage {french}
 \setforeignlanguage {french}
 \setforeignlanguage {french}
-\setforeignlanguage {french}
-\addvspace {10\p@ }
-\setforeignlanguage {french}
 \addvspace {10\p@ }
 \setforeignlanguage {french}
 \setforeignlanguage {french}
@@ -21,12 +18,12 @@
 \setforeignlanguage {french}
 \setforeignlanguage {french}
 \setforeignlanguage {french}
-\setforeignlanguage {french}
-\setforeignlanguage {french}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \setforeignlanguage {french}
 \setforeignlanguage {french}
-\contentsline {table}{\numberline {\if@rl \I {1.4}\else \textLR {4.1}\fi }{\ignorespaces Les configurations des réseaux VGG (illustrées dans des colonnes selon leurs profondeurs). La colonne E représente la configuration du modèle VGG-19 utilisé [\blx@tocontentsinit {0}\cite {simonyan2014very}].}}{48}{table.caption.41}%
+\contentsline {table}{\numberline {\if@rl \I {1.5}\else \textLR {5.1}\fi }{\ignorespaces Les configurations des réseaux VGG (illustrées dans des colonnes selon leurs profondeurs). La colonne E représente la configuration du modèle VGG-19 utilisé [\blx@tocontentsinit {0}\cite {simonyan2014very}].}}{47}{table.caption.54}%
 \setforeignlanguage {french}
 \setforeignlanguage {french}
 \setforeignlanguage {french}
@@ -38,8 +35,8 @@
 \setforeignlanguage {french}
 \setforeignlanguage {french}
 \setforeignlanguage {french}
-\contentsline {table}{\numberline {\if@rl \I {2.4}\else \textLR {4.2}\fi }{\ignorespaces Résultats d'élagage de VGG-19 sur CIFAR-10. La deuxième colonne indique la précision du modèle. Les troisième et quatrième colonnes indiquent le taux d'élagage des FLOPs et le taux d'élagage des paramètres. La dernière colonne indique la taille du modèle.}}{57}{table.caption.52}%
+\contentsline {table}{\numberline {\if@rl \I {2.5}\else \textLR {5.2}\fi }{\ignorespaces Résultats d'élagage de VGG-19 sur CIFAR-10. La deuxième colonne indique la précision du modèle. Les troisième et quatrième colonnes indiquent le taux d'élagage des FLOPs et le taux d'élagage des paramètres. La dernière colonne indique la taille du modèle.}}{56}{table.caption.65}%
 \setforeignlanguage {french}
 \setforeignlanguage {french}
-\contentsline {table}{\numberline {\if@rl \I {3.4}\else \textLR {4.3}\fi }{\ignorespaces Résultats d'élagage de ResNet-34 sur CIFAR-10. La deuxième colonne indique la précision du modèle. Les troisième et quatrième colonnes indiquent le taux d'élagage des FLOPs et le taux d'élagage des paramètres. La dernière colonne indique la taille du modèle.}}{58}{table.caption.54}%
+\contentsline {table}{\numberline {\if@rl \I {3.5}\else \textLR {5.3}\fi }{\ignorespaces Résultats d'élagage de ResNet-34 sur CIFAR-10. La deuxième colonne indique la précision du modèle. Les troisième et quatrième colonnes indiquent le taux d'élagage des FLOPs et le taux d'élagage des paramètres. La dernière colonne indique la taille du modèle.}}{57}{table.caption.67}%
 \setforeignlanguage {french}
