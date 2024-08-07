@@ -523,6 +523,9 @@ INPUT .\images_pfe\motor.jpg
 INPUT .\images_pfe\triphase.png
 INPUT .\images_pfe\triphase.png
 INPUT .\images_pfe\triphase.png
+INPUT .\images_pfe\timeseries.png
+INPUT .\images_pfe\timeseries.png
+INPUT .\images_pfe\timeseries.png
 INPUT .\09-Conception.tex
 INPUT .\09-Conception.tex
 OUTPUT 09-Conception.aux

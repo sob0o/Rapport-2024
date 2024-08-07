@@ -725,13 +725,16 @@ des données d'entrée de manière à permettre
 la génération de nouvelles instances en échantillonnant de cet espace.
 
 L’objectif principal d’un VAE est d’optimiser une fonction de coût qui combine
-deux termes principaux : la divergence de Kullback-Leibler (KL) et la
-vraisemblance de reconstruction.
+deux termes principaux : la divergence de Kullback-Leibler (KL)
+[\cite{johnson2001symmetrizing}] et la vraisemblance de reconstruction.
 
 \textbf{Divergence de Kullback-Leibler (KL)}: Ce terme mesure la différence entre la distribution latente approximée \( q(z | x) \) et la distribution prior \( p(z) \). La divergence KL est donnée par :
-\[
-	D_{KL}(q(z | x) \parallel p(z))
-\]
+
+
+\begin{equation}
+    D_{KL}(q(\mathbf{z} \mid \mathbf{x}) \parallel p(\mathbf{z}))
+\end{equation}
+
 où \( q(z | x) \) est la distribution gaussienne paramétrée par l'encodeur, et
 \( p(z) \) est généralement choisie comme une distribution normale standard.
 
@@ -740,17 +743,19 @@ où \( q(z | x) \) est la distribution gaussienne paramétrée par l'encodeur, e
 Ce terme mesure la capacité du modèle à reconstruire les données d'entrée \( x
 \) à partir de la variable latente \( z \). Il est donné par la vraisemblance
 de \( x \) conditionnée par \( z \) :
-\[
-	\log p(x | z)
-\]
+
+\begin{equation}
+    \log p(\mathbf{x} \mid \mathbf{z})
+\end{equation}
 
 \subsubsection*{Fonction de Perte VAE}
 
 La fonction de coût totale d'un VAE, également appelée fonction de perte VAE,
 combine ces deux termes. Elle peut être formulée comme suit :
-\[
-	\mathcal{L}(\theta, \phi; x) = - \mathbb{E}_{q_\phi(z | x)}[\log p_\theta(x | z)] + D_{KL}(q_\phi(z | x) \parallel p(z))
-\]
+\begin{equation}
+    \mathcal{L}(\theta, \phi; \mathbf{x}) = - \mathbb{E}_{q_\phi(\mathbf{z} \mid \mathbf{x})}[\log p_\theta(\mathbf{x} \mid \mathbf{z})] + D_{KL}(q_\phi(\mathbf{z} \mid \mathbf{x}) \parallel p(\mathbf{z}))
+\end{equation}
+
 où \( \theta \) et \( \phi \) sont les paramètres du décodeur et de l'encodeur
 respectivement. Le premier terme, \( - \mathbb{E}_{q_\phi(z | x)}[\log
 	p_\theta(x | z)] \), représente l'erreur de reconstruction, et le second terme,
@@ -781,7 +786,7 @@ une représentation latente des images d'entraînement, les VAE peuvent
 échantillonner de cet espace latent pour créer de nouvelles images qui
 partagent des caractéristiques similaires avec les données d'origine. Cela a
 des applications potentielles dans la création de contenu, la conception
-assistée par ordinateur et la synthèse d'images médicales.
+assistée par ordinateur et la synthèse d'images médicales [\cite{luhman2024highfidelity}].
 
 \subsubsection{Synthèse de Texte}
 
@@ -790,7 +795,7 @@ structures latentes des séquences de texte. Ils permettent de produire des
 phrases cohérentes et des paragraphes qui imitent le style et le contenu des
 textes d'entraînement. Cette technique est utile dans des domaines tels que la
 génération automatique de rapports, l'écriture créative assistée et la
-traduction automatique.
+traduction automatique[\cite{wang2019topic}].
 
 \subsubsection{Compression de Données}
 
@@ -798,7 +803,7 @@ Les VAE sont efficaces pour la compression de données, en particulier pour des
 données de grande dimension comme les images et les vidéos. En apprenant une
 représentation latente compacte, les VAE peuvent réduire la dimensionnalité des
 données tout en préservant leurs caractéristiques essentielles. Cela permet une
-transmission et un stockage plus efficaces des données compressées.
+transmission et un stockage plus efficaces des données compressées[\cite{yilmaz2021selfvae}].
 
 \subsubsection{Détection d'Anomalies}
 
@@ -807,7 +812,7 @@ identifier des données aberrantes qui diffèrent significativement des données
 d'entraînement. En apprenant une distribution latente des données normales, le
 VAE peut détecter des échantillons qui ne correspondent pas à cette
 distribution, ce qui est particulièrement utile dans la surveillance de
-systèmes industriels, la cybersécurité et la détection de fraudes.
+systèmes industriels, la cybersécurité et la détection de fraudes [\cite{wang2019revisiting}].
 
 \subsubsection{Imputation de Données Manquantes}
 
@@ -816,7 +821,7 @@ manquantes. En apprenant la structure latente des données complètes, les VAE
 peuvent estimer les valeurs manquantes de manière cohérente avec les données
 observées. Cette application est cruciale dans des domaines tels que l'analyse
 de données médicales, les études socio-économiques et les bases de données
-incomplètes.
+incomplètes [\cite{collier2020vaes}].
 
 En résumé, les VAE sont des outils polyvalents dans le domaine de
 l'apprentissage machine, avec des applications variées allant de la génération
@@ -826,7 +831,7 @@ traiter efficacement une large gamme de problèmes complexes.
 
 \section{Réseaux Antagonistes Génératifs (GANs)}
 
-\subsection{Introduction aux Réseaux Antagonistes Génératifs (GANs)}
+\subsection{Introduction aux Réseaux Antagonistes Génératifs}
 
 Les réseaux antagonistes génératifs, ou Generative Adversarial Networks (GANs)
 en anglais, sont une classe de modèles génératifs introduite par Ian Goodfellow
@@ -838,7 +843,7 @@ les échantillons réels des échantillons générés. Cette compétition incite
 deux réseaux à s'améliorer simultanément, aboutissant à la génération de
 données de haute qualité.
 
-\subsection{Fonctionnement des Réseaux Antagonistes Génératifs (GANs)}
+\subsection{Fonctionnement des GANs}
 
 Les GANs sont des modèles très performants et sont adaptés à plusieurs
 architectures variées. Cependant, ils se composent principalement de deux
@@ -853,9 +858,10 @@ Z \rightarrow X \), où \( Z \) est l'espace du bruit et \( X \) est l'espace
 des données. L’objectif du générateur est de "tromper" le discriminateur en
 générant des données indiscernables des données réelles.
 
-\[
-	G(z; \theta_g) : z \sim p_z(z) \rightarrow x = G(z)
-\]
+\begin{equation}
+    G(\mathbf{z}; \theta_g) : \mathbf{z} \sim p_z(\mathbf{z}) \rightarrow \mathbf{x} = G(\mathbf{z})
+\end{equation}
+
 
 où \( \theta_g \) représente les paramètres du générateur, \( p_z(z) \) est la
 distribution du bruit (généralement uniforme ou normale), et \( x \) est la
@@ -875,9 +881,10 @@ discriminateur peut être représenté comme une fonction \( D : X \rightarrow [
 	1] \), où \( D(x) \) représente la probabilité que \( x \) soit une donnée
 réelle.
 
-\[
-	D(x; \theta_d) : x \rightarrow [0, 1]
-\]
+\begin{equation}
+    D(\mathbf{x}; \theta_d) : \mathbf{x} \rightarrow [0, 1]
+\end{equation}
+
 
 où \( \theta_d \) représente les paramètres du discriminateur. Le
 discriminateur est entraîné pour maximiser la probabilité d’assigner la bonne
@@ -892,13 +899,13 @@ distinguer entre les données authentiques et celles générées.
 Les fonctions de perte pour le générateur et le discriminateur sont définies
 comme suit :
 
-\[
-	\mathcal{L}_D = -\mathbb{E}_{x \sim p_{data}}[\log D(x)] - \mathbb{E}_{z \sim p_z}[\log(1 - D(G(z)))]
-\]
+\begin{equation}
+    \mathcal{L}_D = -\mathbb{E}_{\mathbf{x} \sim p_{data}}[\log D(\mathbf{x})] - \mathbb{E}_{\mathbf{z} \sim p_z}[\log(1 - D(G(\mathbf{z})))]
+\end{equation}
 
-\[
-	\mathcal{L}_G = -\mathbb{E}_{z \sim p_z}[\log D(G(z))]
-\]
+\begin{equation}
+    \mathcal{L}_G = -\mathbb{E}_{\mathbf{z} \sim p_z}[\log D(G(\mathbf{z}))]
+\end{equation}
 
 Où :
 \begin{conditions}
@@ -914,9 +921,9 @@ L'objectif du générateur est de minimiser \( \mathcal{L}_G \), tandis que le
 discriminateur cherche à minimiser \( \mathcal{L}_D \). Plus formellement,
 l'objectif est de résoudre le problème de minimax suivant :
 
-\[
-	\min_G \max_D \mathbb{E}_{x \sim p_{data}}[\log D(x)] + \mathbb{E}_{z \sim p_z}[\log(1 - D(G(z)))]
-\]
+\begin{equation}
+    \min_G \max_D \mathbb{E}_{\mathbf{x} \sim p_{data}}[\log D(\mathbf{x})] + \mathbb{E}_{\mathbf{z} \sim p_z}[\log(1 - D(G(\mathbf{z})))]
+\end{equation}
 
 \subsubsection{Entraînement des GANs}
 
@@ -1076,9 +1083,10 @@ réelles. Ce processus est modélisé comme une chaîne de Markov où chaque ét
 x_t \) dépend uniquement de l'état précédent \( x_{t-1} \).
 
 La transition conditionnelle pour le bruitage est donnée par :
-\[
-	q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t \mathbf{I})
-\]
+\begin{equation}
+    q(\mathbf{x}_t \mid \mathbf{x}_{t-1}) = \mathcal{N}(\mathbf{x}_t; \sqrt{1 - \beta_t} \mathbf{x}_{t-1}, \beta_t \mathbf{I})
+\end{equation}
+
 
 où :
 \begin{conditions}
@@ -1089,9 +1097,9 @@ où :
 \end{conditions}
 
 La séquence complète des \( T \) étapes de bruitage est décrite par :
-\[
-	q(x_{1:T} | x_0) = \prod_{t=1}^T q(x_t | x_{t-1})
-\]
+\begin{equation}
+    q(\mathbf{x}_{1:T} \mid \mathbf{x}_0) = \prod_{t=1}^T q(\mathbf{x}_t \mid \mathbf{x}_{t-1})
+\end{equation}
 
 \textbf{Explication du Forward Process :}
 
@@ -1109,9 +1117,11 @@ transformer le bruit gaussien en données réalistes. Cela se fait en utilisant
 un modèle génératif pour approximer la distribution inverse.
 
 La transition conditionnelle pour le débruitage est donnée par :
-\[
-	p_\theta(x_{t-1} | x_t) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t), \Sigma_\theta(x_t, t))
-\]
+
+\begin{equation}
+    p_\theta(\mathbf{x}_{t-1} \mid \mathbf{x}_t) = \mathcal{N}(\mathbf{x}_{t-1}; \mu_\theta(\mathbf{x}_t, t), \Sigma_\theta(\mathbf{x}_t, t))
+\end{equation}
+
 
 où :
 \begin{conditions}
@@ -1141,9 +1151,10 @@ où :
 L'objectif est de minimiser la divergence de Kullback-Leibler (KL) entre la
 distribution réelle \( q \) et la distribution générée par le modèle \(
 p_\theta \) :
-\[
-	\mathcal{L} = \mathbb{E}_q \left[ \sum_{t=1}^T D_{KL}(q(x_{t-1} | x_t, x_0) \| p_\theta(x_{t-1} | x_t)) \right]
-\]
+
+\begin{equation}
+    \mathcal{L} = \mathbb{E}_q \left[ \sum_{t=1}^T D_{KL}(q(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0) \| p_\theta(\mathbf{x}_{t-1} \mid \mathbf{x}_t)) \right]
+\end{equation}
 
 \subsection{Applications des Modéles de Diffusion}
 Les modèles de diffusion ont trouvé des applications dans divers domaines grâce
@@ -1550,59 +1561,16 @@ de contraintes mécaniques répétées, de surcharges ou de défauts de fabricat
 Ce défaut peut provoquer un déséquilibre du rotor, des vibrations excessives et
 une diminution des performances du moteur.
 
-\section*{Signaux Triphasés dans les Moteurs Électriques}
+%%%%%%%%%%%%%%%%%%%%%Traitement de Signal%%%%%%%%%%%%%%%%%%%%%ùù
 
-Les moteurs électriques triphasés utilisent des signaux électriques triphasés
-pour fonctionner efficacement. Ces signaux, qui consistent en trois courants
-alternatifs déphasés de 120 degrés chacun, sont essentiels pour la création
-d'un champ magnétique rotatif dans le stator, qui à son tour entraîne la
-rotation du rotor.
+\section{Traitement de Signal Pour les moteurs électriques}
 
-\subsection*{Signaux d'entrée}
-
-Les signaux d'entrée d'un moteur électrique triphasé sont constitués de
-courants et de tensions triphasés. Chaque phase est décalée de 120 degrés par
-rapport aux autres, permettant une distribution équilibrée de la puissance et
-réduisant les vibrations et les pertes. Les courants et tensions triphasés
-d'entrée doivent être équilibrés et stables pour assurer un fonctionnement
-optimal du moteur. Des déséquilibres ou des variations peuvent indiquer des
-problèmes dans l'alimentation ou des défauts internes.
-
-\subsection*{Signaux de sortie}
-
-Les signaux de sortie d'un moteur électrique, principalement les courants et
-les tensions mesurés aux bornes du moteur, peuvent fournir des informations
-précieuses sur l'état de santé du moteur. Un moteur en bon état génère des
-signaux de sortie avec un certain motif ou "pattern" caractéristique. Ce motif
-est souvent analysé en termes de formes d'onde, d'harmoniques et de spectres de
-fréquence.
-
-\subsubsection*{Courants de sortie}
-
-Les courants de sortie d'un moteur triphasé doivent être symétriques et
-présenter des amplitudes et des fréquences correspondant aux valeurs nominales
-du moteur. Des anomalies telles que des courants de fuite, des déséquilibres
-entre les phases ou des distorsions harmonique peuvent indiquer des problèmes
-tels que des enroulements endommagés, des courts-circuits entre spires ou des
-barres de rotor cassées.
-
-\subsubsection*{Tensions de sortie}
-
-Les tensions de sortie doivent également être équilibrées et maintenir des
-valeurs stables. Des fluctuations de tension, des creux ou des surtensions
-peuvent être symptomatiques de problèmes d'alimentation, de connexions lâches
-ou de composants internes défectueux.
-
-\begin{figure}[hbt!]
-	\centering
-	\includegraphics[width=12cm]{images_pfe/triphase.png}
-	\caption{
-		Principaux Composants d'un moteur asynchrone triphasé (Machine à Induction).}
-	\label{fig:moteu-asynchrone}
-\end{figure}
-\FloatBarrier
-
-\subsection*{Analyse des Signaux}
+Un signal est une représentation physique ou une mesure de certaines
+caractéristiques d’un système, généralement en fonction du temps. Dans le
+contexte des moteurs électriques, les signaux peuvent inclure des courants, des
+tensions, des vitesses de rotation, des températures, des vibrations, et bien
+d'autres paramètres. Ces signaux peuvent être capturés par des capteurs
+installés sur ou à proximité du moteur.
 
 L'analyse des signaux de courant et de tension de sortie est cruciale pour la
 maintenance prédictive des moteurs électriques. Des techniques telles que
@@ -1613,13 +1581,7 @@ déséquilibre dans les courants de phase peut indiquer un défaut mécanique co
 une excentricité de l'entrefer, tandis qu'une augmentation des harmoniques peut
 signaler un court-circuit entre spires.
 
-En conclusion, la surveillance continue des signaux triphasés dans les moteurs
-électriques est essentielle pour assurer leur bon fonctionnement et leur
-longévité. L'analyse proactive des courants et des tensions permet de détecter
-les problèmes potentiels à un stade précoce, facilitant ainsi une intervention
-rapide et réduisant les coûts de maintenance.
-
-\section*{Signaux Triphasés dans les Moteurs Électriques et Analyse par MCSA}
+\subsection*{Signaux Triphasés dans les Moteurs Électriques}
 
 Les moteurs électriques triphasés utilisent des signaux électriques triphasés
 pour fonctionner efficacement. Ces signaux, qui consistent en trois courants
@@ -1627,7 +1589,7 @@ alternatifs déphasés de 120 degrés chacun, sont essentiels pour la création
 d'un champ magnétique rotatif dans le stator, qui à son tour entraîne la
 rotation du rotor.
 
-\subsection*{Signaux d'entrée}
+\subsubsection*{Signaux d'entrée}
 
 Les signaux d'entrée d'un moteur électrique triphasé sont constitués de
 courants et de tensions triphasés. Chaque phase est décalée de 120 degrés par
@@ -1637,7 +1599,7 @@ d'entrée doivent être équilibrés et stables pour assurer un fonctionnement
 optimal du moteur. Des déséquilibres ou des variations peuvent indiquer des
 problèmes dans l'alimentation ou des défauts internes.
 
-\subsection*{Signaux de sortie}
+\subsubsection*{Signaux de sortie}
 
 Les signaux de sortie d'un moteur électrique, principalement les courants et
 les tensions mesurés aux bornes du moteur, peuvent fournir des informations
@@ -1646,34 +1608,26 @@ signaux de sortie avec un certain motif ou "pattern" caractéristique. Ce motif
 est souvent analysé en termes de formes d'onde, d'harmoniques et de spectres de
 fréquence.
 
-\subsubsection*{Courants de sortie}
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=12cm]{images_pfe/triphase.png}
+	\caption{
+		Principaux Composants d'un moteur asynchrone triphasé (Machine à Induction).}
+	\label{fig:moteur-asynchrone}
+\end{figure}
+\FloatBarrier
 
-Les courants de sortie d'un moteur triphasé doivent être symétriques et
-présenter des amplitudes et des fréquences correspondant aux valeurs nominales
-du moteur. Des anomalies telles que des courants de fuite, des déséquilibres
-entre les phases ou des distorsions harmoniques peuvent indiquer des problèmes
-tels que des enroulements endommagés, des courts-circuits entre spires ou des
-barres de rotor cassées.
-
-\subsubsection*{Tensions de sortie}
-
-Les tensions de sortie doivent également être équilibrées et maintenir des
-valeurs stables. Des fluctuations de tension, des creux ou des surtensions
-peuvent être symptomatiques de problèmes d'alimentation, de connexions lâches
-ou de composants internes défectueux.
-
-\subsection*{Analyse des Signaux et MCSA}
+\subsection*{Motor Current Signature Analysis (MCSA)}
 
 L'analyse des signaux de courant et de tension de sortie est cruciale pour la
 maintenance prédictive des moteurs électriques. Une technique particulièrement
 efficace pour cette analyse est la Motor Current Signature Analysis (MCSA).
 
-\subsubsection*{Motor Current Signature Analysis (MCSA)}
-
 La MCSA est une méthode de surveillance et de diagnostic basée sur l'analyse
 des courants du moteur. En mesurant et en analysant les signatures de courant,
-il est possible de détecter des défauts internes et externes du moteur. La MCSA
-peut identifier des problèmes tels que :
+il est possible de détecter des défauts internes et externes du moteur
+	[\cite{bonetjara2023sensorless}]. La MCSA peut identifier des problèmes tels
+que :
 \begin{itemize}
 	\item \textbf{Défauts mécaniques} : Excentricité de l'entrefer, désalignement, déséquilibre.
 	\item \textbf{Défauts électriques} : Court-circuit entre spires, barres de rotor cassées, défauts d'isolation.
@@ -1687,7 +1641,7 @@ générer des fréquences spécifiques qui apparaissent dans le spectre de coura
 En détectant ces fréquences, il est possible de diagnostiquer le défaut avant
 qu'il ne cause une panne majeure.
 
-\subsection*{Avantages de la MCSA}
+\subsubsection*{Avantages de la MCSA}
 
 L'utilisation de la MCSA pour la surveillance des moteurs électriques présente
 plusieurs avantages :
@@ -1698,103 +1652,115 @@ plusieurs avantages :
 	\item \textbf{Amélioration de la fiabilité} : Augmentation de la durée de vie des moteurs et amélioration de leur performance globale.
 \end{itemize}
 
-En conclusion, la surveillance continue des signaux triphasés et l'utilisation
-de techniques comme la MCSA sont essentielles pour assurer le bon
-fonctionnement et la longévité des moteurs électriques. L'analyse proactive des
-courants et des tensions permet de détecter les problèmes potentiels à un stade
-précoce, facilitant ainsi une intervention rapide et réduisant les coûts de
-maintenance.
+la surveillance continue des signaux triphasés et l'utilisation de techniques
+comme la MCSA sont essentielles pour assurer le bon fonctionnement et la
+longévité des moteurs électriques. L'analyse proactive des courants et des
+tensions permet de détecter les problèmes potentiels à un stade précoce,
+facilitant ainsi une intervention rapide et réduisant les coûts de maintenance.
 
-\section*{Analyse des Séries Temporelles et Traitement du Signal}
+\section{Donneés: Séries Temporelles}
 
-\subsection*{Données de Séries Temporelles}
+Dans de nombreux contextes, les données de séries temporelles peuvent être
+considérées comme des signaux, en particulier lorsque les points de données
+représentent des mesures prises à intervalles de temps réguliers. Par exemple,
+les relevés de température quotidienne constituent une série temporelle qui
+peut être analysée comme un signal pour identifier les schémas, les tendances
+et les anomalies [\cite{brophy2023gan}] . Il existe deux types de séries
+temporelles : discrètes et continues.
 
-Les données de séries temporelles sont des ensembles de données collectées à
-intervalles réguliers sur une période de temps. Elles sont omniprésentes dans
-de nombreux domaines tels que la finance, la météorologie, l'ingénierie et les
-sciences sociales. Les séries temporelles permettent de capturer l'évolution
-d'un phénomène au fil du temps, offrant ainsi des informations précieuses pour
-l'analyse et la prise de décision.
+Les séries temporelles discrètes, caractérisées par des points de données
+espacés à des intervalles réguliers, sont couramment utilisées dans de
+nombreuses disciplines pour faciliter l'analyse statistique et la prévision.
+Elles permettent une compréhension claire des tendances à long terme et des
+variations saisonnières, et sont particulièrement utiles dans des domaines tels
+que la climatologie, l'économie et les sciences sociales [\cite{brophy2023gan}]
+.
 
-Les caractéristiques des séries temporelles incluent des tendances
-(augmentation ou diminution sur une période), des saisons (variations
-périodiques à intervalles réguliers) et des irrégularités (fluctuations
-imprévisibles). Analyser ces caractéristiques permet de mieux comprendre le
-comportement sous-jacent des systèmes étudiés.
+À l'opposé, les séries temporelles continues, où les données sont collectées à des
+intervalles infinitésimaux, offrent une représentation plus détaillée et précise des
+phénomènes étudiés. Cette approche est cruciale dans des domaines tels que le traitement
+du signal, la physique et l'ingénierie, où une résolution temporelle fine est nécessaire
+pour capturer les dynamiques rapides et les variations subtiles des systèmes [\cite{brophy2023gan}].
 
-\section*{Analyse des Séries Temporelles et Traitement du Signal}
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=12cm]{images_pfe/timeseries.png}
+	\caption{
+		Exemples de tracés de séries temporelles discrètes (à gauche) et continues (à droite) [\cite{brophy2023gan}] .}
+	\label{fig:time-series}
+\end{figure}
+\FloatBarrier
 
-\subsection*{Données de Séries Temporelles}
+\subsubsection{Catégories de Séries Temporelles}
 
-Les données de séries temporelles sont des ensembles de données collectées à
-intervalles réguliers sur une période de temps. Elles sont omniprésentes dans
-de nombreux domaines tels que la finance, la météorologie, l'ingénierie et les
-sciences sociales. Les séries temporelles permettent de capturer l'évolution
-d'un phénomène au fil du temps, offrant ainsi des informations précieuses pour
-l'analyse et la prise de décision.
+Il existe deux catégories de séries temporelles : univariée et
+multivariée[\cite{fawaz2019deep}].
 
-\subsubsection*{Définition Mathématique d'une Série Temporelle}
+\textbf{Définition 1: Série temporelle univariée}
 
-Une série temporelle peut être définie comme une séquence de valeurs ordonnées
-dans le temps. Mathématiquement, une série temporelle univariée peut être
-représentée par une suite de variables aléatoires $\{X_t\}$, où $t$ représente
-le temps. Par exemple, $X_t$ pourrait représenter la valeur d'un indicateur
-économique à l'instant $t$.
+Une série temporelle univariée $X = [x_1, x_2, \ldots, x_T]$ est un ensemble
+ordonné de valeurs réelles. La longueur de $X$ est égale au nombre de valeurs
+réelles $T$.
 
-\[ X_t = f(t) + \epsilon_t \]
+\begin{equation}
+	X = [x_1, x_2, \ldots, x_T]
+\end{equation}
 
-où $f(t)$ est une fonction déterministe représentant la tendance ou la
-saisonnalité et $\epsilon_t$ est une composante aléatoire représentant le bruit
-ou les irrégularités.
+où $x_i \in \mathbb{R}$ et $i = 1, 2, \ldots, T$.
 
-\subsubsection*{Définition d'une Série Temporelle Multivariée}
+Par exemple, une série temporelle univariée de température prise toutes les
+heures pendant une journée pourrait être représentée par : $X = [15.5, 16.0,
+	16.5, \ldots, 20.0]$, où $T = 24$.
 
-Une série temporelle multivariée consiste en plusieurs séries temporelles
-univariées observées simultanément. Mathématiquement, elle peut être
-représentée par un vecteur de variables aléatoires $\{\mathbf{X}_t\}$, où
-chaque composante du vecteur représente une série temporelle différente.
+\textbf{Définition 2: Série temporelle multivariée}
 
-\[ \mathbf{X}_t = \begin{pmatrix} X_{1t} \\ X_{2t} \\ \vdots \\ X_{nt} \end{pmatrix} \]
+Une série temporelle multivariée de dimension $M$, notée $X = [X_1, X_2,
+	\ldots, X_M]$, se compose de $M$ séries temporelles univariées différentes,
+chaque $X_i$ étant un vecteur de $\mathbb{R}^T$.
 
-où $X_{it}$ représente la $i$-ème série temporelle à l'instant $t$, et $n$ est
-le nombre de séries temporelles.
+\begin{equation}
+	X = [X_1, X_2, \ldots, X_M]
+\end{equation}
 
-\subsection*{Analyse des Séries Temporelles à l'aide de la FFT}
+où $X_i = [x_{i1}, x_{i2}, \ldots, x_{iT}]$, avec $x_{ij} \in \mathbb{R}$ pour
+$i = 1, 2, \ldots, M$ et $j = 1, 2, \ldots, T$.
 
-L'une des méthodes les plus couramment utilisées pour analyser les séries
-temporelles est la transformée de Fourier rapide (FFT, pour Fast Fourier
-Transform). La FFT est un algorithme efficace pour calculer la transformée de
-Fourier discrète (DFT) et inverse (IDFT), qui décompose une série temporelle en
-une somme de sinusoïdes de différentes fréquences.
+Par exemple, une série temporelle multivariée de dimension $M=2$, comprenant la
+température et l'humidité relevées toutes les heures pendant une journée,
+pourrait être représentée par : $X = [X_1, X_2]$, où $X_1$ représente la
+température et $X_2$ représente l'humidité, chacun avec $T = 24$.
 
-\subsubsection*{Définition Mathématique de la FFT}
+\section{Conclusion}
 
-La transformée de Fourier discrète (DFT) d'une série temporelle $\{X_t\}$ de
-longueur $N$ est définie par :
+La maintenance prédictive des moteurs électriques représente une avancée
+significative dans la gestion des actifs industriels, offrant une approche
+proactive qui vise à anticiper les pannes et à optimiser la performance des
+équipements. Contrairement à la maintenance réactive, qui intervient après la
+survenue d’un problème, et à la maintenance préventive, qui suit un calendrier
+fixe, la maintenance prédictive repose sur la surveillance continue de l’état
+des machines et l’analyse de données en temps réel.
 
-\[ X_k = \sum_{t=0}^{N-1} x_t \cdot e^{-i \cdot 2\pi \cdot k \cdot t / N} \]
+Cette stratégie utilise des technologies avancées telles que l'Internet des
+objets (IoT), l'intelligence artificielle (IA) et l'analyse de données pour
+collecter et interpréter des informations critiques sur les moteurs
+électriques, permettant ainsi de détecter les signes avant-coureurs de
+défaillances potentielles. L’objectif principal de cette approche est
+d’améliorer la fiabilité et la durée de vie des moteurs électriques tout en
+réduisant les coûts de maintenance et les interruptions de service.
 
-pour $k = 0, 1, \ldots, N-1$, où $i$ est l'unité imaginaire ($i^2 = -1$).
+En s’appuyant sur des techniques comme la Motor Current Signature Analysis
+(MCSA), la maintenance prédictive permet une détection précoce des défauts, une
+planification proactive des interventions de maintenance, et une optimisation
+des coûts. Cela se traduit par une minimisation des temps d’arrêt imprévus et
+une amélioration globale de la performance des moteurs.
 
-La transformée de Fourier rapide (FFT) est un algorithme efficace pour calculer
-la DFT en réduisant la complexité temporelle de $O(N^2)$ à $O(N \log N)$.
+Enfin, l'analyse des séries temporelles, qu'elles soient discrètes ou
+continues, joue un rôle crucial dans ce processus en fournissant des données
+détaillées et précises pour l'analyse des signaux et l'identification des
+anomalies. La distinction entre séries temporelles univariées et multivariées
+enrichit encore cette approche, permettant une analyse plus complète et
+intégrée des différentes variables opérationnelles.
 
-\subsection*{Importance du Traitement du Signal}
-
-Le traitement du signal est une discipline essentielle pour l'analyse des
-séries temporelles. Il englobe une variété de techniques pour manipuler,
-filtrer et analyser les signaux obtenus à partir de séries temporelles. Voici
-quelques raisons pour lesquelles le traitement du signal est important :
-
-\begin{itemize}
-	\item \textbf{Amélioration de la Qualité des Données} : Le traitement du signal peut réduire le bruit, corriger les erreurs et normaliser les données pour des analyses plus précises.
-	\item \textbf{Extraction d'Informations Pertinentes} : Il permet d'extraire des informations significatives, telles que les tendances, les cycles et les irrégularités, à partir des données brutes.
-	\item \textbf{Préparation pour les Analyses Avancées} : Le traitement préalable des signaux est souvent nécessaire pour préparer les données pour des analyses plus avancées, telles que la modélisation prédictive ou la détection de modèles.
-\end{itemize}
-
-En conclusion, l'analyse des séries temporelles et le traitement du signal sont
-des outils puissants pour explorer et comprendre les données collectées au fil
-du temps. L'utilisation de la FFT pour analyser les fréquences dominantes et
-d'autres techniques de traitement du signal permettent d'améliorer la qualité
-des données et d'extraire des informations précieuses pour la prise de
-décision.
+Ainsi, la maintenance prédictive se positionne comme une composante essentielle
+de la gestion moderne des moteurs électriques, offrant des avantages
+significatifs en termes de fiabilité, de coût et de performance.
