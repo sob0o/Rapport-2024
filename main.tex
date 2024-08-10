@@ -246,7 +246,7 @@ urlcolor=blue}
 % reinstate the correct level for list of tables and figures and algorithms
 \appto\listoffigures{\addtocontents{lof}{\protect\setcounter{tocdepth}{1}}}
 \appto\listoftables{\addtocontents{lot}{\protect\setcounter{tocdepth}{1}}}
-% \appto\listofalgorithms{\addtocontents{loa}{\protect\setcounter{tocdepth}{1}}}
+\appto\listofalgorithms{\addtocontents{loa}{\protect\setcounter{tocdepth}{1}}}
 
 
 
@@ -268,7 +268,7 @@ urlcolor=blue}
 \clearpage
 \listoftables
 \clearpage
-%\listofalgorithms
+\listofalgorithms
 
 \clearpage
 \include{04-Acronymes}

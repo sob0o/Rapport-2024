@@ -325,89 +325,6 @@
       \field{title}{Generative Adversarial Networks in Time Series: A Survey and Taxonomy}
       \field{year}{2023}
     \endentry
-    \entry{brown2020language}{article}{}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{10}{}{%
-        {{un=0,uniquepart=base,hash=7c16e8d36475e58d4f2d161e6ecb7704}{%
-           family={Brown},
-           familyi={B\bibinitperiod},
-           given={Tom\bibnamedelima B},
-           giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d4543c3bcd6aaf414da4296b349603e5}{%
-           family={Mann},
-           familyi={M\bibinitperiod},
-           given={Benjamin},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9ac58bd43db2434e8e1ffd6182c3fcda}{%
-           family={Ryder},
-           familyi={R\bibinitperiod},
-           given={Nick},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9ed243177743da3e650f1cff6376bb3c}{%
-           family={Subbiah},
-           familyi={S\bibinitperiod},
-           given={Melanie},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1e2dad58400c2dd6405837788e785d19}{%
-           family={Kaplan},
-           familyi={K\bibinitperiod},
-           given={Jared\bibnamedelima D},
-           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4164e43d8cf919f5e3f8d80f5ea23f36}{%
-           family={Dhariwal},
-           familyi={D\bibinitperiod},
-           given={Prafulla},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4ca421ceeb5b516dd8fc64bea5a23f2a}{%
-           family={Neelakantan},
-           familyi={N\bibinitperiod},
-           given={Arvind},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ab5d7d7b9cfeaad635c4a60e8950d7dd}{%
-           family={Shyam},
-           familyi={S\bibinitperiod},
-           given={Pranav},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3c1d9a663596faaf544c1a65aac581be}{%
-           family={Sastry},
-           familyi={S\bibinitperiod},
-           given={Girish},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1e84eff933be9f4887bf369cf181bf12}{%
-           family={Askell},
-           familyi={A\bibinitperiod},
-           given={Amanda},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{0884233a667161739ddd01569813457f}
-      \strng{fullhash}{ee5e30a79cb4e4bf3001ccd11438e0bc}
-      \strng{fullhashraw}{ee5e30a79cb4e4bf3001ccd11438e0bc}
-      \strng{bibnamehash}{0884233a667161739ddd01569813457f}
-      \strng{authorbibnamehash}{0884233a667161739ddd01569813457f}
-      \strng{authornamehash}{0884233a667161739ddd01569813457f}
-      \strng{authorfullhash}{ee5e30a79cb4e4bf3001ccd11438e0bc}
-      \strng{authorfullhashraw}{ee5e30a79cb4e4bf3001ccd11438e0bc}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2005.14165}
-      \field{title}{Language models are few-shot learners}
-      \field{year}{2020}
-    \endentry
     \entry{collier2020vaes}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=7de6c5af5fabb2226c1eb98a65b84115}{%
@@ -1525,81 +1442,6 @@
       \field{pages}{32\bibrangedash 42}
       \range{pages}{11}
     \endentry
-    \entry{naveed2023overview}{article}{}{}
-      \name{author}{9}{}{%
-        {{un=0,uniquepart=base,hash=66796972e59bdd4e8082c5a76a167cd3}{%
-           family={Naveed},
-           familyi={N\bibinitperiod},
-           given={Humza},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f3e8487979c3d5c449bbcd133489fccd}{%
-           family={Khan},
-           familyi={K\bibinitperiod},
-           given={Asad\bibnamedelima Ullah},
-           giveni={A\bibinitperiod\bibinitdelim U\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=224492545ce925352b2ba75589d4918b}{%
-           family={Qiu},
-           familyi={Q\bibinitperiod},
-           given={Shi},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=02758b43b92b084b3c279e576d5be20e}{%
-           family={Saqib},
-           familyi={S\bibinitperiod},
-           given={Muhammad},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=636b14101269d849fb13e7d49a7cec3e}{%
-           family={Anwar},
-           familyi={A\bibinitperiod},
-           given={Saeed},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9b188d486913142cb26c6acb66a85531}{%
-           family={Usman},
-           familyi={U\bibinitperiod},
-           given={Muhammad},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=dae51cf934e0ef7645c0d9bad7d37367}{%
-           family={Akhtar},
-           familyi={A\bibinitperiod},
-           given={Naveed},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2f11f27ecdb1aa875cfab05fcff91ac9}{%
-           family={Barnes},
-           familyi={B\bibinitperiod},
-           given={Nick},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=e66ddb661075e1ec2d86e6cc0fa46aef}{%
-           family={Mian},
-           familyi={M\bibinitperiod},
-           given={Ajmal},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{76f6312ee1df1f20a3ed75aa6640736a}
-      \strng{fullhash}{284731eecb06d3d5e9bc985b5f5c8214}
-      \strng{fullhashraw}{284731eecb06d3d5e9bc985b5f5c8214}
-      \strng{bibnamehash}{76f6312ee1df1f20a3ed75aa6640736a}
-      \strng{authorbibnamehash}{76f6312ee1df1f20a3ed75aa6640736a}
-      \strng{authornamehash}{76f6312ee1df1f20a3ed75aa6640736a}
-      \strng{authorfullhash}{284731eecb06d3d5e9bc985b5f5c8214}
-      \strng{authorfullhashraw}{284731eecb06d3d5e9bc985b5f5c8214}
-      \field{sortinit}{N}
-      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2307.06435}
-      \field{title}{A Comprehensive Overview of Large Language Models}
-      \field{year}{2023}
-    \endentry
     \entry{nichol2021improved}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=fc19c0dc057e2a02419916b39da6895b}{%
@@ -1812,126 +1654,6 @@
       \field{year}{2019}
       \verb{doi}
       \verb 10.1007/978-981-13-3705-5_25
-      \endverb
-    \endentry
-    \entry{attention_is_all_you_need}{inproceedings}{}{}
-      \name{author}{8}{}{%
-        {{un=0,uniquepart=base,hash=7f28e84700536646dd6620a0db07ad09}{%
-           family={Vaswani},
-           familyi={V\bibinitperiod},
-           given={Ashish},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=62efade83d70f0323fe248755e6c90c5}{%
-           family={Shazeer},
-           familyi={S\bibinitperiod},
-           given={Noam},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=06649ebab1ea5cac0250746a19764975}{%
-           family={Parmar},
-           familyi={P\bibinitperiod},
-           given={Niki},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=831027ee0ebf22375e2a86afc1881909}{%
-           family={Uszkoreit},
-           familyi={U\bibinitperiod},
-           given={Jakob},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2fd2982e30ebcec93ec1cf76e0d797fd}{%
-           family={Jones},
-           familyi={J\bibinitperiod},
-           given={Llion},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=27b07e4eacbf4ef7a1438e3badb7dd8d}{%
-           family={Gomez},
-           familyi={G\bibinitperiod},
-           given={Aidan\bibnamedelima N},
-           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=540fcd72e1fa4bbed46604f4e6cff817}{%
-           family={Kaiser},
-           familyi={K\bibinitperiod},
-           given={Łukasz},
-           giveni={Ł\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=95595a0fefb86187cbc36e551017d332}{%
-           family={Polosukhin},
-           familyi={P\bibinitperiod},
-           given={Illia},
-           giveni={I\bibinitperiod},
-           givenun=0}}%
-      }
-      \name{editor}{7}{}{%
-        {{hash=e7e74de725116358b68a6e890c026145}{%
-           family={Guyon},
-           familyi={G\bibinitperiod},
-           given={I.},
-           giveni={I\bibinitperiod}}}%
-        {{hash=3b118a9660c18913c6d05d3bcfae41a3}{%
-           family={Luxburg},
-           familyi={L\bibinitperiod},
-           given={U.\bibnamedelimi Von},
-           giveni={U\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=9b411b6c9cefdde16ffea77ecf612142}{%
-           family={Bengio},
-           familyi={B\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=1444141e07dd9549dbb4b8530fe4ec15}{%
-           family={Wallach},
-           familyi={W\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod}}}%
-        {{hash=f3857e15544199442f3d4fb2cf6645b4}{%
-           family={Fergus},
-           familyi={F\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=c73f06e2fc98c9b0bf52eb5fdce61943}{%
-           family={Vishwanathan},
-           familyi={V\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=36b98b7ab533936cf1b5716148de704f}{%
-           family={Garnett},
-           familyi={G\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Curran Associates, Inc.}%
-      }
-      \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
-      \strng{fullhash}{cb26e47f6b8133865271fc8483132297}
-      \strng{fullhashraw}{cb26e47f6b8133865271fc8483132297}
-      \strng{bibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
-      \strng{authorbibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
-      \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
-      \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
-      \strng{authorfullhashraw}{cb26e47f6b8133865271fc8483132297}
-      \strng{editorbibnamehash}{7cffda9a379be8eb9063eee4eb0f58b3}
-      \strng{editornamehash}{7cffda9a379be8eb9063eee4eb0f58b3}
-      \strng{editorfullhash}{1564f811a39f09a7400a11284c987926}
-      \strng{editorfullhashraw}{1564f811a39f09a7400a11284c987926}
-      \field{sortinit}{V}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Advances in Neural Information Processing Systems}
-      \field{title}{Attention is All you Need}
-      \field{volume}{30}
-      \field{year}{2017}
-      \verb{urlraw}
-      \verb https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
-      \endverb
-      \verb{url}
-      \verb https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
       \endverb
     \endentry
     \entry{thispersondoesnotexist}{misc}{}{}
@@ -2374,6 +2096,52 @@
       \verb{url}
       \verb https://arxiv.org/abs/2104.05794
       \endverb
+    \endentry
+    \entry{yoon2019time}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7b5738a87e11e248e9c5a24b5b0f0769}{%
+           family={Yoon},
+           familyi={Y\bibinitperiod},
+           given={Jinsung},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fbb5c34530a1390939addb679d25fb03}{%
+           family={Jarrett},
+           familyi={J\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44c5ebc1d90d166c1418c35650bdd2ef}{%
+           family={Schaar},
+           familyi={S\bibinitperiod},
+           given={Mihaela},
+           giveni={M\bibinitperiod},
+           givenun=0,
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{organization}{1}{%
+        {NeurIPS}%
+      }
+      \strng{namehash}{ddc71f5131ba01c5a19b0591a789618e}
+      \strng{fullhash}{32b77cddbbf3fe5b03a526e57c7b2bf6}
+      \strng{fullhashraw}{32b77cddbbf3fe5b03a526e57c7b2bf6}
+      \strng{bibnamehash}{32b77cddbbf3fe5b03a526e57c7b2bf6}
+      \strng{authorbibnamehash}{32b77cddbbf3fe5b03a526e57c7b2bf6}
+      \strng{authornamehash}{ddc71f5131ba01c5a19b0591a789618e}
+      \strng{authorfullhash}{32b77cddbbf3fe5b03a526e57c7b2bf6}
+      \strng{authorfullhashraw}{32b77cddbbf3fe5b03a526e57c7b2bf6}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Time-series generative adversarial networks}
+      \field{volume}{32}
+      \field{year}{2019}
     \endentry
     \entry{ZHOU202057}{article}{}{}
       \name{author}{9}{}{%

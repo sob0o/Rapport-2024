@@ -1,70 +1,85 @@
 \addvspace {10\p@ }
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }{\ignorespaces Le fonctionnement d'un neurone artificiel [\blx@tocontentsinit {0}\cite {mcculloch_pitts_1943_nervous_activity}].}}{7}{figure.caption.7}%
+\contentsline {figure}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }{\ignorespaces Le fonctionnement d'un neurone artificiel [\blx@tocontentsinit {0}\cite {mcculloch_pitts_1943_nervous_activity}].}}{7}{figure.caption.8}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {2.1}\else \textLR {1.2}\fi }{\ignorespaces Les fonctions d'activations couramment utilisées [\blx@tocontentsinit {0}\cite {feng_he_teng_ren_chen_li_2019}].}}{8}{figure.caption.8}%
+\contentsline {figure}{\numberline {\if@rl \I {2.1}\else \textLR {1.2}\fi }{\ignorespaces Les fonctions d'activations couramment utilisées [\blx@tocontentsinit {0}\cite {feng_he_teng_ren_chen_li_2019}].}}{8}{figure.caption.9}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {3.1}\else \textLR {1.3}\fi }{\ignorespaces Schéma simple d'un réseau de neurones feedforward [\blx@tocontentsinit {0}\cite {dl-healthcare}].}}{10}{figure.caption.9}%
+\contentsline {figure}{\numberline {\if@rl \I {3.1}\else \textLR {1.3}\fi }{\ignorespaces Schéma simple d'un réseau de neurones feedforward [\blx@tocontentsinit {0}\cite {dl-healthcare}].}}{10}{figure.caption.10}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {4.1}\else \textLR {1.4}\fi }{\ignorespaces Exemple d'un réseau de neurones récurrent [\blx@tocontentsinit {0}\cite {kumaraswamy_2021}].}}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {\if@rl \I {4.1}\else \textLR {1.4}\fi }{\ignorespaces Exemple d'un réseau de neurones récurrent [\blx@tocontentsinit {0}\cite {kumaraswamy_2021}].}}{11}{figure.caption.11}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {5.1}\else \textLR {1.5}\fi }{\ignorespaces Architecture d'un bloc LSTM [\blx@tocontentsinit {0}\cite {fawaz2019long}].}}{12}{figure.caption.12}%
+\contentsline {figure}{\numberline {\if@rl \I {5.1}\else \textLR {1.5}\fi }{\ignorespaces Architecture d'un bloc LSTM [\blx@tocontentsinit {0}\cite {fawaz2019long}].}}{12}{figure.caption.13}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {6.1}\else \textLR {1.6}\fi }{\ignorespaces Le fonctionnement d'un réseau neuronal convolutif [\blx@tocontentsinit {0}\cite {alharbi_hewahi_2021}].}}{13}{figure.caption.13}%
+\contentsline {figure}{\numberline {\if@rl \I {6.1}\else \textLR {1.6}\fi }{\ignorespaces Le fonctionnement d'un réseau neuronal convolutif [\blx@tocontentsinit {0}\cite {alharbi_hewahi_2021}].}}{13}{figure.caption.14}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {7.1}\else \textLR {1.7}\fi }{\ignorespaces Exemple du fonctionnement d'une couche convolutive [\blx@tocontentsinit {0}\cite {kimura_yoshinaga_sekijima_azechi_baba_2019}].}}{14}{figure.caption.15}%
+\contentsline {figure}{\numberline {\if@rl \I {7.1}\else \textLR {1.7}\fi }{\ignorespaces Exemple du fonctionnement d'une couche convolutive [\blx@tocontentsinit {0}\cite {kimura_yoshinaga_sekijima_azechi_baba_2019}].}}{14}{figure.caption.16}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {8.1}\else \textLR {1.8}\fi }{\ignorespaces Exemples de pooling maximal et pooling moyen [\blx@tocontentsinit {0}\cite {hu_wu_xu_lai_xia_2022}].}}{15}{figure.caption.17}%
+\contentsline {figure}{\numberline {\if@rl \I {8.1}\else \textLR {1.8}\fi }{\ignorespaces Exemples de pooling maximal et pooling moyen [\blx@tocontentsinit {0}\cite {hu_wu_xu_lai_xia_2022}].}}{15}{figure.caption.18}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {9.1}\else \textLR {1.9}\fi }{\ignorespaces Un bloc régulier (gauche) et un bloc résiduel (droite) [\blx@tocontentsinit {0}\cite {dong_niu_li_xie_zou_ye_wei_pan_2022}].}}{15}{figure.caption.18}%
+\contentsline {figure}{\numberline {\if@rl \I {9.1}\else \textLR {1.9}\fi }{\ignorespaces Un bloc régulier (gauche) et un bloc résiduel (droite) [\blx@tocontentsinit {0}\cite {dong_niu_li_xie_zou_ye_wei_pan_2022}].}}{15}{figure.caption.19}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {10.1}\else \textLR {1.10}\fi }{\ignorespaces Le pipeline de conception générale pour un modèle GNN [\blx@tocontentsinit {0}\cite {ZHOU202057}].}}{16}{figure.caption.19}%
+\contentsline {figure}{\numberline {\if@rl \I {10.1}\else \textLR {1.10}\fi }{\ignorespaces Le pipeline de conception générale pour un modèle GNN [\blx@tocontentsinit {0}\cite {ZHOU202057}].}}{16}{figure.caption.20}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {11.1}\else \textLR {1.11}\fi }{\ignorespaces Fonction de taux d’erreur [\blx@tocontentsinit {0}\cite {amini2018spatial}].}}{18}{figure.caption.20}%
+\contentsline {figure}{\numberline {\if@rl \I {11.1}\else \textLR {1.11}\fi }{\ignorespaces Fonction de taux d’erreur [\blx@tocontentsinit {0}\cite {amini2018spatial}].}}{18}{figure.caption.21}%
 \addvspace {10\p@ }
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }{\ignorespaces Le fonctionnement d'un neurone artificiel [\blx@tocontentsinit {0}\cite {kingma_welling_auto_encoding}].}}{26}{figure.caption.23}%
+\contentsline {figure}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }{\ignorespaces Le fonctionnement d'un neurone artificiel [\blx@tocontentsinit {0}\cite {kingma_welling_auto_encoding}].}}{26}{figure.caption.24}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {2.2}\else \textLR {2.2}\fi }{\ignorespaces Un modèle de réseau générateur adversaire (GAN) [\blx@tocontentsinit {0}\cite {feng_feng_chen_cao_zhang_jiao_yu_2020}].}}{30}{figure.caption.33}%
+\contentsline {figure}{\numberline {\if@rl \I {2.2}\else \textLR {2.2}\fi }{\ignorespaces Un modèle de réseau générateur adversaire (GAN) [\blx@tocontentsinit {0}\cite {feng_feng_chen_cao_zhang_jiao_yu_2020}].}}{30}{figure.caption.34}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {3.2}\else \textLR {2.3}\fi }{\ignorespaces Quelques images générées par le modèle StyleGAN sur le site 'This Person Does Not Exist'[\blx@tocontentsinit {0}\cite {thispersondoesnotexist}].}}{31}{figure.caption.38}%
+\contentsline {figure}{\numberline {\if@rl \I {3.2}\else \textLR {2.3}\fi }{\ignorespaces Quelques images générées par le modèle StyleGAN sur le site 'This Person Does Not Exist'[\blx@tocontentsinit {0}\cite {thispersondoesnotexist}].}}{31}{figure.caption.39}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {4.2}\else \textLR {2.4}\fi }{\ignorespaces Chaîne de Markov du processus de diffusion [\blx@tocontentsinit {0}\cite {ho2020denoising}].}}{32}{figure.caption.39}%
+\contentsline {figure}{\numberline {\if@rl \I {4.2}\else \textLR {2.4}\fi }{\ignorespaces Chaîne de Markov du processus de diffusion [\blx@tocontentsinit {0}\cite {ho2020denoising}].}}{32}{figure.caption.40}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {5.2}\else \textLR {2.5}\fi }{\ignorespaces Le processus d'entraînement d'un UNet pour prédire le bruit ajouté à l'image. [\blx@tocontentsinit {0}\cite {nichol2021improved}].}}{33}{figure.caption.40}%
+\contentsline {figure}{\numberline {\if@rl \I {5.2}\else \textLR {2.5}\fi }{\ignorespaces Le processus d'entraînement d'un UNet pour prédire le bruit ajouté à l'image. [\blx@tocontentsinit {0}\cite {nichol2021improved}].}}{33}{figure.caption.41}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {6.2}\else \textLR {2.6}\fi }{\ignorespaces Illustration des Processus de Diffusion : Forward Process et Reverse Process.}}{34}{figure.caption.43}%
+\contentsline {figure}{\numberline {\if@rl \I {6.2}\else \textLR {2.6}\fi }{\ignorespaces Illustration des Processus de Diffusion : Forward Process et Reverse Process.}}{34}{figure.caption.44}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {7.2}\else \textLR {2.7}\fi }{\ignorespaces Exemple d’images générée par DALL-E2. [\blx@tocontentsinit {0}\cite {ramesh2022hierarchical}].}}{36}{figure.caption.45}%
-\setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {8.2}\else \textLR {2.8}\fi }{\ignorespaces Architecture d'un reseau de neurones de transformation (Transformer) [\blx@tocontentsinit {0}\cite {attention_is_all_you_need}].}}{39}{figure.caption.50}%
+\contentsline {figure}{\numberline {\if@rl \I {7.2}\else \textLR {2.7}\fi }{\ignorespaces Exemple d’images générée par DALL-E2. [\blx@tocontentsinit {0}\cite {ramesh2022hierarchical}].}}{36}{figure.caption.46}%
 \addvspace {10\p@ }
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }{\ignorespaces Stratégies de maintenance montrant les différentes étapes du processus de réparation avant et après la défaillance potentielle de l'équipement. [\blx@tocontentsinit {0}\cite {Mrozek2023}].}}{43}{figure.caption.53}%
+\contentsline {figure}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }{\ignorespaces Stratégies de maintenance montrant les différentes étapes du processus de réparation avant et après la défaillance potentielle de l'équipement. [\blx@tocontentsinit {0}\cite {Mrozek2023}].}}{39}{figure.caption.47}%
 \setforeignlanguage {french}
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {2.3}\else \textLR {3.2}\fi }{\ignorespaces Principaux Composants d'un moteur asynchrone triphasé (Machine à Induction).}}{45}{figure.caption.56}%
+\contentsline {figure}{\numberline {\if@rl \I {2.3}\else \textLR {3.2}\fi }{\ignorespaces Principaux Composants d'un moteur asynchrone triphasé (Machine à Induction).}}{41}{figure.caption.50}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {3.3}\else \textLR {3.3}\fi }{\ignorespaces Principaux Composants d'un moteur asynchrone triphasé (Machine à Induction).}}{47}{figure.caption.67}%
+\contentsline {figure}{\numberline {\if@rl \I {3.3}\else \textLR {3.3}\fi }{\ignorespaces Principaux Composants d'un moteur asynchrone triphasé (Machine à Induction).}}{43}{figure.caption.61}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {4.3}\else \textLR {3.4}\fi }{\ignorespaces Exemples de tracés de séries temporelles discrètes (à gauche) et continues (à droite) [\blx@tocontentsinit {0}\cite {brophy2023gan}] .}}{49}{figure.caption.70}%
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\if@rl \I {4.3}\else \textLR {3.4}\fi }{\ignorespaces Exemples de tracés de séries temporelles discrètes (à gauche) et continues (à droite) [\blx@tocontentsinit {0}\cite {brophy2023gan}] .}}{45}{figure.caption.64}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {1.6}\else \textLR {6.1}\fi }{\ignorespaces Python.}}{56}{figure.caption.72}%
+\contentsline {figure}{\numberline {\if@rl \I {1.5}\else \textLR {5.1}\fi }{\ignorespaces Schneider Electric ATV930D30N4 AC Speed Drive, 3 HP.}}{52}{figure.caption.66}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {2.6}\else \textLR {6.2}\fi }{\ignorespaces NumPy.}}{57}{figure.caption.73}%
+\contentsline {figure}{\numberline {\if@rl \I {2.5}\else \textLR {5.2}\fi }{\ignorespaces Organization de data [\blx@tocontentsinit {0}\cite {yoon2019time}].}}{55}{figure.caption.69}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {3.6}\else \textLR {6.3}\fi }{\ignorespaces Matplotlib.}}{58}{figure.caption.74}%
+\contentsline {figure}{\numberline {\if@rl \I {3.5}\else \textLR {5.3}\fi }{\ignorespaces Organization de data .}}{55}{figure.caption.70}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {4.6}\else \textLR {6.4}\fi }{\ignorespaces Pytorch.}}{58}{figure.caption.75}%
+\contentsline {figure}{\numberline {\if@rl \I {4.5}\else \textLR {5.4}\fi }{\ignorespaces Organization de data.}}{56}{figure.caption.71}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {5.6}\else \textLR {6.5}\fi }{\ignorespaces Torchvision.}}{59}{figure.caption.76}%
+\contentsline {figure}{\numberline {\if@rl \I {5.5}\else \textLR {5.5}\fi }{\ignorespaces Organization de data [\blx@tocontentsinit {0}\cite {yoon2019time}].}}{57}{figure.caption.74}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {6.6}\else \textLR {6.6}\fi }{\ignorespaces NNI (Neural Network Intelligence).}}{59}{figure.caption.77}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {7.6}\else \textLR {6.7}\fi }{\ignorespaces Google Colab.}}{60}{figure.caption.78}%
+\contentsline {figure}{\numberline {\if@rl \I {6.5}\else \textLR {5.6}\fi }{\ignorespaces Organization de data [\blx@tocontentsinit {0}\cite {yoon2019time}].}}{58}{figure.caption.75}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {8.6}\else \textLR {6.8}\fi }{\ignorespaces Google Drive.}}{61}{figure.caption.79}%
+\contentsline {figure}{\numberline {\if@rl \I {7.5}\else \textLR {5.7}\fi }{\ignorespaces Architecure de TimeGAN[\blx@tocontentsinit {0}\cite {yoon2019time}].}}{59}{figure.caption.77}%
+\setforeignlanguage {french}
+\contentsline {figure}{\numberline {\if@rl \I {8.5}\else \textLR {5.8}\fi }{\ignorespaces Architecure de TimeGAN[\blx@tocontentsinit {0}\cite {yoon2019time}].}}{59}{figure.caption.78}%
+\addvspace {10\p@ }
+\setforeignlanguage {french}
+\contentsline {figure}{\numberline {\if@rl \I {1.6}\else \textLR {6.1}\fi }{\ignorespaces Python.}}{60}{figure.caption.79}%
+\setforeignlanguage {french}
+\contentsline {figure}{\numberline {\if@rl \I {2.6}\else \textLR {6.2}\fi }{\ignorespaces NumPy.}}{61}{figure.caption.80}%
+\setforeignlanguage {french}
+\contentsline {figure}{\numberline {\if@rl \I {3.6}\else \textLR {6.3}\fi }{\ignorespaces Matplotlib.}}{62}{figure.caption.81}%
+\setforeignlanguage {french}
+\contentsline {figure}{\numberline {\if@rl \I {4.6}\else \textLR {6.4}\fi }{\ignorespaces Pytorch.}}{62}{figure.caption.82}%
+\setforeignlanguage {french}
+\contentsline {figure}{\numberline {\if@rl \I {5.6}\else \textLR {6.5}\fi }{\ignorespaces Torchvision.}}{63}{figure.caption.83}%
+\setforeignlanguage {french}
+\contentsline {figure}{\numberline {\if@rl \I {6.6}\else \textLR {6.6}\fi }{\ignorespaces NNI (Neural Network Intelligence).}}{63}{figure.caption.84}%
+\setforeignlanguage {french}
+\contentsline {figure}{\numberline {\if@rl \I {7.6}\else \textLR {6.7}\fi }{\ignorespaces Google Colab.}}{64}{figure.caption.85}%
+\setforeignlanguage {french}
+\contentsline {figure}{\numberline {\if@rl \I {8.6}\else \textLR {6.8}\fi }{\ignorespaces Google Drive.}}{65}{figure.caption.86}%
 \addvspace {10\p@ }
