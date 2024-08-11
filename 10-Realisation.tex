@@ -1,12 +1,13 @@
-
-
 \chapter{Réalisation et tests}
 \section{Introduction}
-Après avoir exposé en détail notre méthode automatique d'élagage dans le chapitre précèdent, nous discuterons maintenant sur les technologies et outils qui ont été choisis pour matérialiser cette approche et garantir son déploiement efficace. De ce fait, il est essentiel d'examiner en détail les langages de programmation, les bibliothèques et les frameworks qui ont été sélectionnés pour concrétiser notre approche. Nous offrons également un aperçu des stratégies de test que nous avons employées pour évaluer la performance de notre solution. Ces tests ont été établis pour mesurer les performances des modèles VGG-19 et ResNet-34 et la précision de chacun.
-
-\section{Modèles et jeu de données utilisés}
-
-
+Après avoir exposé les notions de base et les détails de notre solution pour la
+génération de données, ainsi que les types de séries temporelles de moteurs
+électriques avec lesquelles nous travaillons, ce chapitre présente les langages
+de programmation, les bibliothèques et les frameworks sélectionnés pour mettre
+en œuvre notre approche. Nous y décrivons également l'environnement technique
+dans lequel notre solution a été conçue, et nous évaluons la performance de
+notre solution ainsi que la qualité des données générées par notre modèle
+génératif.
 
 \section{Technologies utilisées}
 \subsection{Python}
@@ -18,12 +19,29 @@ Après avoir exposé en détail notre méthode automatique d'élagage dans le ch
   \label{fig:python}
 \end{figure}
 \FloatBarrier
-\medskip
+\medskip!
 
-Python joue un rôle important dans le domaine de l'intelligence artificielle (IA) grâce à sa polyvalence, sa simplicité et sa richesse en bibliothèques spécialisées. En tant que langage de programmation, Python est devenu le premier choix  pour de nombreux chercheurs, ingénieurs et développeurs travaillant dans le domaine de l'IA. D'une part, Python est connu pour sa syntaxe claire et lisible, ce qui  permet aux nouveaux arrivants dans le domaine de l'IA de se familiariser rapidement avec les concepts de base. D'autre part, Python offre plusieurs bibliothèques et frameworks spécialisés dans l'IA, tels que TensorFlow, Keras, PyTorch et Scikit-learn. Ces bibliothèques sont souvent utilisées pour le développement de réseaux de neurones, d'algorithmes d'apprentissage automatique et d'autres techniques d'IA. Finalement, Python est un langage polyvalent qui permet aux développeurs de créer et tester différentes approches rapidement.
+Python joue un rôle important dans le domaine de l'intelligence artificielle
+(IA) grâce à sa polyvalence, sa simplicité et sa richesse en bibliothèques
+spécialisées. En tant que langage de programmation, Python est devenu le
+premier choix pour de nombreux chercheurs, ingénieurs et développeurs
+travaillant dans le domaine de l'IA. D'une part, Python est connu pour sa
+syntaxe claire et lisible, ce qui permet aux nouveaux arrivants dans le domaine
+de l'IA de se familiariser rapidement avec les concepts de base. D'autre part,
+Python offre plusieurs bibliothèques et frameworks spécialisés dans l'IA, tels
+que TensorFlow, Keras, PyTorch et Scikit-learn. Ces bibliothèques sont souvent
+utilisées pour le développement de réseaux de neurones, d'algorithmes
+d'apprentissage automatique et d'autres techniques d'IA. Finalement, Python est
+un langage polyvalent qui permet aux développeurs de créer et tester
+différentes approches rapidement.
 
 \section{Bibliothèque utilisées}
-Python offre une riche collection de bibliothèques spécialisées dans plusieurs domaines, en particulier l'IA. Ces bibliothèques offrent des outils et des frameworks puissants pour développer des modèles d'apprentissage automatique, des réseaux de neurones, et bien plus encore. Dans cette section, nous allons explorer les bibliothèques que nous avons utilisé pour implémenter et tester notre méthode.
+Python offre une riche collection de bibliothèques spécialisées dans plusieurs
+domaines, en particulier l'IA. Ces bibliothèques offrent des outils et des
+frameworks puissants pour développer des modèles d'apprentissage automatique,
+des réseaux de neurones, et bien plus encore. Dans cette section, nous allons
+explorer les bibliothèques que nous avons utilisé pour implémenter et tester
+notre méthode.
 \subsection{NumPy}
 
 \begin{figure}[hbt!]
@@ -35,21 +53,69 @@ Python offre une riche collection de bibliothèques spécialisées dans plusieur
 \FloatBarrier
 \medskip
 
-NumPy \footnote{acronyme de "Numerical Python"} est une bibliothèque open source qui offre de nombreuses fonctionnalités pour le calcul numérique en Python. Elle offre un support puissant pour la manipulation de tableaux multidimensionnels, ainsi que pour l'exécution de calculs mathématiques complexes sur ces tableaux. Ces tableaux multidimensionnels permettent de stocker et de manipuler efficacement des données numériques sous forme de matrices et de vecteurs. Elle fournit également des fonctions mathématiques de base, des opérations d'algèbre linéaire, des opérations sur les tableaux, des fonctions statistiques et bien plus encore. Elle est largement utilisé en IA pour le traitement et la manipulation de données, la préparation de jeux de données, ainsi que pour la mise en œuvre d'algorithmes d'apprentissage automatique et de réseaux de neurones. La performance élevée de NumPy en calcul numérique en fait un bon choix pour les tâches intensives en termes de calcul.
+NumPy \footnote{acronyme de "Numerical Python"} est une bibliothèque open
+source qui offre de nombreuses fonctionnalités pour le calcul numérique en
+Python. Elle offre un support puissant pour la manipulation de tableaux
+multidimensionnels, ainsi que pour l'exécution de calculs mathématiques
+complexes sur ces tableaux. Ces tableaux multidimensionnels permettent de
+stocker et de manipuler efficacement des données numériques sous forme de
+matrices et de vecteurs. Elle fournit également des fonctions mathématiques de
+base, des opérations d'algèbre linéaire, des opérations sur les tableaux, des
+fonctions statistiques et bien plus encore. Elle est largement utilisé en IA
+pour le traitement et la manipulation de données, la préparation de jeux de
+données, ainsi que pour la mise en œuvre d'algorithmes d'apprentissage
+automatique et de réseaux de neurones. La performance élevée de NumPy en calcul
+numérique en fait un bon choix pour les tâches intensives en termes de calcul.
 
+\subsection{Pandas}
 
-\subsection{Matplotlib}
 \begin{figure}[hbt!]
   \centering
-  \includegraphics[width=4.5cm]{images_pfe/matplotlib.png}
-  \caption{Matplotlib.}
-  \label{fig:matplotlib}
+  \includegraphics[width=8cm]{images_pfe/pandas.png}
+  \caption{Pandas.}
+  \label{fig:Pandas}
 \end{figure}
 \FloatBarrier
 \medskip
 
-Matplotlib est une bibliothèque de visualisation en Python qui aide à créer des graphiques et des visualisations de données de manière interactive et statique. Cette bibliothèque offre un large éventail d'outils pour générer des graphiques de haute qualité à partir de données numériques. Son objectif est de permettre aux utilisateurs de représenter visuellement des données complexes de manière claire et compréhensible. Pour cela, elle propose une grande variété de types de graphiques, tels que les graphiques linéaires, les graphiques en barres, les graphiques à secteurs, les graphiques de dispersion, les graphiques 3D, etc. Elle permet également de personnaliser presque tous les aspects des graphiques, y compris les étiquettes, les couleurs, les styles de ligne, les titres, les axes et les légendes. L'utilisation de Matplotlib est essentielle dans l'analyse de données, la science des données et la recherche en général. En intelligence artificielle et en apprentissage automatique, Matplotlib est souvent employé pour visualiser les performances des modèles, les distributions de données, les tendances, les caractéristiques importantes, les matrices de confusion, les courbes d'apprentissage, etc.
+Pandas est une bibliothèque essentielle en Python pour la manipulation et
+l'analyse de données. Elle fournit des structures de données rapides, flexibles
+et expressives, notamment les DataFrames, qui permettent de gérer et d'analyser
+des ensembles de données de manière efficace. Pandas est conçu pour rendre la
+manipulation des données aussi simple que possible, qu'il s'agisse de
+nettoyage, de transformation, ou d'agrégation de données.
 
+Avec Pandas, il est facile de lire et d'écrire des données à partir de diverses
+sources, telles que des fichiers CSV, Excel, SQL, ou encore des formats JSON,
+tout en conservant la structure tabulaire des données. Une fois les données
+chargées, Pandas permet de les filtrer, les trier, les regrouper, les
+fusionner, et de réaliser des opérations arithmétiques ou des transformations
+complexes sur celles-ci.
+
+\subsection{Plotly}
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[width=8cm]{images_pfe/Plotly-logo.png}
+  \caption{Plotly.}
+  \label{fig:Plotly}
+\end{figure}
+\FloatBarrier
+\medskip
+
+Plotly est une bibliothèque de visualisation en Python qui permet de créer des
+graphiques interactifs et statiques de haute qualité. Cette bibliothèque se
+distingue par sa capacité à générer une large gamme de graphiques, allant des
+graphiques linéaires et en barres aux graphiques de dispersion, cartes
+choroplèthes, graphiques en 3D, et bien plus encore. Plotly offre des
+fonctionnalités interactives avancées, telles que le zoom, le panoramique et
+l'affichage de détails au survol des données, ce qui facilite l'exploration et
+l'analyse des données complexes.Plotly est particulièrement utile dans les
+domaines de la science des données, de l'intelligence artificielle et de
+l'apprentissage automatique, où il est couramment utilisé pour visualiser les
+performances des modèles, les distributions de données, les tendances, les
+matrices de confusion, et les courbes d'apprentissage. Sa capacité à produire
+des visualisations interactives en fait un outil précieux pour les analyses
+exploratoires et la présentation des résultats.
 \subsection{Pytorch}
 
 \begin{figure}[hbt!]
@@ -61,33 +127,20 @@ Matplotlib est une bibliothèque de visualisation en Python qui aide à créer d
 \FloatBarrier
 \medskip
 
-PyTorch est une bibliothèque open-source d'apprentissage automatique et d'intelligence artificielle en Python, développée principalement par Facebook's AI Research lab (FAIR). Elle repose sur un concept fondamental appelé "tenseur", qui est une structure de données multidimensionnelle similaire aux tableaux NumPy et elle est conçue pour faciliter le développement et la mise en œuvre de modèles de réseaux de neurones profonds. PyTorch est surtout distinguée par sa prise en charge des calculs automatiques de gradients, ce qui signifie qu'il est possible de définir des opérations mathématiques sur les tenseurs et que PyTorch peut automatiquement calculer les gradients de ces opérations qui sont nécessaires pour ajuster les poids dans les réseaux de neurones et ainsi minimiser une fonction de perte. Elle est utilisé pour la conception des modèles de réseaux de neurones profonds, y compris les réseaux de neurones convolutionnels (CNN), les réseaux de neurones récurrents (RNN), les transformeurs, etc.
-
-\subsection{Torchvision}
-
-\begin{figure}[hbt!]
-  \centering
-  \includegraphics[width=4cm]{images_pfe/torchvision.png}
-  \caption{Torchvision.}
-  \label{fig:torchvision}
-\end{figure}
-\FloatBarrier
-\medskip
-
-Torchvision est une bibliothèque qui fait partie de PyTorch. Elle est spécifiquement conçue pour faciliter le chargement et la transformation de jeux de données d'images couramment utilisés dans le domaine de l'apprentissage automatique et de la vision par ordinateur. Elle offre des outils pour prétraiter les données d'image, créer des ensembles de données, appliquer des transformations aux images et charger des ensembles de données préexistants. Elle propose des classes pour charger facilement des ensembles de données standard tels que MNIST, CIFAR-10, ImageNet, etc. Elle permet également d'appliquer diverses transformations aux images, telles que le redimensionnement, le recadrage, la normalisation, les rotations, les miroirs, etc. qui sont utiles pour augmenter la variabilité des données.
-
-\subsection{NNI}
-
-\begin{figure}[hbt!]
-  \centering
-  \includegraphics[width=6cm]{images_pfe/nni.png}
-  \caption{NNI (Neural Network Intelligence).}
-  \label{fig:nni}
-\end{figure}
-\FloatBarrier
-\medskip
-
-NNI (Neural Network Intelligence) est une bibliothèque open-source développée par Microsoft Research. Elle fournit un ensemble d'outils et de bibliothèques pour faciliter l'exploration et l'optimisation des espaces d'hyperparamètres, ainsi que pour la recherche automatique d'architectures de modèles. Elle permet aux utilisateurs de définir un espace de recherche pour les hyperparamètres, tels que les taux d'apprentissage, les tailles de lot, les architectures de couches, etc. NNI exécute ensuite des expériences en utilisant différentes configurations d'hyperparamètres et rapporte les résultats, y compris les performances du modèle. Elle est très utile dans le domaine de l'apprentissage automatique, car elle simplifie et automatise le processus d'ajustement des hyperparamètres et d'exploration des architectures, ce qui peut considérablement accélérer le développement de modèles performants.
+PyTorch est une bibliothèque open-source d'apprentissage automatique et
+d'intelligence artificielle en Python, développée principalement par Facebook's
+AI Research lab (FAIR). Elle repose sur un concept fondamental appelé
+"tenseur", qui est une structure de données multidimensionnelle similaire aux
+tableaux NumPy et elle est conçue pour faciliter le développement et la mise en
+œuvre de modèles de réseaux de neurones profonds. PyTorch est surtout
+distinguée par sa prise en charge des calculs automatiques de gradients, ce qui
+signifie qu'il est possible de définir des opérations mathématiques sur les
+tenseurs et que PyTorch peut automatiquement calculer les gradients de ces
+opérations qui sont nécessaires pour ajuster les poids dans les réseaux de
+neurones et ainsi minimiser une fonction de perte. Elle est utilisé pour la
+conception des modèles de réseaux de neurones profonds, y compris les réseaux
+de neurones convolutionnels (CNN), les réseaux de neurones récurrents (RNN),
+les transformeurs, etc.
 
 \section{Outils utilisés}
 
@@ -102,7 +155,18 @@ NNI (Neural Network Intelligence) est une bibliothèque open-source développée
 \FloatBarrier
 \medskip
 
-Google Colab (abrégé de Colaboratory) est une plateforme de notebooks interactifs basée sur le cloud, développée par Google. Elle permet aux utilisateurs d'écrire, d'exécuter et de partager du code Python de manière collaborative, sans nécessiter de configuration ou d'installation. Elle propose des notebooks interactifs qui permettent d'insérer des cellules de code exécutable et des cellules de texte et chaque notebook Colab s'exécute dans un environnement virtuel où les utilisateurs peuvent accéder à la puissance de calcul des processeurs graphiques (GPU) et des unités de traitement tensoriel (TPU) pour accélérer l'entraînement de modèles d'apprentissage automatique. Elle propose également de nombreuses bibliothèques préinstallées, mais les utilisateurs peuvent également installer et utiliser des bibliothèques tierces via des commandes simples.
+Google Colab (abrégé de Colaboratory) est une plateforme de notebooks
+interactifs basée sur le cloud, développée par Google. Elle permet aux
+utilisateurs d'écrire, d'exécuter et de partager du code Python de manière
+collaborative, sans nécessiter de configuration ou d'installation. Elle propose
+des notebooks interactifs qui permettent d'insérer des cellules de code
+exécutable et des cellules de texte et chaque notebook Colab s'exécute dans un
+environnement virtuel où les utilisateurs peuvent accéder à la puissance de
+calcul des processeurs graphiques (GPU) et des unités de traitement tensoriel
+(TPU) pour accélérer l'entraînement de modèles d'apprentissage automatique.
+Elle propose également de nombreuses bibliothèques préinstallées, mais les
+utilisateurs peuvent également installer et utiliser des bibliothèques tierces
+via des commandes simples.
 
 \subsection{Google Drive}
 
@@ -115,8 +179,69 @@ Google Colab (abrégé de Colaboratory) est une plateforme de notebooks interact
 \FloatBarrier
 \medskip
 
-Google Drive est un service de stockage en ligne développé par Google pour stocker, synchroniser et partager des fichiers et des dossiers sur le cloud. Il offre une variété de fonctionnalités telles que le stockage en ligne, la synchronisation multi-appareils, le partage de fichiers, la collaboration en temps réel, etc. De plus, il peut être utilisé avec Google Colab.
+Google Drive est un service de stockage en ligne développé par Google pour
+stocker, synchroniser et partager des fichiers et des dossiers sur le cloud. Il
+offre une variété de fonctionnalités telles que le stockage en ligne, la
+synchronisation multi-appareils, le partage de fichiers, la collaboration en
+temps réel, etc. De plus, il peut être utilisé avec Google Colab.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Solution ML
+
+\section{Environnement de développement}
+
+\subsubsection{Préparation de données}
+
+Pour les données utilisées, elles proviennent de moteurs asynchrones réels de
+Schneider Toshiba Inverter Europe (STIE) à Pacy-sur-Eure. Ces données ont été
+collectées par les automaticiens de STIE et nous ont été transmises sous forme
+de fichiers MATLAB. Nous les récupérons, les convertissons en fichiers CSV,
+puis utilisons la bibliothèque Pandas pour les traiter. Avant d'exploiter les
+données, nous les normalisons en appliquant soit la normalisation Min-Max, soit
+la normalisation nominale recommandée par l'équipe de STIE. Ensuite, nous
+procédons à la segmentation des données, et nous présentons l'algorithme de
+segmentation utilisé comme suit.
+
+\subsubsection{Serveur de Schneider Electric}
+
+Pour l'entraînement des modèles, nous utilisons un serveur dédié chez Schneider
+Electric. Ce serveur est spécialement configuré pour gérer les tâches de calcul
+intensif requises par l'entraînement de modèles complexes. Grâce à cette
+infrastructure, nous pouvons traiter de grandes quantités de données en
+parallèle, ce qui améliore significativement la vitesse et l'efficacité des
+processus de modélisation.
+
+Le serveur chez Schneider Electric est optimisé pour les applications
+d'apprentissage automatique, disposant de GPU performants pour accélérer les
+calculs. Les données collectées à partir des moteurs asynchrones réels, après
+avoir été normalisées et segmentées, sont transférées sur ce serveur pour
+l'entraînement des modèles prédictifs. Cette infrastructure nous permet
+d'itérer rapidement sur différents modèles, d'ajuster les paramètres et
+d'obtenir des résultats précis dans des délais raisonnables.
 
 \section{Tests et résultats}
+
+\subsection{Méthodes D'évaluation}
+
+
+Pour évaluer la qualité des données générées par notre modèle, nous utilisons plusieurs métriques qui garantissent les aspects clés suivants :
+\begin{enumerate}
+    \item \textbf{Diversité}:les échantillons générés doivent couvrir de manière adéquate la distribution des données réelles ;
+    \item \textbf{Fidélité}:les échantillons générés doivent être indiscernables des données réelles ;
+    \item \textbf{Utilité}:les échantillons générés doivent être tout aussi efficaces que les données réelles pour les tâches prédictives, comme l'entraînement sur des données synthétiques et le test sur des données réelles.
+\end{enumerate}
+
+Pour assurer ces trois qualités : \textbf{diversité}, \textbf{fidélité}, et \textbf{utilité}, nous utilisons les techniques suivantes :
+
+\textbf{1. Visualisation}
+
+Nous appliquons les analyses t-SNE [\cite{van2008visualizing}] et PCA [\cite{wold1987principal}] sur les ensembles de données originaux et synthétiques (en aplatissant la dimension temporelle). Cela permet de visualiser dans un espace à 2 dimensions dans quelle mesure la distribution des échantillons générés ressemble à celle de l'original, donnant ainsi une évaluation qualitative de la diversité.
+
+\textbf{2. Score Discriminant}
+
+Pour une mesure quantitative de la similarité, nous entraînons un modèle de classification de séries temporelles post-hoc (en optimisant un LSTM à 2 couches) pour distinguer les séquences provenant des ensembles de données originaux et générés. Tout d'abord, chaque séquence originale est étiquetée \textit{réelle}, et chaque séquence générée est étiquetée \textit{non réelle}. Ensuite, un classificateur RNN standard est entraîné pour distinguer les deux classes dans le cadre d'une tâche supervisée standard. Nous rapportons ensuite l'erreur de classification sur l'ensemble de test réservé, ce qui donne une évaluation quantitative de la fidélité.
+
+\textbf{3. Score Prédictif}
+
+Pour être utile, les données échantillonnées doivent hériter des caractéristiques prédictives de l'original. En particulier, nous nous attendons à ce que TimeGAN excelle dans la capture des distributions conditionnelles au fil du temps. Par conséquent, en utilisant l'ensemble de données synthétiques, nous entraînons un modèle de prédiction de séquences post-hoc (en optimisant un LSTM à 2 couches) pour prédire les vecteurs temporels du prochain pas sur chaque séquence d'entrée. Ensuite, nous évaluons le modèle entraîné sur l'ensemble de données original. La performance est mesurée en termes d'erreur absolue moyenne (MAE) ; pour les données basées sur des événements, le MAE est calculé comme $|1 - \text{probabilité estimée que l'événement se soit produit}|$. Cela donne une évaluation quantitative de l'utilité.
 
 \section{Conclusion}

@@ -178,7 +178,7 @@ potentielles et alerter les opérateurs avant qu'une panne majeure ne survienne.
 
 \begin{figure}[hbt!]
   \centering
-  \includegraphics[width=12cm]{images_pfe/drive_se.jpg}
+  \includegraphics[width=10cm]{images_pfe/drive_se.jpg}
   \caption{Schneider Electric ATV930D30N4 AC Speed Drive, 3 HP.}
   \label{fig:drive}
 \end{figure}
@@ -269,7 +269,7 @@ charge et de vitesse.
 
 \begin{figure}[hbt!]
   \centering
-  \includegraphics[width=12cm]{images_pfe/speed_couple.png}
+  \includegraphics[width=13cm]{images_pfe/speed_couple.png}
   \caption{Organization de data [\cite{yoon2019time}].}
   \label{fig:speed_couple}
 \end{figure}
@@ -285,12 +285,12 @@ chronologique pour former une série temporelle.
 
 Par exemple, la série temporelle illustrée dans la figure correspond au point
 de fonctionnement (Couple = 0\%, Vitesse = 15\%). Cette série est composée de
-80000 points, chaque point ayant été collecté à un intervalle de 250 (\(\mu
+80 000 points, chaque point ayant été collecté à un intervalle de 250 (\(\mu
 s\)).
 
 \begin{figure}[hbt!]
   \centering
-  \includegraphics[width=12cm]{images_pfe/V_I_data.png}
+  \includegraphics[width=14cm]{images_pfe/V_I_data.png}
   \caption{Organization de data .}
   \label{fig:data_v_i}
 \end{figure}
@@ -303,7 +303,7 @@ différentes conditions de fonctionnement.
 
 \begin{figure}[hbt!]
   \centering
-  \includegraphics[width=12cm]{images_pfe/couple_vittese_glissement.png}
+  \includegraphics[width=13cm]{images_pfe/couple_vittese_glissement.png}
   \caption{Organization de data.}
   \label{fig:data_v_i}
 \end{figure}
@@ -391,7 +391,7 @@ dans l'intervalle \([0, 1]\), comme illustré dans la figure (5.5).
 
 \begin{figure}[hbt!]
   \centering
-  \includegraphics[width=12cm]{images_pfe/V_I_data_norm.png}
+  \includegraphics[width=14cm]{images_pfe/V_I_data_norm.png}
   \caption{Organization de data [\cite{yoon2019time}].}
   \label{fig:data_norm}
 \end{figure}
@@ -399,53 +399,45 @@ dans l'intervalle \([0, 1]\), comme illustré dans la figure (5.5).
 
 \textbf{Normalisation Nominale}
 
-En utilisant la normalisation nominale, telle que proposée par l'équipe de Schneider Electric, l'algorithme se présente comme suit :
-
-
-
-
+En utilisant la normalisation nominale, telle que proposée par l'équipe de
+Schneider Electric, l'algorithme se présente comme suit :
 
 \begin{algorithm}[H]
   \caption{Normalization Nominale}
   \KwIn{Valeurs des courants et tensions}
   \KwOut{Valeurs normalisées des courants et tensions}
-  
+
   \SetKw{Initialization}{Initialisation:}
   \Initialization{}
-
 
   \( V_{\text{nom}} \gets 400 \) \;
   \( V_{\text{max}} \gets 921 \) \;
   \( I_{\text{nom}} \gets 10.2 \) \;
   \( I_{\text{max}} \gets 35.59 \) \;
-  
+
   \SetKw{Normalization}{Normalisation:}
   \Normalization{}
 
-
   \( I_1 \gets I_1 \times \frac{I_{\text{max}}}{2^{12} \times I_{\text{nom}}} \) \;
-
 
   \( I_2 \gets I_2 \times \frac{I_{\text{max}}}{2^{12} \times I_{\text{nom}}} \) \;
   \( I_3 \gets I_3 \times \frac{I_{\text{max}}}{2^{12} \times I_{\text{nom}}} \) \;
-  
+
   \( V_1 \gets V_1 \times \frac{V_{\text{max}}}{2^{12} \times V_{\text{nom}}} \) \;
   \( V_2 \gets V_2 \times \frac{V_{\text{max}}}{2^{12} \times V_{\text{nom}}} \) \;
   \( V_3 \gets V_3 \times \frac{V_{\text{max}}}{2^{12} \times V_{\text{nom}}} \) \;
-  
+
   \KwRet{Valeurs normalisées des courants \( I_1, I_2, I_3 \) et des tensions \( V_1, V_2, V_3 \)}
-  
-  \end{algorithm}
-    \FloatBarrier
 
+\end{algorithm}
+\FloatBarrier
 
-
-Dans la figure suivante, nous observons les courants et tensions normalisés avec cette technique: 
-
+Dans la figure suivante, nous observons les courants et tensions normalisés
+avec cette technique:
 
 \begin{figure}[hbt!]
   \centering
-  \includegraphics[width=12cm]{images_pfe/normalization_nominale.png}
+  \includegraphics[width=14cm]{images_pfe/normalization_nominale.png}
   \caption{Organization de data [\cite{yoon2019time}].}
   \label{fig:data_norm}
 \end{figure}
@@ -454,38 +446,74 @@ Dans la figure suivante, nous observons les courants et tensions normalisés ave
 \section{Solution proposée}
 
 \subsection{TimeGAN}
+
+Dans notre approche pour générer des données sous forme de séries temporelles
+correspondant à celles des moteurs électriques, nous nous sommes inspirés d'un
+modèle génératif nommé Time-series GAN (TimeGAN), présenté dans l'article de
+  [\cite{yoon2019time}], Dans ce qui suit, nous présenterons en détail
+l'architecture de notre modèle génératif, en exposant les différents composants
+ainsi que les fondements théoriques sur lesquels repose notre modèle.
+
 \subsubsection{Architecure de TimeGAN}
 
--VAE + GAN latent space
+Compte tenu de la nature séquentielle des données utilisées, qui prennent la
+forme de séries temporelles, l'architecture des réseaux de neurones adoptée
+repose sur des réseaux de neurones récurrents (RNN). Afin d'améliorer les
+performances du modèle, une architecture basée sur des réseaux LSTM (Long
+Short-Term Memory) a été intégrée, en complément de réseaux entièrement
+connectés (fully connected layers). La figure (5.7) présente l'architecture
+globale du modèle génératif proposé.
 
-- LSTM ( number of layers )
+Le modèle TimeGAN se structure autour de quatre réseaux de neurones principaux
+: une fonction d'embedding (encodeur), une fonction de recovery (décodeur), un
+générateur de séquences et un discriminateur. Ces quatre réseaux interagissent
+au sein d'un espace latent une représentations réduites des données.
 
-- Loss Functions
+\textbf{Réseaux d'Embedding et de Recovery}
 
-- Evaluataion
+Les fonctions d'embedding et de recovery établissent les liens entre l'espace
+des caractéristiques et l'espace latent, permettant au modèle d'apprendre les
+dynamiques temporelles des données sous une forme réduite. Le réseau
+d'embedding convertit les données de séries temporelles en une représentation
+latente. Le réseau de recovery cherche ensuite à reconstruire la série
+temporelle originale à partir de cette représentation réduite. La fonction de
+perte vise à minimiser l'écart entre la série temporelle initiale et celle
+reconstruite à partir de l'espace latent.
 
-- Data
+\textbf{Réseaux de Générateur et de Discriminateur}
+
+On commence par le réseau générateur, qui prend en entrée un bruit (bruit
+gaussien) et tente de générer des vecteurs dans l'espace latent, en s'assurant
+que ces vecteurs se rapprochent de ceux encodés par le réseau d'embedding.
+Ensuite, le discriminateur intervient en prenant en entrée les vecteurs générés
+par le générateur et vérifie leur similitude avec les vecteurs originaux
+encodés par le réseau de recovery. Le discriminateur guide et ajuste ainsi le
+générateur, de sorte que la fonction de perte incite le générateur à produire
+des vecteurs de plus en plus similaires aux vecteurs originaux.
 
 \begin{figure}[hbt!]
   \centering
-  \includegraphics[width=12cm]{images_pfe/timegan.png}
+  \includegraphics[width=14cm]{images_pfe/timegan_archi_.png}
   \caption{Architecure de TimeGAN[\cite{yoon2019time}].}
   \label{fig:timegan}
 \end{figure}
 \FloatBarrier
 
+\textbf{Géneration de données}
+
+Une fois que l'entraînement du modèle est terminé et que le modèle a convergé,
+la génération de données devient simple. Il suffit de fournir un bruit au
+réseau générateur, qui va alors produire des vecteurs dans l'espace latent. Ces
+vecteurs sont ensuite décodés en séries temporelles par le réseau de recovery.
+
 \begin{figure}[hbt!]
   \centering
-  \includegraphics[width=12cm]{images_pfe/timegan_archi.png}
+  \includegraphics[width=14cm]{images_pfe/gents.png}
   \caption{Architecure de TimeGAN[\cite{yoon2019time}].}
   \label{fig:timegan}
 \end{figure}
 \FloatBarrier
 
 \subsection{AutoDiff}
-
-\section{Géneration de données}
-
-comment on vas générer des données
 
 \section{Conclusion}

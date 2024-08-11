@@ -242,7 +242,7 @@ caractéristiques des RNN sont:
 
 \begin{figure}[hbt!]
 	\centering
-	\includegraphics[width=12cm]{images_pfe/rnn.jpg}
+	\includegraphics[width=12cm]{images_pfe/rnn.png}
 	\caption{Exemple d'un réseau de neurones récurrent [\cite{kumaraswamy_2021}].}
 	\label{fig:schema-reseau}
 \end{figure}
@@ -331,7 +331,7 @@ donne la classification de l'image (la sortie finale du modèle)
 \FloatBarrier
 \medskip
 
-\subsubsection{Couche convolutive }
+\subsubsection{Couche convolutive}
 Une couche convolutive est un élément constitutif des réseaux de neurones
 convolutifs (CNN). Elle est utilisé pour extraire des caractéristiques à partir
 de données d'entrée, souvent des images, en appliquant un ensemble de filtres
@@ -395,31 +395,6 @@ Un ResNet est composé d'une ensemble de blocs résiduels, qui sont constitués 
 \medskip
 ResNet est très efficace dans les tâches de vision par ordinateur, telles que la classification d'images, la détection d'objets et la segmentation. Il a joué un rôle important dans l'avancement de l'état de l'art en apprentissage profond et en vision par ordinateur, et continue d'être un domaine de recherche actif.
 
-\subsection{Réseaux de neurones en graphe (GNN)}
-Les réseaux de neurones en graphe (GNN) sont conçus pour traiter des données
-structurées sous forme de graphes. Les GNN sont capables d'apprendre et de
-faire des prédictions sur les données du graphe en propageant les informations
-à travers les bords et les nœuds du graphe [\cite{ZHOU202057}].
-
-\medskip
-L'idée de base derrière les GNN est d'utiliser un ensemble de paramètres entraînables pour transformer les caractéristiques de chaque nœud dans le graphe en fonction des caractéristiques de ses nœuds voisins (plongement de graphe). Ce processus est répété de manière itérative sur plusieurs couches du réseau, permettant au GNN d'apprendre des motifs et des relations complexes à partir des données [\cite{ZHOU202057}].
-
-\medskip
-Parmi les tâches réalisées par ce type de réseaux:
-\begin{itemize}
-	\item \textbf{Classification des graphes} : Les GNN peuvent être utilisées pour classer des graphes en différentes catégories, tels que dans le cas de l'analyse des réseaux sociaux, la classification de textes et classification des molécules.
-	\item \textbf{Prédiction de lien} : Les GNN peuvent prédire le lien manquant entre une paire de nœuds dans un graphe avec une matrice d'adjacence incomplète. Ils sont souvent utilisés pour les réseaux sociaux (tel que la suggestion des amis)
-	\item \textbf{Plongement de graphe} : Les GNN permettent de faire la transformation de graphe en vecteurs, en préservant les informations pertinentes sur les nœuds, les arêtes et la structure générale du graphe.
-\end{itemize}
-
-\begin{figure}[hbt!]
-	\centering
-	\includegraphics[width=15cm]{images_pfe/gnn.jpg}
-	\caption{Le pipeline de conception générale pour un modèle GNN [\cite{ZHOU202057}].}
-	\label{fig:gnn}
-\end{figure}
-\FloatBarrier
-\medskip
 
 \section{Le processus d’apprentissage}
 L’apprentissage est le processus itératif et continu d’ajustement des
