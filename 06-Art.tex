@@ -395,7 +395,6 @@ Un ResNet est composé d'une ensemble de blocs résiduels, qui sont constitués 
 \medskip
 ResNet est très efficace dans les tâches de vision par ordinateur, telles que la classification d'images, la détection d'objets et la segmentation. Il a joué un rôle important dans l'avancement de l'état de l'art en apprentissage profond et en vision par ordinateur, et continue d'être un domaine de recherche actif.
 
-
 \section{Le processus d’apprentissage}
 L’apprentissage est le processus itératif et continu d’ajustement des
 paramètres du réseau neuronal afin d’obtenir une meilleure précision du modèle
@@ -622,21 +621,13 @@ Dans ce qui suit, nous présenterons l'apprentissage profond et ses algorithmes.
 Avec les avancées fulgurantes du deep learning, de nouvelles méthodes
 d'intelligence artificielle ont émergé, souvent désignées sous le terme de
 modèles génératifs. Ces technologies de pointe, telles que les auto-encodeurs
-variationnels, les réseaux adversariaux génératifs (GANs), les modèles de
+variationnels (VAE), les réseaux adversariaux génératifs (GANs), les modèles de
 diffusion, les transformers et les modèles de langage de grande taille (LLM)
 sont capables de produire des données d'une qualité impressionnante,
 ressemblant de manière frappante aux données réelles. Les données générées par
-ces modèles sont souvent indiscernables des données authentiques, ce qui pose
-de nouveaux défis en matière d'identification et d'authenticité.Les modèles
+ces modèles sont souvent indiscernables des données authentiques, ces modèles
 génératifs permettent la génération de textes, d'images, de séries temporelles
 et de données tabulaires avec une grande précision.
-
-\medskip
-
-La puissance de ces modèles repose sur des ressources de calcul considérables,
-notamment l'utilisation de GPU, et sur l'accès à des ensembles de données
-massifs. Par exemple, des modèles tels que ChatGPT-4 ont été entraînés sur
-l'intégralité du contenu disponible sur Internet.
 
 \medskip
 
@@ -661,17 +652,17 @@ leur introduction par Kingma et Welling en 2013
 diverses applications, allant de la génération d'images à la synthèse de texte.
 
 \subsection{Fonctionnement}
-Les VAE sont composés de trois éléments principaux : l'encodeur, le décodeur et
-l'espace latent. Chacune de ces composantes joue un rôle crucial dans le
-fonctionnement global du modèle.
+Les VAE sont composés de trois éléments principaux (Figure \ref{fig:VAE}):
+l'encodeur, le décodeur et l'espace latent. Chacune de ces composantes joue un
+rôle crucial dans le fonctionnement global du modèle.
 
 \textbf{L'Encodeur:}L'encodeur est responsable de la transformation des données d'entrée \(\mathbf{x}\) en une distribution
 dans l'espace latent. Plus précisément, il mappe les données d'entrée à une distribution gaussienne paramétrée par
-une moyenne \(\mu\) et une variance \(\sigma^2\). Cette distribution est souvent représentée comme :
+une moyenne \(\mu\) et une variance \(\sigma^2\). Cette distribution est souvent représentée par la formule \ref{equ:Enc}:
 
 \begin{equation}
 	q(\mathbf{z} \mid \mathbf{x}) = \mathcal{N}(\mathbf{z} \mid \mu(\mathbf{x}), \sigma^2(\mathbf{x}))
-	\label{equ:couche}
+	\label{equ:Enc}
 \end{equation}
 
 où \(\mathbf{z}\) est la variable latente que l'encodeur cherche à estimer.
@@ -680,11 +671,11 @@ où \(\mathbf{z}\) est la variable latente que l'encodeur cherche à estimer.
 
 \textbf{Le Décodeur:}Le décodeur prend un échantillon \(\mathbf{z}\) de la distribution gaussienne dans
 l'espace latent et génère une reconstruction \(\hat{\mathbf{x}}\) des données d'entrée. Il modélise la distribution
-des données d'entrée conditionnellement à \(\mathbf{z}\) comme suit :
+des données d'entrée conditionnellement à \(\mathbf{z}\), La distribution des données générées est souvent exprimée par la formule \ref{equ:Dec} :
 
 \begin{equation}
 	p(\mathbf{x} \mid \mathbf{z})
-	\label{equ:couche}
+	\label{equ:Dec}
 \end{equation}
 
 Typiquement, le décodeur est un réseau neuronal qui produit les paramètres de
@@ -699,15 +690,22 @@ possible de données générées. L'idée est que cet espace latent capture les 
 des données d'entrée de manière à permettre
 la génération de nouvelles instances en échantillonnant de cet espace.
 
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=10cm]{images_pfe/vae_1.png}
+	\caption{Les composants d'un auto-encodeur variationnel (VAE)  [\cite{kingma_welling_auto_encoding}].}
+	\label{fig:VAE}
+\end{figure}
+
 L’objectif principal d’un VAE est d’optimiser une fonction de coût qui combine
 deux termes principaux : la divergence de Kullback-Leibler (KL)
 [\cite{johnson2001symmetrizing}] et la vraisemblance de reconstruction.
 
-\textbf{Divergence de Kullback-Leibler (KL)}: Ce terme mesure la différence entre la distribution latente approximée \( q(z | x) \) et la distribution prior \( p(z) \). La divergence KL est donnée par :
-
+\textbf{Divergence de Kullback-Leibler (KL)}: Ce terme mesure la différence entre la distribution latente approximée \( q(z | x) \) et la distribution prior \( p(z) \). La divergence KL est donnée par \ref{equ:KL} :
 
 \begin{equation}
-    D_{KL}(q(\mathbf{z} \mid \mathbf{x}) \parallel p(\mathbf{z}))
+	D_{KL}(q(\mathbf{z} \mid \mathbf{x}) \parallel p(\mathbf{z}))
+	\label{equ:KL}
 \end{equation}
 
 où \( q(z | x) \) est la distribution gaussienne paramétrée par l'encodeur, et
@@ -717,18 +715,22 @@ où \( q(z | x) \) est la distribution gaussienne paramétrée par l'encodeur, e
 
 Ce terme mesure la capacité du modèle à reconstruire les données d'entrée \( x
 \) à partir de la variable latente \( z \). Il est donné par la vraisemblance
-de \( x \) conditionnée par \( z \) :
+de \( x \) conditionnée par \( z \), La formule de vraisemblance de
+reconstruction est exprimée dans l'équation \ref{equ:vr}:
 
 \begin{equation}
-    \log p(\mathbf{x} \mid \mathbf{z})
+	\log p(\mathbf{x} \mid \mathbf{z})
+	\label{equ:vr}
 \end{equation}
 
 \subsubsection*{Fonction de Perte VAE}
 
 La fonction de coût totale d'un VAE, également appelée fonction de perte VAE,
-combine ces deux termes. Elle peut être formulée comme suit :
+combine ces deux termes. L'équation de cette fonction de coût est donnée comme
+suit \ref{equ:perte_vae} :
 \begin{equation}
-    \mathcal{L}(\theta, \phi; \mathbf{x}) = - \mathbb{E}_{q_\phi(\mathbf{z} \mid \mathbf{x})}[\log p_\theta(\mathbf{x} \mid \mathbf{z})] + D_{KL}(q_\phi(\mathbf{z} \mid \mathbf{x}) \parallel p(\mathbf{z}))
+	\mathcal{L}(\theta, \phi; \mathbf{x}) = - \mathbb{E}_{q_\phi(\mathbf{z} \mid \mathbf{x})}[\log p_\theta(\mathbf{x} \mid \mathbf{z})] + D_{KL}(q_\phi(\mathbf{z} \mid \mathbf{x}) \parallel p(\mathbf{z}))
+	\label{equ:perte_vae}
 \end{equation}
 
 où \( \theta \) et \( \phi \) sont les paramètres du décodeur et de l'encodeur
@@ -740,13 +742,6 @@ pour qu'elle soit proche de la distribution prior.
 En optimisant cette fonction de perte, les VAE parviennent à apprendre des
 représentations latentes qui permettent une reconstruction fidèle des données
 d'entrée tout en assurant une régularité statistique dans l'espace latent.
-
-\begin{figure}[hbt!]
-	\centering
-	\includegraphics[width=10cm]{images_pfe/vae_1.png}
-	\caption{Le fonctionnement d'un neurone artificiel [\cite{kingma_welling_auto_encoding}].}
-	\label{fig:VAE}
-\end{figure}
 
 \subsection{Applications des Auto-Encodeurs Variationnels (VAE)}
 
@@ -761,7 +756,8 @@ une représentation latente des images d'entraînement, les VAE peuvent
 échantillonner de cet espace latent pour créer de nouvelles images qui
 partagent des caractéristiques similaires avec les données d'origine. Cela a
 des applications potentielles dans la création de contenu, la conception
-assistée par ordinateur et la synthèse d'images médicales [\cite{luhman2024highfidelity}].
+assistée par ordinateur et la synthèse d'images médicales
+[\cite{luhman2024highfidelity}].
 
 \subsubsection{Synthèse de Texte}
 
@@ -778,7 +774,8 @@ Les VAE sont efficaces pour la compression de données, en particulier pour des
 données de grande dimension comme les images et les vidéos. En apprenant une
 représentation latente compacte, les VAE peuvent réduire la dimensionnalité des
 données tout en préservant leurs caractéristiques essentielles. Cela permet une
-transmission et un stockage plus efficaces des données compressées[\cite{yilmaz2021selfvae}].
+transmission et un stockage plus efficaces des données
+compressées[\cite{yilmaz2021selfvae}].
 
 \subsubsection{Détection d'Anomalies}
 
@@ -787,7 +784,8 @@ identifier des données aberrantes qui diffèrent significativement des données
 d'entraînement. En apprenant une distribution latente des données normales, le
 VAE peut détecter des échantillons qui ne correspondent pas à cette
 distribution, ce qui est particulièrement utile dans la surveillance de
-systèmes industriels, la cybersécurité et la détection de fraudes [\cite{wang2019revisiting}].
+systèmes industriels, la cybersécurité et la détection de fraudes
+	[\cite{wang2019revisiting}].
 
 \subsubsection{Imputation de Données Manquantes}
 
@@ -804,6 +802,7 @@ de contenu à la compression de données et à la détection d'anomalies. Leur
 capacité à apprendre des représentations latentes significatives permet de
 traiter efficacement une large gamme de problèmes complexes.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Réseaux Antagonistes Génératifs (GANs) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Réseaux Antagonistes Génératifs (GANs)}
 
 \subsection{Introduction aux Réseaux Antagonistes Génératifs}
@@ -831,12 +830,14 @@ uniforme ou normale et produit une donnée synthétique \( G(z) \).
 Mathématiquement, le générateur peut être représenté comme une fonction \( G :
 Z \rightarrow X \), où \( Z \) est l'espace du bruit et \( X \) est l'espace
 des données. L’objectif du générateur est de "tromper" le discriminateur en
-générant des données indiscernables des données réelles.
+générant des données indiscernables des données réelles, la fonction qui
+représent le réseaux de neurones génerateur est donnée comme suite
+\ref{equ:gen_gan}:
 
 \begin{equation}
-    G(\mathbf{z}; \theta_g) : \mathbf{z} \sim p_z(\mathbf{z}) \rightarrow \mathbf{x} = G(\mathbf{z})
+	G(\mathbf{z}; \theta_g) : \mathbf{z} \sim p_z(\mathbf{z}) \rightarrow \mathbf{x} = G(\mathbf{z})
+	\label{equ:gen_gan}
 \end{equation}
-
 
 où \( \theta_g \) représente les paramètres du générateur, \( p_z(z) \) est la
 distribution du bruit (généralement uniforme ou normale), et \( x \) est la
@@ -854,16 +855,18 @@ générée \( G(z) \). Il sort une probabilité \( D(x) \) ou \( D(G(z)) \)
 indiquant si l’entrée est réelle ou générée. Mathématiquement, le
 discriminateur peut être représenté comme une fonction \( D : X \rightarrow [0,
 	1] \), où \( D(x) \) représente la probabilité que \( x \) soit une donnée
-réelle.
+réelle, la fonction qui représent lé réseaux de neurones est donnée par
+\ref{equ:dis_gan}:
 
 \begin{equation}
-    D(\mathbf{x}; \theta_d) : \mathbf{x} \rightarrow [0, 1]
+	D(\mathbf{x}; \theta_d) : \mathbf{x} \rightarrow [0, 1]
+	\label{equ:dis_gan}
 \end{equation}
 
+où \( \theta_d \) représente les paramètres du discriminateur.
 
-où \( \theta_d \) représente les paramètres du discriminateur. Le
-discriminateur est entraîné pour maximiser la probabilité d’assigner la bonne
-étiquette aux échantillons réels et générés. Il essaie de minimiser la
+Le discriminateur est entraîné pour maximiser la probabilité d’assigner la
+bonne étiquette aux échantillons réels et générés. Il essaie de minimiser la
 probabilité d'être trompé par les fausses données produites par le générateur.
 
 Le discriminateur est, en essence, un classificateur binaire qui essaie de
@@ -871,15 +874,17 @@ distinguer entre les données authentiques et celles générées.
 
 \subsubsection{Fonction de Perte}
 
-Les fonctions de perte pour le générateur et le discriminateur sont définies
-comme suit :
+Les fonctions de perte pour le discriminateur et le générateur sont définies
+comme suit dans \ref{equ:gan_d_perte} et \ref{equ:gan_g_perte} respectivement :
 
 \begin{equation}
-    \mathcal{L}_D = -\mathbb{E}_{\mathbf{x} \sim p_{data}}[\log D(\mathbf{x})] - \mathbb{E}_{\mathbf{z} \sim p_z}[\log(1 - D(G(\mathbf{z})))]
+	\mathcal{L}_D = -\mathbb{E}_{\mathbf{x} \sim p_{data}}[\log D(\mathbf{x})] - \mathbb{E}_{\mathbf{z} \sim p_z}[\log(1 - D(G(\mathbf{z})))]
+	\label{equ:gan_d_perte}
 \end{equation}
 
 \begin{equation}
-    \mathcal{L}_G = -\mathbb{E}_{\mathbf{z} \sim p_z}[\log D(G(\mathbf{z}))]
+	\mathcal{L}_G = -\mathbb{E}_{\mathbf{z} \sim p_z}[\log D(G(\mathbf{z}))]
+	\label{equ:gan_g_perte}
 \end{equation}
 
 Où :
@@ -894,10 +899,12 @@ Où :
 
 L'objectif du générateur est de minimiser \( \mathcal{L}_G \), tandis que le
 discriminateur cherche à minimiser \( \mathcal{L}_D \). Plus formellement,
-l'objectif est de résoudre le problème de minimax suivant :
+l'objectif est de résoudre le problème de minimax définit dans l'équation
+\ref{equ:prob_gan} :
 
 \begin{equation}
-    \min_G \max_D \mathbb{E}_{\mathbf{x} \sim p_{data}}[\log D(\mathbf{x})] + \mathbb{E}_{\mathbf{z} \sim p_z}[\log(1 - D(G(\mathbf{z})))]
+	\min_G \max_D \mathbb{E}_{\mathbf{x} \sim p_{data}}[\log D(\mathbf{x})] + \mathbb{E}_{\mathbf{z} \sim p_z}[\log(1 - D(G(\mathbf{z})))]
+	\label{equ:prob_gan}
 \end{equation}
 
 \subsubsection{Entraînement des GANs}
@@ -929,7 +936,7 @@ de texte.
 \begin{figure}[hbt!]
 	\centering
 	\includegraphics[width=12cm]{images_pfe/gan_1.png}
-	\caption{Un modèle de réseau générateur adversaire (GAN) [\cite{feng_feng_chen_cao_zhang_jiao_yu_2020}].}
+	\caption{Architecture du modèle de GANs [\cite{feng_feng_chen_cao_zhang_jiao_yu_2020}].}
 	\label{fig:gan}
 \end{figure}
 \FloatBarrier
@@ -942,7 +949,7 @@ Les GANs ont une variété d'applications dans différents domaines :
 
 Les GANs sont largement utilisés pour générer des images réalistes. Ils ont été
 appliqués avec succès dans la création d'images de haute qualité, la génération
-de visages humains, et même la création artistique. Par exemple, les GAN
+de visages humains, et même la création artistique. Par exemple, les GANs
 peuvent générer des images de personnes qui n'existent pas en apprenant les
 caractéristiques des visages humains à partir de vastes bases de données
 d'images.
@@ -953,18 +960,18 @@ Les GANs sont également utilisés pour la super-résolution d'images,
 c'est-à-dire augmenter la résolution d'une image basse résolution. Le modèle
 SRGAN (Super-Resolution GAN) est un exemple où les GANs sont utilisés pour
 produire des images de haute résolution à partir d'images de basse résolution,
-améliorant ainsi les détails visuels et la clarté.
+améliorant ainsi les détails visuels et la clarté [\cite{ledig2017photo}].
 
 \subsubsection{Synthèse de Texte et Traduction Automatique}
 
 Dans le traitement du langage naturel (NLP), les GANs sont appliqués à la
-génération de texte et à la traduction automatique. Les modèles basés sur les
-GAN peuvent générer des phrases cohérentes et contextuellement appropriées,
-imitant le style et le contenu des textes d'entraînement. Cela est
-particulièrement utile pour les applications comme les chatbots, la création de
-contenu textuel, et les systèmes de traduction.
+génération de texte et à la traduction automatique [\cite{de2021survey}]. Les
+modèles basés sur les GAN peuvent générer des phrases cohérentes et
+contextuellement appropriées, imitant le style et le contenu des textes
+d'entraînement. Cela est particulièrement utile pour les applications comme les
+chatbots, la création de contenu textuel, et les systèmes de traduction.
 
-\subsubsection{ StyleGAN: This Person Does Not Exist}
+\subsubsection{StyleGAN: This Person Does Not Exist}
 
 StyleGAN, ou Style-Based Generator Architecture for Generative Adversarial
 Networks, est un modèle génératif avancé développé par les chercheurs de
@@ -993,23 +1000,24 @@ des données réalistes ouvre de nombreuses perspectives dans divers domaines.
 \section{Diffusion models}
 \subsection{Introduction}
 
-Les modèles de diffusion, également connus sous le nom de diffusion models,
-représentent une avancée significative dans le domaine des modèles génératifs
-au sein de l'apprentissage automatique. Émergents de manière proéminente ces
-dernières années, ces modèles ont attiré l'attention pour leur remarquable
-capacité à générer des données synthétiques de haute qualité, les positionnant
-comme une alternative prometteuse aux techniques plus établies telles que les
-Réseaux Antagonistes Génératifs (GANs) et les Autoencodeurs Variationnels
-(VAEs) [\cite{dhariwal2021diffusion}].
+Les modèles de diffusion, également connus sous le nom de diffusion models en
+angalais, représentent une avancée significative dans le domaine des modèles
+génératifs au sein de l'apprentissage automatique. Émergents de manière
+proéminente ces dernières années, ces modèles ont attiré l'attention pour leur
+remarquable capacité à générer des données synthétiques de haute qualité, les
+positionnant comme une alternative prometteuse aux techniques plus établies
+telles que les Réseaux Antagonistes Génératifs (GANs) et les Autoencodeurs
+Variationnels (VAEs) [\cite{dhariwal2021diffusion}].
 
 La fondation conceptuelle des modèles de diffusion s'inspire des processus de
 diffusion physique, où les particules migrent des régions de haute
 concentration vers des zones de moindre concentration [\cite{ho2020denoising}]
 . Ces modèles sont également basés sur les chaînes de Markov comme illustré
-dans la figure (2.4), un concept clé en probabilité qui décrit une série de
-transitions d'état où chaque état dépend uniquement de l'état précédent. Dans
-le contexte des données, ce principe est exploité pour affiner progressivement
-les données bruitées en représentations réalistes [\cite{yang2022diffusion}].
+dans la figure \ref{fig:markov}, un concept clé en probabilité qui décrit une
+série de transitions d'état où chaque état dépend uniquement de l'état
+précédent. Dans le contexte des données, ce principe est exploité pour affiner
+progressivement les données bruitées en représentations réalistes
+[\cite{yang2022diffusion}].
 
 \begin{figure}[hbt!]
 	\centering
@@ -1021,35 +1029,40 @@ les données bruitées en représentations réalistes [\cite{yang2022diffusion}]
 
 \subsection{Fonctionnement des Modèles de Diffusion}
 
-Les modèles de diffusion utilisent un processus en deux étapes cruciales : le
-bruitage (noising, également appelé Forward Process) et le débruitage
-(denoising, ou Reverse Process). Ces étapes sont essentielles pour transformer
-des données réelles en une distribution de bruit et inversement. Le Forward
-Process consiste à ajouter progressivement du bruit aux données réelles, les
-transformant ainsi en une séquence de données de plus en plus bruitées.
-Ensuite, le Reverse Process inverse ce processus en éliminant le bruit étape
-par étape, recréant des données réalistes à partir du bruit.
+Les modèles de diffusion utilisent un processus en deux étapes cruciale[Figure
+		\ref{fig:pro_diff}] : le bruitage (noising en anglais, également appelé Forward
+Process) et le débruitage (denoising en anglais, ou Reverse Process). Ces
+étapes sont essentielles pour transformer des données réelles en une
+distribution de bruit et inversement. Le Forward Process consiste à ajouter
+progressivement du bruit aux données réelles, les transformant ainsi en une
+séquence de données de plus en plus bruitées. Ensuite, le Reverse Process
+inverse ce processus en éliminant le bruit étape par étape, recréant des
+données réalistes à partir du bruit.
+
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=12cm]{images_pfe/diffusion_process.png}
+	\caption{Illustration des Processus de Diffusion : Forward Process et Reverse Process.}
+	\label{fig:pro_diff}
+\end{figure}
+\FloatBarrier
 
 Pour effectuer le débruitage, un réseau de neurones est utilisé. Ce réseau de
 neurones est entraîné à détecter et à éliminer le bruit à chaque étape du
 Reverse Process. Il apprend à prédire l'état précédent des données à partir de
 l'état actuel bruité, permettant ainsi de reconstruire progressivement les
 données originales. Cette méthode en deux phases, combinée à l'utilisation d'un
-réseau de neurones pour le débruitage, permet de modéliser et de générer des
-données synthétiques de haute qualité de manière efficace et contrôlée.
+réseau de neurones [Figure \ref{fig:unet_}] pour le débruitage, permet de
+modéliser et de générer des données synthétiques de haute qualité de manière
+efficace et contrôlée.
 
 \begin{figure}[hbt!]
 	\centering
 	\includegraphics[width=12cm]{images_pfe/Unet.png}
 	\caption{ Le processus d'entraînement d'un UNet pour prédire le bruit ajouté à l'image. [\cite{nichol2021improved}].}
-	\label{fig:unet}
+	\label{fig:unet_}
 \end{figure}
 \FloatBarrier
-
-Les modèles de diffusion utilisent un processus en deux étapes : le bruitage
-(noising, également appelé \textit{Forward Process}) et le débruitage
-(denoising, ou \textit{Reverse Process}). Ces étapes sont essentielles pour
-transformer des données réelles en une distribution de bruit et inversement.
 
 \subsubsection{Forward Process (Bruitage)}
 
@@ -1057,11 +1070,12 @@ L'étape de bruitage ajoute progressivement du bruit gaussien aux données
 réelles. Ce processus est modélisé comme une chaîne de Markov où chaque état \(
 x_t \) dépend uniquement de l'état précédent \( x_{t-1} \).
 
-La transition conditionnelle pour le bruitage est donnée par :
+La transition conditionnelle pour le bruitage est donnée par \ref{fig:bruitage}
+:
 \begin{equation}
-    q(\mathbf{x}_t \mid \mathbf{x}_{t-1}) = \mathcal{N}(\mathbf{x}_t; \sqrt{1 - \beta_t} \mathbf{x}_{t-1}, \beta_t \mathbf{I})
+	q(\mathbf{x}_t \mid \mathbf{x}_{t-1}) = \mathcal{N}(\mathbf{x}_t; \sqrt{1 - \beta_t} \mathbf{x}_{t-1}, \beta_t \mathbf{I})
+	\label{fig:bruitage}
 \end{equation}
-
 
 où :
 \begin{conditions}
@@ -1071,9 +1085,11 @@ où :
 	\mathbf{I} & \text{matrice identité}
 \end{conditions}
 
-La séquence complète des \( T \) étapes de bruitage est décrite par :
+La séquence complète des \( T \) étapes de bruitage est décrite par
+\ref{equ:bruit_comp} :
 \begin{equation}
-    q(\mathbf{x}_{1:T} \mid \mathbf{x}_0) = \prod_{t=1}^T q(\mathbf{x}_t \mid \mathbf{x}_{t-1})
+	q(\mathbf{x}_{1:T} \mid \mathbf{x}_0) = \prod_{t=1}^T q(\mathbf{x}_t \mid \mathbf{x}_{t-1})
+	\label{equ:bruit_comp}
 \end{equation}
 
 \textbf{Explication du Forward Process :}
@@ -1091,12 +1107,12 @@ L'étape de débruitage consiste à inverser le processus de bruitage pour
 transformer le bruit gaussien en données réalistes. Cela se fait en utilisant
 un modèle génératif pour approximer la distribution inverse.
 
-La transition conditionnelle pour le débruitage est donnée par :
+La transition conditionnelle pour le débruitage est donnée par \ref{equ:debr}:
 
 \begin{equation}
-    p_\theta(\mathbf{x}_{t-1} \mid \mathbf{x}_t) = \mathcal{N}(\mathbf{x}_{t-1}; \mu_\theta(\mathbf{x}_t, t), \Sigma_\theta(\mathbf{x}_t, t))
+	p_\theta(\mathbf{x}_{t-1} \mid \mathbf{x}_t) = \mathcal{N}(\mathbf{x}_{t-1}; \mu_\theta(\mathbf{x}_t, t), \Sigma_\theta(\mathbf{x}_t, t))
+	\label{equ:debr}
 \end{equation}
-
 
 où :
 \begin{conditions}
@@ -1114,27 +1130,21 @@ où :
 	\item La covariance \( \Sigma_\theta(x_t, t) \) représente l'incertitude du modèle.
 \end{itemize}
 
-\begin{figure}[hbt!]
-	\centering
-	\includegraphics[width=12cm]{images_pfe/diffusion_process.png}
-	\caption{Illustration des Processus de Diffusion : Forward Process et Reverse Process.}
-	\label{fig:markov}
-\end{figure}
-\FloatBarrier
-
 \paragraph{Objectif d'Entraînement :}
 L'objectif est de minimiser la divergence de Kullback-Leibler (KL) entre la
 distribution réelle \( q \) et la distribution générée par le modèle \(
-p_\theta \) :
+p_\theta \). La fonction de perte du modèle de diffusion est donnée par
+l'équation \ref{equ:div_diff} :
 
 \begin{equation}
-    \mathcal{L} = \mathbb{E}_q \left[ \sum_{t=1}^T D_{KL}(q(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0) \| p_\theta(\mathbf{x}_{t-1} \mid \mathbf{x}_t)) \right]
+	\mathcal{L} = \mathbb{E}_q \left[ \sum_{t=1}^T D_{KL}(q(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0) \| p_\theta(\mathbf{x}_{t-1} \mid \mathbf{x}_t)) \right]
+	\label{equ:div_diff}
 \end{equation}
 
 \subsection{Applications des Modéles de Diffusion}
 Les modèles de diffusion ont trouvé des applications dans divers domaines grâce
-à leur capacité à générer des données synthétiques de haute qualité. Voici
-quelques-unes des applications les plus remarquables :
+à leur capacité à générer des données synthétiques de haute qualité. Parmi les
+applications remarquables des modèles de diffusion, on trouve:
 
 \begin{itemize}
 	\item \textbf{Génération d'images} : Les modèles de diffusion sont largement utilisés pour la génération d'images réalistes à partir de bruit aléatoire. Ils permettent de créer des images de haute qualité qui peuvent être utilisées dans le domaine de l'art, du design, et même dans la production de contenu multimédia.
@@ -1151,16 +1161,16 @@ quelques-unes des applications les plus remarquables :
 Parmi les applications ayant connu un succès notable, on trouve :
 
 \begin{itemize}
-	\item \textbf{Stable Diffusion} : n modèle de diffusion qui a gagné en popularité pour sa capacité à générer des images d’une qualité exceptionnelle et son utilisation dans divers projets artistiques et commerciaux. Stable Diffusion est particulièrement apprécié pour sa flexibilité et sa robustesse, permettant aux artistes et aux créateurs de générer des œuvres d'art numériques impressionnantes avec un niveau de détail et de réalisme sans précédent. En outre, il est utilisé dans des industries telles que le design graphique, la publicité et même la production cinématographique, démontrant sa vaste applicabilité commerciale.
+	\item \textbf{Stable Diffusion} : un modèle de diffusion qui a gagné en popularité pour sa capacité à générer des images d’une qualité exceptionnelle et son utilisation dans divers projets artistiques et commerciaux. Stable Diffusion est particulièrement apprécié pour sa flexibilité et sa robustesse, permettant aux artistes et aux créateurs de générer des œuvres d'art numériques impressionnantes avec un niveau de détail et de réalisme sans précédent. En outre, il est utilisé dans des industries telles que le design graphique, la publicité et même la production cinématographique, démontrant sa vaste applicabilité commerciale [\cite{rombach2022high}].
 
-	\item \textbf{DALL-E de OpenAI} : Ce modèle est capable de créer des images à partir de descriptions textuelles, révolutionnant ainsi la manière dont nous concevons et interagissons avec les images générées par l’intelligence artificielle. DALL-E peut interpréter des descriptions textuelles complexes et générer des images correspondantes, ce qui ouvre de nouvelles possibilités en matière de création de contenu visuel. Par exemple, il peut créer des images de concepts ou d'objets inexistants basés uniquement sur des descriptions verbales, ce qui est extrêmement utile pour le prototypage, l'illustration de concepts et l'innovation créative. DALL-E a été salué pour sa capacité à comprendre et à visualiser des idées abstraites, rendant la technologie accessible et utile pour les designers, les artistes et les innovateurs.
+	\item \textbf{DALL-E de OpenAI} : Ce modèle est capable de créer des images à partir de descriptions textuelles [Figure \cite{fig:Dalle}], révolutionnant ainsi la manière dont nous concevons et interagissons avec les images générées par l’intelligence artificielle. DALL-E peut interpréter des descriptions textuelles complexes et générer des images correspondantes, ce qui ouvre de nouvelles possibilités en matière de création de contenu visuel. Par exemple, il peut créer des images de concepts ou d'objets inexistants basés uniquement sur des descriptions verbales, ce qui est extrêmement utile pour le prototypage, l'illustration de concepts et l'innovation créative. DALL-E a été salué pour sa capacité à comprendre et à visualiser des idées abstraites, rendant la technologie accessible et utile pour les designers, les artistes et les innovateurs.
 \end{itemize}
 
 \begin{figure}[hbt!]
 	\centering
-	\includegraphics[width=12cm]{images_pfe/sd_images.png}
+	\includegraphics[width=12cm]{images_pfe/dalle.png}
 	\caption{Exemple d’images générée par DALL-E2. [\cite{ramesh2022hierarchical}].}
-	\label{fig:unet}
+	\label{fig:Dalle}
 \end{figure}
 \FloatBarrier
 
@@ -1168,25 +1178,50 @@ Ces applications démontrent la polyvalence et l'efficacité des modèles de
 diffusion, faisant d'eux des outils indispensables dans l'arsenal de
 l'intelligence artificielle moderne.
 
-\subsection{Conclusion}
+Les modèles de diffusion se sont révélés être une avancée remarquable dans le
+domaine des modèles génératifs, en particulier pour leur capacité à produire
+des données synthétiques de haute qualité, Leur robustesse, couplée à une
+efficacité croissante, fait des modèles de diffusion un choix prometteur pour
+de nombreuses applications en intelligence artificielle. Leur potentiel
+continue de se déployer, suggérant une influence durable et croissante dans le
+paysage de l'apprentissage automatique.
 
-En conclusion, les modèles de diffusion représentent une avancée significative
-dans le domaine des modèles génératifs au sein de l'apprentissage automatique.
-En s'appuyant sur un processus en deux étapes, le Forward Process et le Reverse
-Process, ces modèles parviennent à transformer des données réelles en une
-distribution de bruit et à les reconvertir en données réalistes de haute
-qualité. L'utilisation d'un réseau de neurones pour le débruitage améliore
-encore l'efficacité et la précision du processus. Grâce à leur capacité à
-générer des données synthétiques fiables, les modèles de diffusion se
-positionnent comme une alternative prometteuse et robuste aux techniques
-traditionnelles telles que les Réseaux Antagonistes Génératifs et les
-Autoencodeurs Variationnels. Leur évolution continue et leur adoption
-croissante témoignent de leur potentiel immense et de leur pertinence dans
-divers domaines d'application de l'intelligence artificielle.
+\section{Conclusion}
+En conclusion, ce chapitre a présenté les modèles qui ont marqué un succès
+significatif dans le domaine de l'intelligence artificielle générative. Nous
+avons exploré trois des modèles les plus utilisés, à savoir les VAE
+(Variational Autoencoders), les GANs (Generative Adversarial Networks) et les
+modèles de diffusion. Chacun de ces modèles a été examiné en détail, tant en ce
+qui concerne leur fonctionnement interne que leurs applications dans divers
+domaines.
+
+Les VAE se distinguent par leur capacité à apprendre des représentations
+latentes continues, permettant une génération de données synthétiques avec une
+grande cohérence. Les GANs, quant à eux, se sont imposés comme des outils
+puissants pour générer des images réalistes, grâce à leur mécanisme
+d'apprentissage par confrontation entre un générateur et un discriminateur.
+Enfin, les modèles de diffusion, plus récents, offrent une approche unique pour
+générer des données de haute qualité en partant de bruit et en débruitant
+progressivement, rivalisant avec les techniques traditionnelles dans plusieurs
+applications.
+
+Ces trois modèles, bien que tous basés sur les réseaux de neurones et les
+principes de la probabilité, diffèrent radicalement dans leur approche et leur
+fonctionnement, ce qui leur confère des avantages spécifiques dans diverses
+applications. Par ailleurs, d'autres modèles génératifs, tels que les grands
+modèles de langage (Large Language Models) [\cite{attention_is_all_you_need}],
+ont également montré un potentiel considérable, notamment dans la génération de
+texte, et ils continuent d'évoluer rapidement.
+
+Le domaine de l'intelligence artificielle générative est extrêmement dynamique
+et en pleine expansion. Avec l'augmentation exponentielle des données
+disponibles et l'accès croissant à des ressources de calcul puissantes, il est
+certain que des innovations encore plus passionnantes émergeront dans un avenir
+proche. Ce champ de recherche reste donc ouvert et prometteur, avec de
+nombreuses opportunités pour de nouvelles découvertes et applications.
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Large Language Models%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
-
 
 \chapter{Maintenance prédictive des moteurs électriques}
 \section{Introduction}
@@ -1195,10 +1230,10 @@ La maintenance prédictive est devenue une approche incontournable pour la
 gestion efficace des équipements industriels, en particulier les moteurs
 électriques. Avec l'avènement de l'Industrie 4.0 et l'intégration croissante de
 l'Internet des Objets (IoT) et de l'intelligence artificielle (IA) dans les
-processus industriels, la maintenance prédictive permet d'anticiper les
-défaillances potentielles avant qu'elles ne se produisent, assurant ainsi une
-continuité opérationnelle optimale et une réduction significative des coûts de
-maintenance [\cite{Mrozek2023}].
+processus industriels[\cite{dalenogare2018industry4}], la maintenance
+prédictive permet d'anticiper les défaillances potentielles avant qu'elles ne
+se produisent, assurant ainsi une continuité opérationnelle optimale et une
+réduction significative des coûts de maintenance [\cite{Mrozek2023}].
 
 Les moteurs électriques, étant au cœur de nombreuses applications
 industrielles, représentent des composants critiques dont la fiabilité et
@@ -1279,11 +1314,18 @@ de vie des équipements. Dans l'industrie manufacturière, elle permet de
 maintenir la qualité des produits et d'optimiser les cycles de production en
 réduisant les temps d'arrêt imprévus.
 
+Ces trois types de maintenance, que sont la maintenance prédictive, corrective
+et préventive, ont chacun leurs avantages et inconvénients. Nous présentons les
+avantages et inconvénients de chaque technique dans le tableau
+\ref{tab:comparaison-maintenance}. De plus, nous présentons la figure
+\ref{fig:pred} pour illustrer l'ordre chronologique à suivre pour effectuer la
+maintenance.
+
 \begin{figure}[hbt!]
 	\centering
-	\includegraphics[width=12cm]{images_pfe/predictive.png}
+	\includegraphics[width=18cm]{images_pfe/predictive.png}
 	\caption{Stratégies de maintenance montrant les différentes étapes du processus de réparation avant et après la défaillance potentielle de l'équipement. [\cite{Mrozek2023}].}
-	\label{fig:transformer}
+	\label{fig:pred}
 \end{figure}
 \FloatBarrier
 
@@ -1308,8 +1350,8 @@ réduisant les temps d'arrêt imprévus.
 
 La maintenance prédictive des moteurs électriques est une approche proactive
 qui vise à anticiper les pannes et à optimiser la performance des équipements.
-Contrairement à la maintenance réactive, qui intervient après la survenue d'un
-problème, ou à la maintenance préventive, qui suit un calendrier fixe, la
+Contrairement à la maintenance corrective, qui intervient après la survenue
+d'un problème, ou à la maintenance préventive, qui suit un calendrier fixe, la
 maintenance prédictive s'appuie sur la surveillance continue de l'état des
 machines et l'analyse de données en temps réel.
 
@@ -1327,10 +1369,6 @@ maintenance et les interruptions de service. En anticipant les problèmes avant
 qu'ils ne deviennent critiques, les entreprises peuvent planifier les
 interventions de maintenance de manière plus efficace, minimisant ainsi les
 temps d'arrêt imprévus et les coûts associés.
-
-En somme, la maintenance prédictive représente une avancée significative dans
-la gestion des actifs industriels, offrant une approche plus intelligente et
-efficiente pour la maintenance des moteurs électriques.
 
 \subsection{Moteurs électriques}
 
@@ -1365,17 +1403,16 @@ applications industrielles et domestiques.
 \subsubsection{Moteurs Asynchrones}
 
 Il existe deux types de moteurs asynchrones : monophasés et triphasés. Dans
-cette section, nous aborderons spécifiquement les moteurs triphas, Dans la
-figure (3.2), les principaux composants d'un moteur asynchrone triphasé,
-également appelé machine à induction, sont présentés. Voici une description de
-chaque composant :
+cette section, nous aborderons spécifiquement les moteurs triphas, la figure
+\ref{fig:moteur-asynchrone} illustre les principaux composants d'un moteur
+asynchrone triphasé, également appelé machine à induction:
 
 \begin{figure}[hbt!]
 	\centering
 	\includegraphics[width=12cm]{images_pfe/motor.jpg}
 	\caption{
 		Principaux Composants d'un moteur asynchrone triphasé (Machine à Induction).}
-	\label{fig:moteu-asynchrone}
+	\label{fig:moteur-asynchrone}
 \end{figure}
 \FloatBarrier
 
@@ -1391,12 +1428,12 @@ chaque composant :
 
 \subsubsection{Défauts des Moteurs Asynchrones}
 
-Les moteurs asynchrones, également appelés machines à induction, peuvent
-présenter divers défauts mécaniques et électriques. Ces défauts peuvent
-affecter les performances et la durée de vie du moteur. Voici une description
-des principaux défauts mécaniques et électriques :
+Les moteurs asynchrones peuvent présenter divers défauts mécaniques et
+électriques. Ces défauts peuvent affecter les performances et la durée de vie
+du moteur. Dans les paragraphes qui suivent, nous allons examiner en détail ces
+défauts.
 
-\paragraph{Défauts Mécaniques}
+\paragraph{Défauts Mécaniques} : Deux défauts mécaniques se manifestent fréquemment dans les moteurs asynchrones :
 
 \subparagraph{Défaut d'excentricité de l'entrefer}:
 L'excentricité de l'entrefer se produit lorsque l'espace entre le stator et le
@@ -1405,7 +1442,7 @@ inégale des roulements ou des défauts de fabrication. Ce défaut peut entraîn
 des vibrations excessives, des bruits anormaux et une usure prématurée des
 composants du moteur.
 
-\subparagraph{Analyse des dommages aux roulements}:
+\subparagraph{Dommages aux roulements}:
 Les roulements sont essentiels pour le bon fonctionnement du rotor. Les
 dommages aux roulements peuvent être causés par une lubrification insuffisante,
 des contaminants, une surcharge ou une mauvaise installation. Les symptômes de
@@ -1413,7 +1450,7 @@ dommages aux roulements incluent des vibrations élevées, des bruits de
 grincement ou de cliquetis, et une augmentation de la température de
 fonctionnement.
 
-\paragraph{Défauts Électriques}
+\paragraph{Défauts Électriques} : Les moteurs asynchrones présentent souvent deux types de défauts électriques:
 
 \subparagraph{Court-circuit entre spires}:
 Un court-circuit entre spires se produit lorsque l'isolation entre les
@@ -1452,10 +1489,10 @@ signaler un court-circuit entre spires.
 \subsection*{Signaux Triphasés dans les Moteurs Électriques}
 
 Les moteurs électriques triphasés utilisent des signaux électriques triphasés
-pour fonctionner efficacement. Ces signaux, qui consistent en trois courants
-alternatifs déphasés de 120 degrés chacun, sont essentiels pour la création
-d'un champ magnétique rotatif dans le stator, qui à son tour entraîne la
-rotation du rotor.
+[Figure \ref{fig:moteur-asynchrone-tri}] pour fonctionner efficacement. Ces
+signaux, qui consistent en trois courants alternatifs déphasés de 120 degrés
+chacun, sont essentiels pour la création d'un champ magnétique rotatif dans le
+stator, qui à son tour entraîne la rotation du rotor.
 
 \subsubsection*{Signaux d'entrée}
 
@@ -1480,8 +1517,8 @@ fréquence.
 	\centering
 	\includegraphics[width=12cm]{images_pfe/triphase.png}
 	\caption{
-		Principaux Composants d'un moteur asynchrone triphasé (Machine à Induction).}
-	\label{fig:moteur-asynchrone}
+		Signaux électriques triphasés.}
+	\label{fig:moteur-asynchrone-tri}
 \end{figure}
 \FloatBarrier
 
@@ -1516,7 +1553,8 @@ plusieurs avantages :
 \begin{itemize}
 	\item \textbf{Détection précoce des défauts} : Identification des problèmes avant qu'ils ne deviennent critiques.
 	\item \textbf{Maintenance proactive} : Planification des interventions de maintenance basées sur l'état réel du moteur.
-	\item \textbf{Réduction des coûts} : Minimisation des temps d'arrêt imprévus et des réparations coûteuses.
+	\item \textbf{Réduction des coûts} : Minimisation des temps d'arrêt imprévus et des réparations coûteuses,
+	      elle ne nécessite pas de capteurs externes comme ceux de température et de vibration.
 	\item \textbf{Amélioration de la fiabilité} : Augmentation de la durée de vie des moteurs et amélioration de leur performance globale.
 \end{itemize}
 
@@ -1534,7 +1572,7 @@ représentent des mesures prises à intervalles de temps réguliers. Par exemple
 les relevés de température quotidienne constituent une série temporelle qui
 peut être analysée comme un signal pour identifier les schémas, les tendances
 et les anomalies [\cite{brophy2023gan}] . Il existe deux types de séries
-temporelles : discrètes et continues.
+temporelles : discrètes et continues [Figure \ref{fig:time-series}].
 
 Les séries temporelles discrètes, caractérisées par des points de données
 espacés à des intervalles réguliers, sont couramment utilisées dans de
@@ -1566,9 +1604,8 @@ multivariée[\cite{fawaz2019deep}].
 
 \textbf{Définition 1: Série temporelle univariée}
 
-Une série temporelle univariée $X = [x_1, x_2, \ldots, x_T]$ est un ensemble
-ordonné de valeurs réelles. La longueur de $X$ est égale au nombre de valeurs
-réelles $T$.
+Une série temporelle univariée $X$ est un ensemble ordonné de valeurs réelles.
+La longueur de $X$ est égale au nombre de valeurs réelles $T$:
 
 \begin{equation}
 	X = [x_1, x_2, \ldots, x_T]
@@ -1582,9 +1619,9 @@ heures pendant une journée pourrait être représentée par : $X = [15.5, 16.0,
 
 \textbf{Définition 2: Série temporelle multivariée}
 
-Une série temporelle multivariée de dimension $M$, notée $X = [X_1, X_2,
-	\ldots, X_M]$, se compose de $M$ séries temporelles univariées différentes,
-chaque $X_i$ étant un vecteur de $\mathbb{R}^T$.
+Une série temporelle multivariée de dimension $M$, notée $X$, se compose de $M$
+séries temporelles univariées différentes, chaque $X_i$ étant un vecteur de
+$\mathbb{R}^T$:
 
 \begin{equation}
 	X = [X_1, X_2, \ldots, X_M]
@@ -1603,7 +1640,7 @@ température et $X_2$ représente l'humidité, chacun avec $T = 24$.
 La maintenance prédictive des moteurs électriques représente une avancée
 significative dans la gestion des actifs industriels, offrant une approche
 proactive qui vise à anticiper les pannes et à optimiser la performance des
-équipements. Contrairement à la maintenance réactive, qui intervient après la
+équipements. Contrairement à la maintenance corrective, qui intervient après la
 survenue d’un problème, et à la maintenance préventive, qui suit un calendrier
 fixe, la maintenance prédictive repose sur la surveillance continue de l’état
 des machines et l’analyse de données en temps réel.
@@ -1616,11 +1653,11 @@ défaillances potentielles. L’objectif principal de cette approche est
 d’améliorer la fiabilité et la durée de vie des moteurs électriques tout en
 réduisant les coûts de maintenance et les interruptions de service.
 
-En s’appuyant sur des techniques comme la Motor Current Signature Analysis
-(MCSA), la maintenance prédictive permet une détection précoce des défauts, une
-planification proactive des interventions de maintenance, et une optimisation
-des coûts. Cela se traduit par une minimisation des temps d’arrêt imprévus et
-une amélioration globale de la performance des moteurs.
+En intégrant des techniques comme la Motor Current Signature Analysis (MCSA) à
+la maintenance prédictive, nous pouvons détecter précocement les défauts en
+nous basant sur les courants électriques sortant du moteur. Cette combinaison
+simplifie la maintenance, optimise les coûts, et élimine le besoin de capteurs
+externes.
 
 Enfin, l'analyse des séries temporelles, qu'elles soient discrètes ou
 continues, joue un rôle crucial dans ce processus en fournissant des données
@@ -1629,6 +1666,3 @@ anomalies. La distinction entre séries temporelles univariées et multivariées
 enrichit encore cette approche, permettant une analyse plus complète et
 intégrée des différentes variables opérationnelles.
 
-Ainsi, la maintenance prédictive se positionne comme une composante essentielle
-de la gestion moderne des moteurs électriques, offrant des avantages
-significatifs en termes de fiabilité, de coût et de performance.

@@ -370,6 +370,62 @@
       \verb https://arxiv.org/abs/2006.05301
       \endverb
     \endentry
+    \entry{dalenogare2018industry4}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=423a503e0585b505d52d415b06746498}{%
+           family={Dalenogare},
+           familyi={D\bibinitperiod},
+           given={Lucas\bibnamedelima Santos},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f0578c6e4d81d209ab3ef63eb4d2b9f9}{%
+           family={Benitez},
+           familyi={B\bibinitperiod},
+           given={Guilherme\bibnamedelima Brittes},
+           giveni={G\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c6041e81cc2a98944c2f81bd4a09c2af}{%
+           family={Ayala},
+           familyi={A\bibinitperiod},
+           given={Néstor\bibnamedelima Fabián},
+           giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0218393ea85670dbe36c737d56c6df82}{%
+           family={Frank},
+           familyi={F\bibinitperiod},
+           given={Alejandro\bibnamedelima Germán},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Emerald Publishing Limited}%
+      }
+      \strng{namehash}{e83d607e13ef9573e6253e9da7830d9e}
+      \strng{fullhash}{b6e73822f9343da55f53491fafa5b863}
+      \strng{fullhashraw}{b6e73822f9343da55f53491fafa5b863}
+      \strng{bibnamehash}{e83d607e13ef9573e6253e9da7830d9e}
+      \strng{authorbibnamehash}{e83d607e13ef9573e6253e9da7830d9e}
+      \strng{authornamehash}{e83d607e13ef9573e6253e9da7830d9e}
+      \strng{authorfullhash}{b6e73822f9343da55f53491fafa5b863}
+      \strng{authorfullhashraw}{b6e73822f9343da55f53491fafa5b863}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Manufacturing Technology Management}
+      \field{note}{Organizational Engineering Group (Núcleo de Engenharia Organizacional – NEO), Department of Industrial Engineering, Universidade Federal do Rio Grande do Sul, Brazil, G-SCOP Laboratory, Grenoble Institute of Technology (INPG), France}
+      \field{number}{3}
+      \field{title}{The expected contribution of Industry 4.0 technologies for industrial performance}
+      \field{volume}{29}
+      \field{year}{2018}
+      \field{pages}{501\bibrangedash 522}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1108/JMTM-03-2017-0051
+      \endverb
+    \endentry
     \entry{dhariwal2021diffusion}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=4164e43d8cf919f5e3f8d80f5ea23f36}{%
@@ -1236,6 +1292,95 @@
       \verb 10.1016/b978-0-12-820601-0.00011-2
       \endverb
     \endentry
+    \entry{ledig2017photo}{inproceedings}{}{}
+      \name{author}{11}{}{%
+        {{un=0,uniquepart=base,hash=dee0b959a6d8e56154a0c6381ea357af}{%
+           family={Ledig},
+           familyi={L\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5314c7da92c0dd8f017ad76fc7a24e02}{%
+           family={Theis},
+           familyi={T\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06edff712db50810cceb7f6ad2d53ecf}{%
+           family={Huszár},
+           familyi={H\bibinitperiod},
+           given={Ferenc},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3b9836d6278f3cf5dc21ab6e8c010ecb}{%
+           family={Caballero},
+           familyi={C\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c1b16923730dc02c52fbcfe531bad999}{%
+           family={Cunningham},
+           familyi={C\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=054b92db4c82434176e894d7fa6055ce}{%
+           family={Acosta},
+           familyi={A\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b9d6efcdb8c05d59bf4b6c18cba1518c}{%
+           family={Aitken},
+           familyi={A\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3feeeebee8583ecc208f7fb3e0a55068}{%
+           family={Tejani},
+           familyi={T\bibinitperiod},
+           given={Alykhan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1381c64db5234527e34e6f3b4977fe54}{%
+           family={Totz},
+           familyi={T\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9c196f615b0bde00b8ef1e7cfaa8055}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zehan},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=59260dd2ba392e626647c9ee8f8c6b35}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Wenzhe},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{fullhash}{6dcffb6520c8662b4191af5821817aa5}
+      \strng{fullhashraw}{6dcffb6520c8662b4191af5821817aa5}
+      \strng{bibnamehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{authorbibnamehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{authornamehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{authorfullhash}{6dcffb6520c8662b4191af5821817aa5}
+      \strng{authorfullhashraw}{6dcffb6520c8662b4191af5821817aa5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition (CVPR)}
+      \field{title}{Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network}
+      \field{year}{2017}
+      \field{pages}{4681\bibrangedash 4690}
+      \range{pages}{10}
+    \endentry
     \entry{luhman2024highfidelity}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=01718a4c6e83e4173f93fe766f492c8f}{%
@@ -1592,6 +1737,107 @@
       \verb https://arxiv.org/abs/2204.06125
       \endverb
     \endentry
+    \entry{rombach2022high}{misc}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=0921e3810ca1ba112b5f374d82f0735f}{%
+           family={Rombach},
+           familyi={R\bibinitperiod},
+           given={Robin},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43a95cf5d0fe271fe6d6d0e5803cbfc9}{%
+           family={Blattmann},
+           familyi={B\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=809ae73566d8d76e9931ffde3969f1dc}{%
+           family={Lorenz},
+           familyi={L\bibinitperiod},
+           given={Dominik},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e61c1cb5e29d764299a12d1ab334cdc2}{%
+           family={Esser},
+           familyi={E\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5a040243464f368c0ac690deabc8731}{%
+           family={Ommer},
+           familyi={O\bibinitperiod},
+           given={Bjorn},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b5bfcd95459df0d66c58a299cbec3e9a}
+      \strng{fullhash}{31a3b0d904c7d14f5af157452068b121}
+      \strng{fullhashraw}{31a3b0d904c7d14f5af157452068b121}
+      \strng{bibnamehash}{b5bfcd95459df0d66c58a299cbec3e9a}
+      \strng{authorbibnamehash}{b5bfcd95459df0d66c58a299cbec3e9a}
+      \strng{authornamehash}{b5bfcd95459df0d66c58a299cbec3e9a}
+      \strng{authorfullhash}{31a3b0d904c7d14f5af157452068b121}
+      \strng{authorfullhashraw}{31a3b0d904c7d14f5af157452068b121}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{note}{Stable Diffusion}
+      \field{title}{High-Resolution Image Synthesis with Latent Diffusion Models}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb 2112.10752
+      \endverb
+      \verb{urlraw}
+      \verb https://github.com/CompVis/stable-diffusion
+      \endverb
+      \verb{url}
+      \verb https://github.com/CompVis/stable-diffusion
+      \endverb
+    \endentry
+    \entry{de2021survey}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5acd8d193d24d58196352605b6915329}{%
+           family={Rosa},
+           familyi={R\bibinitperiod},
+           given={Gustavo\bibnamedelima H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=3fc34ba27bcdf9f7068c78695e4935be}{%
+           family={Papa},
+           familyi={P\bibinitperiod},
+           given={João\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {São Paulo State University, Department of Computing, Bauru, Brazil}%
+      }
+      \strng{namehash}{13f491c4fdc35da1520574ea783c59ea}
+      \strng{fullhash}{956ffa98f641c0495be46ecc38246d9e}
+      \strng{fullhashraw}{956ffa98f641c0495be46ecc38246d9e}
+      \strng{bibnamehash}{956ffa98f641c0495be46ecc38246d9e}
+      \strng{authorbibnamehash}{956ffa98f641c0495be46ecc38246d9e}
+      \strng{authornamehash}{13f491c4fdc35da1520574ea783c59ea}
+      \strng{authorfullhash}{956ffa98f641c0495be46ecc38246d9e}
+      \strng{authorfullhashraw}{956ffa98f641c0495be46ecc38246d9e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2107.05324}
+      \field{title}{A Survey on Text Generation using Generative Adversarial Networks}
+      \field{year}{2021}
+    \endentry
     \entry{rosenblatt_1958_perceptron}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=1750cd87a34d44119e7a4aab9b8012c6}{%
@@ -1708,6 +1954,126 @@
       \field{year}{2019}
       \verb{doi}
       \verb 10.1007/978-981-13-3705-5_25
+      \endverb
+    \endentry
+    \entry{attention_is_all_you_need}{inproceedings}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=7f28e84700536646dd6620a0db07ad09}{%
+           family={Vaswani},
+           familyi={V\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62efade83d70f0323fe248755e6c90c5}{%
+           family={Shazeer},
+           familyi={S\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06649ebab1ea5cac0250746a19764975}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={Niki},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=831027ee0ebf22375e2a86afc1881909}{%
+           family={Uszkoreit},
+           familyi={U\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fd2982e30ebcec93ec1cf76e0d797fd}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Llion},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27b07e4eacbf4ef7a1438e3badb7dd8d}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Aidan\bibnamedelima N},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=540fcd72e1fa4bbed46604f4e6cff817}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={Łukasz},
+           giveni={Ł\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95595a0fefb86187cbc36e551017d332}{%
+           family={Polosukhin},
+           familyi={P\bibinitperiod},
+           given={Illia},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{7}{}{%
+        {{hash=e7e74de725116358b68a6e890c026145}{%
+           family={Guyon},
+           familyi={G\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=3b118a9660c18913c6d05d3bcfae41a3}{%
+           family={Luxburg},
+           familyi={L\bibinitperiod},
+           given={U.\bibnamedelimi Von},
+           giveni={U\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=9b411b6c9cefdde16ffea77ecf612142}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1444141e07dd9549dbb4b8530fe4ec15}{%
+           family={Wallach},
+           familyi={W\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f3857e15544199442f3d4fb2cf6645b4}{%
+           family={Fergus},
+           familyi={F\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c73f06e2fc98c9b0bf52eb5fdce61943}{%
+           family={Vishwanathan},
+           familyi={V\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=36b98b7ab533936cf1b5716148de704f}{%
+           family={Garnett},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{fullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{fullhashraw}{cb26e47f6b8133865271fc8483132297}
+      \strng{bibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorbibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{authorfullhashraw}{cb26e47f6b8133865271fc8483132297}
+      \strng{editorbibnamehash}{7cffda9a379be8eb9063eee4eb0f58b3}
+      \strng{editornamehash}{7cffda9a379be8eb9063eee4eb0f58b3}
+      \strng{editorfullhash}{1564f811a39f09a7400a11284c987926}
+      \strng{editorfullhashraw}{1564f811a39f09a7400a11284c987926}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Attention is All you Need}
+      \field{volume}{30}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
+      \endverb
+      \verb{url}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
       \endverb
     \endentry
     \entry{thispersondoesnotexist}{misc}{}{}
@@ -2247,6 +2613,7 @@
       \field{year}{2019}
     \endentry
   \enddatalist
+  \missing{fig:Dalle}
 \endrefsection
 \endinput
 
