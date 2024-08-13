@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.7.26)  11 AUG 2024 16:31
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.7.26)  13 AUG 2024 01:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1173,6 +1173,12 @@ LaTeX Warning: Label `fig:timegan' multiply defined.
 
 LaTeX Warning: Label `fig:drive' multiply defined.
 
+
+LaTeX Warning: Label `fig:real_1000' multiply defined.
+
+
+LaTeX Warning: Label `fig:fake_1000' multiply defined.
+
 ) (11-Conclusion.aux))
 \openout1 = `main.aux'.
 
@@ -1603,6 +1609,24 @@ LaTeX Info: Redefining \ttfamily on input line 77.
 LaTeX Info: Redefining \rmfamily on input line 79.
 LaTeX Info: Redefining \sffamily on input line 79.
 LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 81.
+LaTeX Info: Redefining \sffamily on input line 81.
+LaTeX Info: Redefining \ttfamily on input line 81.
+LaTeX Info: Redefining \rmfamily on input line 82.
+LaTeX Info: Redefining \sffamily on input line 82.
+LaTeX Info: Redefining \ttfamily on input line 82.
+LaTeX Info: Redefining \rmfamily on input line 84.
+LaTeX Info: Redefining \sffamily on input line 84.
+LaTeX Info: Redefining \ttfamily on input line 84.
+LaTeX Info: Redefining \rmfamily on input line 86.
+LaTeX Info: Redefining \sffamily on input line 86.
+LaTeX Info: Redefining \ttfamily on input line 86.
+LaTeX Info: Redefining \rmfamily on input line 87.
+LaTeX Info: Redefining \sffamily on input line 87.
+LaTeX Info: Redefining \ttfamily on input line 87.
+LaTeX Info: Redefining \rmfamily on input line 89.
+LaTeX Info: Redefining \sffamily on input line 89.
+LaTeX Info: Redefining \ttfamily on input line 89.
 )
 \tf@lof=\write7
 \openout7 = `main.lof'.
@@ -1730,6 +1754,24 @@ LaTeX Info: Redefining \ttfamily on input line 44.
 LaTeX Info: Redefining \rmfamily on input line 45.
 LaTeX Info: Redefining \sffamily on input line 45.
 LaTeX Info: Redefining \ttfamily on input line 45.
+LaTeX Info: Redefining \rmfamily on input line 46.
+LaTeX Info: Redefining \sffamily on input line 46.
+LaTeX Info: Redefining \ttfamily on input line 46.
+LaTeX Info: Redefining \rmfamily on input line 48.
+LaTeX Info: Redefining \sffamily on input line 48.
+LaTeX Info: Redefining \ttfamily on input line 48.
+LaTeX Info: Redefining \rmfamily on input line 49.
+LaTeX Info: Redefining \sffamily on input line 49.
+LaTeX Info: Redefining \ttfamily on input line 49.
+LaTeX Info: Redefining \rmfamily on input line 50.
+LaTeX Info: Redefining \sffamily on input line 50.
+LaTeX Info: Redefining \ttfamily on input line 50.
+LaTeX Info: Redefining \rmfamily on input line 52.
+LaTeX Info: Redefining \sffamily on input line 52.
+LaTeX Info: Redefining \ttfamily on input line 52.
+LaTeX Info: Redefining \rmfamily on input line 53.
+LaTeX Info: Redefining \sffamily on input line 53.
+LaTeX Info: Redefining \ttfamily on input line 53.
 )
 \tf@lot=\write8
 \openout8 = `main.lot'.
@@ -3425,30 +3467,57 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
 Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
+Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
 
 
-LaTeX Info: Redefining \rmfamily on input line 246.
-LaTeX Info: Redefining \sffamily on input line 246.
-LaTeX Info: Redefining \ttfamily on input line 246.
-LaTeX Info: Redefining \rmfamily on input line 246.
-LaTeX Info: Redefining \sffamily on input line 246.
-LaTeX Info: Redefining \ttfamily on input line 246.
+LaTeX Info: Redefining \rmfamily on input line 269.
+LaTeX Info: Redefining \sffamily on input line 269.
+LaTeX Info: Redefining \ttfamily on input line 269.
+LaTeX Info: Redefining \rmfamily on input line 269.
+LaTeX Info: Redefining \sffamily on input line 269.
+LaTeX Info: Redefining \ttfamily on input line 269.
 [65]
+File: images_pfe/real_1000.jpg Graphic file (type bmp)
+<images_pfe/real_1000.jpg>
+File: images_pfe/fake_1000.jpg Graphic file (type bmp)
+<images_pfe/fake_1000.jpg>
+
+
+LaTeX Info: Redefining \rmfamily on input line 310.
+LaTeX Info: Redefining \sffamily on input line 310.
+LaTeX Info: Redefining \ttfamily on input line 310.
+LaTeX Info: Redefining \rmfamily on input line 310.
+LaTeX Info: Redefining \sffamily on input line 310.
+LaTeX Info: Redefining \ttfamily on input line 310.
+[66]
+File: images_pfe/real_2000.png Graphic file (type bmp)
+<images_pfe/real_2000.png>
+File: images_pfe/fake_2000.png Graphic file (type bmp)
+<images_pfe/fake_2000.png>
+
+
+LaTeX Info: Redefining \rmfamily on input line 345.
+LaTeX Info: Redefining \sffamily on input line 345.
+LaTeX Info: Redefining \ttfamily on input line 345.
+LaTeX Info: Redefining \rmfamily on input line 345.
+LaTeX Info: Redefining \sffamily on input line 345.
+LaTeX Info: Redefining \ttfamily on input line 345.
+[67]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beginL' on input line 247.
+(hyperref)                removing `\beginL' on input line 352.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 247.
+(hyperref)                removing `\<def>-command' on input line 352.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\encodingdefault' on input line 247.
+(hyperref)                removing `\encodingdefault' on input line 352.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endL' on input line 247.
+(hyperref)                removing `\endL' on input line 352.
 
 )
 
@@ -3458,7 +3527,7 @@ LaTeX Info: Redefining \ttfamily on input line 288.
 LaTeX Info: Redefining \rmfamily on input line 288.
 LaTeX Info: Redefining \sffamily on input line 288.
 LaTeX Info: Redefining \ttfamily on input line 288.
-[66]
+[68]
 \openout2 = `11-Conclusion.aux'.
 
  (11-Conclusion.tex
@@ -3513,7 +3582,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 )
 
-[67
+[69
 
 
 
@@ -3544,7 +3613,7 @@ Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-t
 Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
 
 
-[68
+[70
 
 
 
@@ -3592,7 +3661,7 @@ LaTeX Info: Redefining \ttfamily on input line 296.
 LaTeX Info: Redefining \rmfamily on input line 296.
 LaTeX Info: Redefining \sffamily on input line 296.
 LaTeX Info: Redefining \ttfamily on input line 296.
-[69]
+[71]
 Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
 Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
 Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
@@ -3613,11 +3682,11 @@ LaTeX Info: Redefining \ttfamily on input line 298.
 LaTeX Info: Redefining \rmfamily on input line 298.
 LaTeX Info: Redefining \sffamily on input line 298.
 LaTeX Info: Redefining \ttfamily on input line 298.
-[70]
+[72]
 Missing character: There is no ​ in font [lmromancaps10-regular]:mapping=tex-text;!
 
 
-[71
+[73
 
 ] (main.aux (01-Dedicace.aux) (02-Remerciements.aux) (03-Resume.aux) (04-Acronymes.aux) (05-Introduction.aux) (06-Art.aux) (09-Conception.aux) (10-Realisation.aux) (11-Conclusion.aux))
  ***********
@@ -3635,18 +3704,18 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5AD66370977299386D1ABC6D13414AE7;9238.
+(rerunfilecheck)             Checksum: 7AC92C07878EF360AF1414A16D1CA38B;9238.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31054 strings out of 409034
- 595298 string characters out of 5756841
+ 31093 strings out of 409034
+ 596352 string characters out of 5756841
  1941560 words of memory out of 5000000
- 53210 multiletter control sequences out of 15000+600000
+ 53245 multiletter control sequences out of 15000+600000
  574851 words of font info for 108 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,17n,107p,1502b,5876s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (84 pages).
+Output written on main.pdf (86 pages).

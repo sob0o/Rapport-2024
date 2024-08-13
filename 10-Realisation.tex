@@ -222,26 +222,153 @@ d'obtenir des résultats précis dans des délais raisonnables.
 
 \subsection{Méthodes D'évaluation}
 
-
-Pour évaluer la qualité des données générées par notre modèle, nous utilisons plusieurs métriques qui garantissent les aspects clés suivants :
+Pour évaluer la qualité des données générées par notre modèle, nous employons
+les métriques proposées dans [\cite{yoon2019time}], qui assurent les aspects
+clés suivants :
 \begin{enumerate}
-    \item \textbf{Diversité}:les échantillons générés doivent couvrir de manière adéquate la distribution des données réelles ;
-    \item \textbf{Fidélité}:les échantillons générés doivent être indiscernables des données réelles ;
-    \item \textbf{Utilité}:les échantillons générés doivent être tout aussi efficaces que les données réelles pour les tâches prédictives, comme l'entraînement sur des données synthétiques et le test sur des données réelles.
+  \item \textbf{Diversité}:les échantillons générés doivent couvrir de manière adéquate la distribution des données réelles ;
+  \item \textbf{Fidélité}:les échantillons générés doivent être indistinguables des données réelles ;
+  \item \textbf{Utilité}:les échantillons générés doivent être tout aussi utiles que les données réelles pour les tâches prédictives.
 \end{enumerate}
 
-Pour assurer ces trois qualités : \textbf{diversité}, \textbf{fidélité}, et \textbf{utilité}, nous utilisons les techniques suivantes :
+Pour assurer ces trois qualités : \textbf{diversité}, \textbf{fidélité}, et
+\textbf{utilité}, nous utilisons les métriques suivantes:
 
 \textbf{1. Visualisation}
 
-Nous appliquons les analyses t-SNE [\cite{van2008visualizing}] et PCA [\cite{wold1987principal}] sur les ensembles de données originaux et synthétiques (en aplatissant la dimension temporelle). Cela permet de visualiser dans un espace à 2 dimensions dans quelle mesure la distribution des échantillons générés ressemble à celle de l'original, donnant ainsi une évaluation qualitative de la diversité.
+Nous appliquons les analyses t-SNE [\cite{van2008visualizing}] et PCA
+  [\cite{wold1987principal}] sur les ensembles de données originaux et
+synthétiques (en comprimant la dimension temporelle). Cela permet de visualiser
+dans un espace à 2 dimensions dans quelle mesure la distribution des
+échantillons générés ressemble à celle de l'original, donnant ainsi une
+évaluation qualitative de la diversité.
 
 \textbf{2. Score Discriminant}
 
-Pour une mesure quantitative de la similarité, nous entraînons un modèle de classification de séries temporelles post-hoc (en optimisant un LSTM à 2 couches) pour distinguer les séquences provenant des ensembles de données originaux et générés. Tout d'abord, chaque séquence originale est étiquetée \textit{réelle}, et chaque séquence générée est étiquetée \textit{non réelle}. Ensuite, un classificateur RNN standard est entraîné pour distinguer les deux classes dans le cadre d'une tâche supervisée standard. Nous rapportons ensuite l'erreur de classification sur l'ensemble de test réservé, ce qui donne une évaluation quantitative de la fidélité.
+Pour une mesure quantitative de la similarité, nous entraînons un modèle de
+classification de séries temporelles (en optimisant un LSTM à 2 couches) pour
+distinguer les séquences provenant des ensembles de données originaux et
+générés. Tout d'abord, chaque séquence originale est étiquetée \textit{réelle},
+et chaque séquence générée est étiquetée \textit{non réelle}. Ensuite, un
+classificateur RNN standard est entraîné pour distinguer les deux classes dans
+le cadre d'une tâche supervisée standard. Nous rapportons ensuite l'erreur de
+classification sur l'ensemble de test réservé ( données synthétiques ), ce qui
+donne une évaluation quantitative de la fidélité.
 
 \textbf{3. Score Prédictif}
 
-Pour être utile, les données échantillonnées doivent hériter des caractéristiques prédictives de l'original. En particulier, nous nous attendons à ce que TimeGAN excelle dans la capture des distributions conditionnelles au fil du temps. Par conséquent, en utilisant l'ensemble de données synthétiques, nous entraînons un modèle de prédiction de séquences post-hoc (en optimisant un LSTM à 2 couches) pour prédire les vecteurs temporels du prochain pas sur chaque séquence d'entrée. Ensuite, nous évaluons le modèle entraîné sur l'ensemble de données original. La performance est mesurée en termes d'erreur absolue moyenne (MAE) ; pour les données basées sur des événements, le MAE est calculé comme $|1 - \text{probabilité estimée que l'événement se soit produit}|$. Cela donne une évaluation quantitative de l'utilité.
+Pour être utile, les données échantillonnées doivent hériter des
+caractéristiques prédictives de l'original. En particulier, nous nous attendons
+à ce que notre méthode excelle dans la capture des distributions
+conditionnelles au fil du temps. Par conséquent, en utilisant l'ensemble de
+données synthétiques, nous entraînons un modèle de prédiction de séries
+temporelles (en optimisant un LSTM à 2 couches) pour prédire les vecteurs
+temporels du prochain pas sur chaque séquence d'entrée. Ensuite, nous évaluons
+le modèle entraîné sur l'ensemble de données original. La performance est
+mesurée en termes d'erreur absolue moyenne (MAE).
+
+\subsection{Tests et résultats}
+Cette section finale propose une analyse approfondie des résultats obtenus
+après avoir testé notre méthode de génération de données de séries temporelles
+pour les moteurs asynchrones. Les résultats sont évalués en fonction de
+différents paramètres de notre modèle ainsi que de l'organisation de notre jeu
+de données. Nous concluons par une synthèse des tests effectués, en mettant en
+évidence les améliorations potentielles et les ajustements nécessaires pour
+optimiser notre approche.
+
+Nous configurons notre modèle et notre jeu de données selon les paramètres
+présentés dans le tableau ci-dessous :
+
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Paramètre}                             & \textbf{Valeur} \\ \hline
+    Longueur de séquence                           & 1000            \\ \hline
+    Normalisation                                  & Min-Max         \\ \hline
+    Taille de l'espace latent pour le modèle       & 32              \\ \hline
+    Nombre de couches pour les réseaux de neurones & 4               \\ \hline
+  \end{tabular}
+  \caption{Configuration du modèle et du jeu de données}
+\end{table}
+
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[width=14cm]{images_pfe/real_1000.jpg}
+  \caption{Seq.}
+  \label{fig:real_1000}
+\end{figure}
+\FloatBarrier
+\medskip
+
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[width=14cm]{images_pfe/fake_1000.jpg}
+  \caption{Seq.}
+  \label{fig:fake_1000}
+\end{figure}
+\FloatBarrier
+\medskip
+
+\textbf{Score Discriminant} (Lower the better): 0.1568
+
+\textbf{Score Prédictif}  (Lower the better) : 0.5138
+
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Paramètre}                             & \textbf{Valeur} \\ \hline
+    Longueur de séquence                           & 2000            \\ \hline
+    Normalisation                                  & Min-Max         \\ \hline
+    Taille de l'espace latent pour le modèle       & 32              \\ \hline
+    Nombre de couches pour les réseaux de neurones & 4               \\ \hline
+  \end{tabular}
+  \caption{Configuration du modèle et du jeu de données}
+\end{table}
+
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[width=14cm]{images_pfe/real_2000.png}
+  \caption{Seq.}
+  \label{fig:real_1000}
+\end{figure}
+\FloatBarrier
+\medskip
+
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[width=14cm]{images_pfe/fake_2000.png}
+  \caption{Seq.}
+  \label{fig:fake_1000}
+\end{figure}
+\FloatBarrier
+\medskip
+
+\textbf{Score Discriminant} (Lower the better): 0.4
+
+\textbf{Score Prédictif}  (Lower the better) : 0.3465
 
 \section{Conclusion}
+En conclusion de ce chapitre dédié aux tests et aux résultats, nous avons
+présenté en détail la réalisation technique de notre solution. Cette section a
+permis de mettre en lumière les outils et technologies essentiels à la mise en
+œuvre de notre solution pour la génération de données de séries temporelles
+pour les moteurs électriques.
+
+Les expérimentations menées ont montré l'importance de la segmentation dans la
+génération des séries temporelles. En particulier, nous avons observé que la
+longueur de segmentation joue un rôle crucial : lorsque les segments sont plus
+courts, la génération des séries temporelles avec cette longueur produit des
+séries de meilleure qualité.
+
+De plus, nous avons utilisé plusieurs métriques, telles que le score
+discriminatif et le score prédictif, pour évaluer la qualité des données
+générées. Ces évaluations ont confirmé la pertinence des données synthétiques
+pour les tâches prédictives.
+
+En conclusion, ce chapitre a fourni une vue d'ensemble complète de la
+réalisation technique de notre projet et des résultats obtenus. Les
+informations présentées ici serviront de base pour les discussions et analyses
+futures, et ouvriront la voie à des améliorations et extensions potentielles de
+notre solution.

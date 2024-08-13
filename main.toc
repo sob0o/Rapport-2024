@@ -207,8 +207,6 @@
 \select@language {french}
 \contentsline {subsubsection}{\bgroup \beginL \latintext Architecure de TimeGAN\endL \egroup }{58}{section*.75}%
 \select@language {french}
-\contentsline {subsection}{\numberline {\if@rl \I {2.5.5}\else \textLR {5.5.2}\fi }\bgroup \beginL \latintext AutoDiff\endL \egroup }{59}{subsection.5.5.2}%
-\select@language {french}
 \contentsline {section}{\numberline {\if@rl \I {6.5}\else \textLR {5.6}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{59}{section.5.6}%
 \select@language {french}
 \contentsline {chapter}{\numberline {6}\bgroup \beginL \latintext Réalisation et tests\endL \egroup }{60}{chapter.6}%
@@ -245,13 +243,15 @@
 \select@language {french}
 \contentsline {subsection}{\numberline {\if@rl \I {1.6.6}\else \textLR {6.6.1}\fi }\bgroup \beginL \latintext Méthodes D'évaluation\endL \egroup }{65}{subsection.6.6.1}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {7.6}\else \textLR {6.7}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{66}{section.6.7}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.6.6}\else \textLR {6.6.2}\fi }\bgroup \beginL \latintext Tests et résultats\endL \egroup }{66}{subsection.6.6.2}%
 \select@language {french}
-\contentsline {chapter}{\numberline {7}\bgroup \beginL \latintext Conclusion et perspectives\endL \egroup }{67}{chapter.7}%
+\contentsline {section}{\numberline {\if@rl \I {7.6}\else \textLR {6.7}\fi }\bgroup \beginL \latintext Conclusion\endL \egroup }{68}{section.6.7}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {1.7}\else \textLR {7.1}\fi }\bgroup \beginL \latintext Perspectives\endL \egroup }{67}{section.7.1}%
+\contentsline {chapter}{\numberline {7}\bgroup \beginL \latintext Conclusion et perspectives\endL \egroup }{69}{chapter.7}%
 \select@language {french}
-\contentsline {section}{\numberline {\if@rl \I {2.7}\else \textLR {7.2}\fi }\bgroup \beginL \latintext Appréciation personnelle\endL \egroup }{67}{section.7.2}%
+\contentsline {section}{\numberline {\if@rl \I {1.7}\else \textLR {7.1}\fi }\bgroup \beginL \latintext Perspectives\endL \egroup }{69}{section.7.1}%
+\select@language {french}
+\contentsline {section}{\numberline {\if@rl \I {2.7}\else \textLR {7.2}\fi }\bgroup \beginL \latintext Appréciation personnelle\endL \egroup }{69}{section.7.2}%
 \select@language {french}
 \select@language {french}
-\contentsline {chapter}{Bibliographie}{71}{chapter*.88}%
+\contentsline {chapter}{Bibliographie}{73}{chapter*.94}%
