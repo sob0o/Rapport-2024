@@ -158,16 +158,17 @@ Cependant, une problématique majeure se pose : il existe une multitude de
 marques et de modèles de moteurs électriques, chacun ayant des caractéristiques
 différentes. Pour que la maintenance prédictive soit efficace, il est essentiel
 de développer une solution qui soit généralisable à tous les types de moteurs
-utilisés par les clients de Schneider. Toutefois, il est pratiquement
+utilisés par les clients de Schneider Electric. Toutefois, il est pratiquement
 impossible de collecter des données exhaustives sur tous les moteurs
 disponibles sur le marché, ce qui complique considérablement l'entraînement du
 modèle de machine learning.
 
 Chez Schneider Electric, une des solutions techniques envisagées repose sur
-l'utilisation d'un dispositif appelé "drive" (illustré à la figure 5.1). Ce
-drive est connecté au moteur électrique et permet de contrôler des paramètres
-essentiels tels que le couple et la vitesse. De plus, il est capable de lire
-les signaux entrants et sortants du moteur asynchrone triphasé.
+l'utilisation d'un dispositif appelé "Drive" (illustré à la figure
+\ref{fig:drive}). Ce drive est connecté au moteur électrique et permet de
+contrôler des paramètres essentiels tels que le couple et la vitesse. De plus,
+il est capable de lire les signaux entrants et sortants du moteur asynchrone
+triphasé.
 
 Le drive de Schneider est équipé d'un microcontrôleur, et l'idée est de
 déployer un modèle de classification directement sur ce microcontrôleur afin de
@@ -179,7 +180,7 @@ potentielles et alerter les opérateurs avant qu'une panne majeure ne survienne.
 \begin{figure}[hbt!]
   \centering
   \includegraphics[width=10cm]{images_pfe/drive_se.jpg}
-  \caption{Schneider Electric ATV930D30N4 AC Speed Drive, 3 HP.}
+  \caption{Schneider Electric ATV930D30N4 AC Speed Drive.}
   \label{fig:drive}
 \end{figure}
 \FloatBarrier
@@ -213,15 +214,16 @@ les enregistrements initiaux.
           \item \textbf{Couple (T)} : Le couple (Torque en anglais) est la force rotative produite par le moteur, exprimée en Newton-mètre (Nm). Il représente la capacité du moteur à produire une rotation et est directement lié à la charge que le moteur peut entraîner. Le couple est un indicateur crucial de la performance d'un moteur, surtout dans des conditions de charge variable.
           \item \textbf{Vitesse (S)} : La vitesse (Speed en angalais) , généralement mesurée en tours par minute (tr/min), désigne la rapidité avec laquelle l'arbre du moteur tourne. Elle est souvent liée à la fréquence du courant alternatif dans les moteurs asynchrones, mais peut être contrôlée à l'aide de variateurs de vitesse. La relation entre le couple et la vitesse est un point central dans la caractérisation du point de fonctionnement d'un moteur.
         \end{itemize}
-        \textbf{Le point de fonctionnement}: d'un moteur est donc défini par une combinaison spécifique de couple et de vitesse \textbf{(} $\mathcal{T}$\textbf{orque, }$\mathcal{S}$\textbf{peed)}, et il évolue en fonction des conditions de charge et des paramètres d'alimentation du moteur. Un suivi précis de ces deux paramètres est essentiel pour la maintenance et le diagnostic des moteurs.
+        \textbf{Le point de fonctionnement} d'un moteur est donc défini par une combinaison spécifique de couple et de vitesse \textbf{(} $\mathcal{T}$\textbf{orque, }$\mathcal{S}$\textbf{peed)}, et il évolue en fonction des conditions de charge et des paramètres d'alimentation du moteur. Un suivi précis de ces deux paramètres est essentiel pour la maintenance et le diagnostic des moteurs.
 
   \item \textbf{Glissement} \\
         Le glissement (Slip en anglais) est généralement exprimé en pourcentage. Il représente le décalage relatif  entre la vitesse de rotation du champ magnétique du stator, appelée vitesse synchrone  et la vitesse réelle du rotor, et constitue une caractéristique clé du fonctionnement des moteurs asynchrones.
 
-        La formule du glissement (\(s\)) est donnée par :
+        La formule du glissement (\(s\)) est donnée par \ref{equ:slip} :
 
         \begin{equation}
           s = \frac{N_s - N_r}{N_s} \cdot 100
+          \label{equ:slip}
         \end{equation}
 
         où :
@@ -256,21 +258,22 @@ variables sont fondamentales pour la caractérisation du fonctionnement
 et les phénomènes dynamiques internes, leurs variations peuvent signaler des
 anomalies telles que des déséquilibres, des harmoniques ou des surcharges.
 
-\subsubsection{Méthodologie de Collecte des Données}
+\subsubsection*{Méthodologie de Collecte des Données}
 
-Avant d'initier la collecte de données, il est impératif de définir avec
-précision le point de fonctionnement du moteur, c'est-à-dire la combinaison
-spécifique de couple et de vitesse (\(T\), \(S\)). Chaque point de
-fonctionnement est déterminé par une configuration précise de ces deux
-paramètres, et la collecte des variables électriques mentionnées plus haut est
-réalisée pour chaque combinaison de \(T\) et \(S\) sélectionnée. Cette méthode
-permet d'établir un profil complet du moteur sous différentes conditions de
-charge et de vitesse.
+Chez Schneider Electric, nous travaillons sur des moteurs fonctionnant en
+régime permanent, c'est-à-dire que le couple et la vitesse ne varient pas au
+fil du temps. Avant de débuter la collecte de données, il est essentiel de
+définir avec précision le point de fonctionnement du moteur, c’est-à-dire la
+combinaison spécifique du couple (T) et de la vitesse (S). Ensuite, la collecte
+des variables électriques \((V_1, V_2, V_3)\) et \((I_1, I_2, I_3)\) est
+réalisée pour chaque point de fonctionnement [Figure \ref{fig:speed_couple}] .
+Cette méthode permet de créer un profil complet du moteur sous différentes
+conditions de couple et de vitesse.
 
 \begin{figure}[hbt!]
   \centering
   \includegraphics[width=13cm]{images_pfe/speed_couple.png}
-  \caption{Organization de data [\cite{yoon2019time}].}
+  \caption{Variables électriques collectées pour différentes combinaisons de couple et de vitesse.}
   \label{fig:speed_couple}
 \end{figure}
 \FloatBarrier
@@ -283,29 +286,31 @@ comportement électrique. Au terme de cette période de collecte, un tableau de
 80 000 points de données est crée, chaque point étant enregistré de manière
 chronologique pour former une série temporelle.
 
-Par exemple, la série temporelle illustrée dans la figure correspond au point
-de fonctionnement (Couple = 0\%, Vitesse = 15\%). Cette série est composée de
-80 000 points, chaque point ayant été collecté à un intervalle de 250 (\(\mu
-s\)).
+Par exemple, la série temporelle illustrée dans la figure \ref{fig:data_v_i}
+correspond au point de fonctionnement (Couple = 0\%, Vitesse = 15\%). Cette
+série est composée de 80 000 points, chaque point ayant été collecté à un
+intervalle de 250 (\(\mu s\)).
 
 \begin{figure}[hbt!]
   \centering
   \includegraphics[width=14cm]{images_pfe/V_I_data.png}
-  \caption{Organization de data .}
+  \caption{Signaux \((V_1, V_2, V_3, I_1, I_2, I_3)\) mesurés au point de fonctionnement \((0, 15.0)\) du moteur.}
   \label{fig:data_v_i}
 \end{figure}
 \FloatBarrier
 
-Pour enrichir notre jeu de données, nous ajoutons des colonnes supplémentaires
-représentant la vitesse, le couple, ainsi que le glissement. Ces nouvelles
-variables permettent de mieux caractériser le comportement du moteur sous
-différentes conditions de fonctionnement.
+À terme, notre objectif est de constituer un jeu de données exhaustif regroupant l'ensemble des points
+de fonctionnement avec leurs variables électriques correspondantes. Afin d'enrichir ce jeu de données,
+nous intégrons des colonnes supplémentaires représentant la vitesse, le couple, ainsi que le glissement [Figure \ref{fig:data_vcg}].
+Ces nouvelles variables permettent de mieux caractériser le comportement du moteur sous diverses conditions
+de fonctionnement, assurant ainsi que notre modèle génératif puisse correctement associer les variables
+électriques aux combinaisons spécifiques de couple et de vitesse.
 
 \begin{figure}[hbt!]
   \centering
   \includegraphics[width=13cm]{images_pfe/couple_vittese_glissement.png}
-  \caption{Organization de data.}
-  \label{fig:data_v_i}
+  \caption{Intégration des valeurs de couple, vitesse et glissement aux variables électriques dans le jeu de données d'entraînement.}
+  \label{fig:data_vcg}
 \end{figure}
 \FloatBarrier
 

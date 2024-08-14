@@ -541,6 +541,56 @@
       \verb https://arxiv.org/abs/2206.13329v1
       \endverb
     \endentry
+    \entry{duhamel_vetterli_1989}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ca636099e863a1e6b3d14ec49d994fb2}{%
+           family={Duhamel},
+           familyi={D\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b71918af950be5e71e6327a9e23eae08}{%
+           family={Vetterli},
+           familyi={V\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e695a915e7c10b7b2d4901fe18972f5b}
+      \strng{fullhash}{db047bb929fa653cff1b444995c01e83}
+      \strng{fullhashraw}{db047bb929fa653cff1b444995c01e83}
+      \strng{bibnamehash}{db047bb929fa653cff1b444995c01e83}
+      \strng{authorbibnamehash}{db047bb929fa653cff1b444995c01e83}
+      \strng{authornamehash}{e695a915e7c10b7b2d4901fe18972f5b}
+      \strng{authorfullhash}{db047bb929fa653cff1b444995c01e83}
+      \strng{authorfullhashraw}{db047bb929fa653cff1b444995c01e83}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Signal Processing}
+      \field{note}{Received 22 December 1988; Revised 30 October 1989; Available online 10 June 2003}
+      \field{number}{4}
+      \field{title}{Fast Fourier Transforms: A Tutorial Review and a State of the Art}
+      \field{volume}{19}
+      \field{year}{1989}
+      \field{pages}{259\bibrangedash 299}
+      \range{pages}{41}
+      \verb{doi}
+      \verb 10.1016/0165-1684(89)90098-7
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/0165168489900987
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/0165168489900987
+      \endverb
+    \endentry
     \entry{fawaz2019long}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=5f9dec053cfbccb13e3ca0397ac2af91}{%
@@ -1030,62 +1080,6 @@
       \field{year}{1997}
       \field{pages}{1735\bibrangedash 1780}
       \range{pages}{46}
-    \endentry
-    \entry{hu_wu_xu_lai_xia_2022}{article}{}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=9efec8382013ee4db301fa4b6d0dc2bd}{%
-           family={Hu},
-           familyi={H\bibinitperiod},
-           given={Rong},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ba4281cc63a7e258b157999313aba06e}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Zhongying},
-           giveni={Z\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=90812e2aac1e3fb393dfd7663b4eefe1}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Yong},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=35d298e9e0c3c77c4a8d693850104b52}{%
-           family={Lai},
-           familyi={L\bibinitperiod},
-           given={Taotao},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c0fc305221378f3e38b8e573d5444c56}{%
-           family={Xia},
-           familyi={X\bibinitperiod},
-           given={Canyu},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{28117b451b56e60c45a9b02cf4fb9a4e}
-      \strng{fullhash}{814dfd46d622f5300566b18e79c7b71f}
-      \strng{fullhashraw}{814dfd46d622f5300566b18e79c7b71f}
-      \strng{bibnamehash}{28117b451b56e60c45a9b02cf4fb9a4e}
-      \strng{authorbibnamehash}{28117b451b56e60c45a9b02cf4fb9a4e}
-      \strng{authornamehash}{28117b451b56e60c45a9b02cf4fb9a4e}
-      \strng{authorfullhash}{814dfd46d622f5300566b18e79c7b71f}
-      \strng{authorfullhashraw}{814dfd46d622f5300566b18e79c7b71f}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{PLOS ONE}
-      \field{number}{5}
-      \field{title}{A multi-attack intrusion detection model based on mosaic coded convolutional neural network and centralized encoding}
-      \field{volume}{17}
-      \field{year}{2022}
-      \verb{doi}
-      \verb 10.1371/journal.pone.0267910
-      \endverb
     \endentry
     \entry{johnson2001symmetrizing}{article}{}{}
       \name{author}{2}{}{%

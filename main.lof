@@ -1,91 +1,91 @@
 \addvspace {10\p@ }
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }{\ignorespaces Le fonctionnement d'un neurone artificiel [\blx@tocontentsinit {0}\cite {mcculloch_pitts_1943_nervous_activity}].}}{7}{figure.caption.8}%
+\contentsline {figure}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }{\ignorespaces Le fonctionnement d'un neurone artificiel [\blx@tocontentsinit {0}\cite {mcculloch_pitts_1943_nervous_activity}].}}{7}{figure.caption.9}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {2.1}\else \textLR {1.2}\fi }{\ignorespaces Les fonctions d'activations couramment utilisées [\blx@tocontentsinit {0}\cite {feng_he_teng_ren_chen_li_2019}].}}{8}{figure.caption.9}%
+\contentsline {figure}{\numberline {\if@rl \I {2.1}\else \textLR {1.2}\fi }{\ignorespaces Les fonctions d'activations couramment utilisées [\blx@tocontentsinit {0}\cite {feng_he_teng_ren_chen_li_2019}].}}{8}{figure.caption.10}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {3.1}\else \textLR {1.3}\fi }{\ignorespaces Schéma simple d'un réseau de neurones feedforward [\blx@tocontentsinit {0}\cite {dl-healthcare}].}}{10}{figure.caption.10}%
+\contentsline {figure}{\numberline {\if@rl \I {3.1}\else \textLR {1.3}\fi }{\ignorespaces Schéma simple d'un réseau de neurones feedforward [\blx@tocontentsinit {0}\cite {dl-healthcare}].}}{10}{figure.caption.11}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {4.1}\else \textLR {1.4}\fi }{\ignorespaces Exemple d'un réseau de neurones récurrent [\blx@tocontentsinit {0}\cite {kumaraswamy_2021}].}}{11}{figure.caption.11}%
+\contentsline {figure}{\numberline {\if@rl \I {4.1}\else \textLR {1.4}\fi }{\ignorespaces Exemple d'un réseau de neurones récurrent [\blx@tocontentsinit {0}\cite {kumaraswamy_2021}].}}{11}{figure.caption.12}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {5.1}\else \textLR {1.5}\fi }{\ignorespaces Architecture d'un bloc LSTM [\blx@tocontentsinit {0}\cite {fawaz2019long}].}}{12}{figure.caption.13}%
+\contentsline {figure}{\numberline {\if@rl \I {5.1}\else \textLR {1.5}\fi }{\ignorespaces Architecture d'un bloc LSTM [\blx@tocontentsinit {0}\cite {fawaz2019long}].}}{12}{figure.caption.14}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {6.1}\else \textLR {1.6}\fi }{\ignorespaces Le fonctionnement d'un réseau neuronal convolutif [\blx@tocontentsinit {0}\cite {alharbi_hewahi_2021}].}}{13}{figure.caption.14}%
+\contentsline {figure}{\numberline {\if@rl \I {6.1}\else \textLR {1.6}\fi }{\ignorespaces Le fonctionnement d'un réseau neuronal convolutif [\blx@tocontentsinit {0}\cite {alharbi_hewahi_2021}].}}{13}{figure.caption.15}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {7.1}\else \textLR {1.7}\fi }{\ignorespaces Exemple du fonctionnement d'une couche convolutive [\blx@tocontentsinit {0}\cite {kimura_yoshinaga_sekijima_azechi_baba_2019}].}}{14}{figure.caption.16}%
+\contentsline {figure}{\numberline {\if@rl \I {7.1}\else \textLR {1.7}\fi }{\ignorespaces Exemple du fonctionnement d'une couche convolutive [\blx@tocontentsinit {0}\cite {kimura_yoshinaga_sekijima_azechi_baba_2019}].}}{14}{figure.caption.17}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {8.1}\else \textLR {1.8}\fi }{\ignorespaces Exemples de pooling maximal et pooling moyen [\blx@tocontentsinit {0}\cite {hu_wu_xu_lai_xia_2022}].}}{15}{figure.caption.18}%
+\contentsline {figure}{\numberline {\if@rl \I {8.1}\else \textLR {1.8}\fi }{\ignorespaces Un bloc régulier (gauche) et un bloc résiduel (droite) [\blx@tocontentsinit {0}\cite {dong_niu_li_xie_zou_ye_wei_pan_2022}].}}{15}{figure.caption.18}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {9.1}\else \textLR {1.9}\fi }{\ignorespaces Un bloc régulier (gauche) et un bloc résiduel (droite) [\blx@tocontentsinit {0}\cite {dong_niu_li_xie_zou_ye_wei_pan_2022}].}}{15}{figure.caption.19}%
-\setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {10.1}\else \textLR {1.10}\fi }{\ignorespaces Fonction de taux d’erreur [\blx@tocontentsinit {0}\cite {amini2018spatial}].}}{17}{figure.caption.20}%
+\contentsline {figure}{\numberline {\if@rl \I {9.1}\else \textLR {1.9}\fi }{\ignorespaces Fonction de taux d’erreur [\blx@tocontentsinit {0}\cite {amini2018spatial}].}}{17}{figure.caption.19}%
 \addvspace {10\p@ }
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }{\ignorespaces Les composants d'un auto-encodeur variationnel (VAE) [\blx@tocontentsinit {0}\cite {kingma_welling_auto_encoding}].}}{24}{figure.caption.21}%
+\contentsline {figure}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }{\ignorespaces Les composants d'un auto-encodeur variationnel (VAE) [\blx@tocontentsinit {0}\cite {kingma_welling_auto_encoding}].}}{23}{figure.caption.20}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {2.2}\else \textLR {2.2}\fi }{\ignorespaces Architecture du modèle de GANs [\blx@tocontentsinit {0}\cite {feng_feng_chen_cao_zhang_jiao_yu_2020}].}}{29}{figure.caption.33}%
+\contentsline {figure}{\numberline {\if@rl \I {2.2}\else \textLR {2.2}\fi }{\ignorespaces Architecture du modèle de GANs [\blx@tocontentsinit {0}\cite {feng_feng_chen_cao_zhang_jiao_yu_2020}].}}{28}{figure.caption.32}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {3.2}\else \textLR {2.3}\fi }{\ignorespaces Quelques images générées par le modèle StyleGAN sur le site 'This Person Does Not Exist'[\blx@tocontentsinit {0}\cite {thispersondoesnotexist}].}}{30}{figure.caption.38}%
+\contentsline {figure}{\numberline {\if@rl \I {3.2}\else \textLR {2.3}\fi }{\ignorespaces Quelques images générées par le modèle StyleGAN sur le site 'This Person Does Not Exist'[\blx@tocontentsinit {0}\cite {thispersondoesnotexist}].}}{29}{figure.caption.37}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {4.2}\else \textLR {2.4}\fi }{\ignorespaces Chaîne de Markov du processus de diffusion [\blx@tocontentsinit {0}\cite {ho2020denoising}].}}{31}{figure.caption.39}%
+\contentsline {figure}{\numberline {\if@rl \I {4.2}\else \textLR {2.4}\fi }{\ignorespaces Chaîne de Markov du processus de diffusion [\blx@tocontentsinit {0}\cite {ho2020denoising}].}}{30}{figure.caption.38}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {5.2}\else \textLR {2.5}\fi }{\ignorespaces Illustration des Processus de Diffusion : Forward Process et Reverse Process.}}{32}{figure.caption.40}%
+\contentsline {figure}{\numberline {\if@rl \I {5.2}\else \textLR {2.5}\fi }{\ignorespaces Illustration des Processus de Diffusion : Forward Process et Reverse Process.}}{31}{figure.caption.39}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {6.2}\else \textLR {2.6}\fi }{\ignorespaces Le processus d'entraînement d'un UNet pour prédire le bruit ajouté à l'image. [\blx@tocontentsinit {0}\cite {nichol2021improved}].}}{32}{figure.caption.41}%
+\contentsline {figure}{\numberline {\if@rl \I {6.2}\else \textLR {2.6}\fi }{\ignorespaces Le processus d'entraînement d'un UNet pour prédire le bruit ajouté à l'image. [\blx@tocontentsinit {0}\cite {nichol2021improved}].}}{31}{figure.caption.40}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {7.2}\else \textLR {2.7}\fi }{\ignorespaces Exemple d’images générée par DALL-E2. [\blx@tocontentsinit {0}\cite {ramesh2022hierarchical}].}}{35}{figure.caption.45}%
+\contentsline {figure}{\numberline {\if@rl \I {7.2}\else \textLR {2.7}\fi }{\ignorespaces Exemple d’images générée par DALL-E2. [\blx@tocontentsinit {0}\cite {ramesh2022hierarchical}].}}{34}{figure.caption.44}%
 \addvspace {10\p@ }
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }{\ignorespaces Stratégies de maintenance montrant les différentes étapes du processus de réparation avant et après la défaillance potentielle de l'équipement. [\blx@tocontentsinit {0}\cite {Mrozek2023}].}}{39}{figure.caption.46}%
+\contentsline {figure}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }{\ignorespaces Stratégies de maintenance montrant les différentes étapes du processus de réparation avant et après la défaillance potentielle de l'équipement. [\blx@tocontentsinit {0}\cite {Mrozek2023}].}}{38}{figure.caption.45}%
 \setforeignlanguage {french}
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {2.3}\else \textLR {3.2}\fi }{\ignorespaces Principaux Composants d'un moteur asynchrone triphasé (Machine à Induction).}}{41}{figure.caption.49}%
+\contentsline {figure}{\numberline {\if@rl \I {2.3}\else \textLR {3.2}\fi }{\ignorespaces Principaux Composants d'un moteur asynchrone triphasé (Machine à Induction).}}{40}{figure.caption.48}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {3.3}\else \textLR {3.3}\fi }{\ignorespaces Signaux électriques triphasés.}}{44}{figure.caption.60}%
+\contentsline {figure}{\numberline {\if@rl \I {3.3}\else \textLR {3.3}\fi }{\ignorespaces Signaux électriques triphasés.}}{43}{figure.caption.58}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {4.3}\else \textLR {3.4}\fi }{\ignorespaces Exemples de tracés de séries temporelles discrètes (à gauche) et continues (à droite) [\blx@tocontentsinit {0}\cite {brophy2023gan}] .}}{46}{figure.caption.63}%
+\contentsline {figure}{\numberline {\if@rl \I {4.3}\else \textLR {3.4}\fi }{\ignorespaces Exemple de transformation d'un signal du domaine temporel au domaine fréquentiel à l'aide de la FFT.}}{45}{figure.caption.60}%
+\setforeignlanguage {french}
+\contentsline {figure}{\numberline {\if@rl \I {5.3}\else \textLR {3.5}\fi }{\ignorespaces Exemples de tracés de séries temporelles discrètes (à gauche) et continues (à droite) [\blx@tocontentsinit {0}\cite {brophy2023gan}] .}}{46}{figure.caption.62}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {1.5}\else \textLR {5.1}\fi }{\ignorespaces Schneider Electric ATV930D30N4 AC Speed Drive, 3 HP.}}{53}{figure.caption.65}%
+\contentsline {figure}{\numberline {\if@rl \I {1.5}\else \textLR {5.1}\fi }{\ignorespaces Schneider Electric ATV930D30N4 AC Speed Drive.}}{53}{figure.caption.64}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {2.5}\else \textLR {5.2}\fi }{\ignorespaces Organization de data [\blx@tocontentsinit {0}\cite {yoon2019time}].}}{56}{figure.caption.68}%
+\contentsline {figure}{\numberline {\if@rl \I {2.5}\else \textLR {5.2}\fi }{\ignorespaces Variables électriques collectées pour différentes combinaisons de couple et de vitesse.}}{56}{figure.caption.67}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {3.5}\else \textLR {5.3}\fi }{\ignorespaces Organization de data .}}{56}{figure.caption.69}%
+\contentsline {figure}{\numberline {\if@rl \I {3.5}\else \textLR {5.3}\fi }{\ignorespaces Signaux \((V_1, V_2, V_3, I_1, I_2, I_3)\) mesurés au point de fonctionnement \((0, 15.0)\) du moteur.}}{56}{figure.caption.68}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {4.5}\else \textLR {5.4}\fi }{\ignorespaces Organization de data.}}{57}{figure.caption.70}%
+\contentsline {figure}{\numberline {\if@rl \I {4.5}\else \textLR {5.4}\fi }{\ignorespaces Intégration des valeurs de couple, vitesse et glissement aux variables électriques dans le jeu de données d'entraînement.}}{57}{figure.caption.69}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {5.5}\else \textLR {5.5}\fi }{\ignorespaces Organization de data [\blx@tocontentsinit {0}\cite {yoon2019time}].}}{58}{figure.caption.73}%
+\contentsline {figure}{\numberline {\if@rl \I {5.5}\else \textLR {5.5}\fi }{\ignorespaces Organization de data [\blx@tocontentsinit {0}\cite {yoon2019time}].}}{58}{figure.caption.72}%
 \setforeignlanguage {french}
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {6.5}\else \textLR {5.6}\fi }{\ignorespaces Organization de data [\blx@tocontentsinit {0}\cite {yoon2019time}].}}{59}{figure.caption.74}%
+\contentsline {figure}{\numberline {\if@rl \I {6.5}\else \textLR {5.6}\fi }{\ignorespaces Organization de data [\blx@tocontentsinit {0}\cite {yoon2019time}].}}{59}{figure.caption.73}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {7.5}\else \textLR {5.7}\fi }{\ignorespaces Architecure de TimeGAN[\blx@tocontentsinit {0}\cite {yoon2019time}].}}{60}{figure.caption.76}%
+\contentsline {figure}{\numberline {\if@rl \I {7.5}\else \textLR {5.7}\fi }{\ignorespaces Architecure de TimeGAN[\blx@tocontentsinit {0}\cite {yoon2019time}].}}{60}{figure.caption.75}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {8.5}\else \textLR {5.8}\fi }{\ignorespaces Architecure de TimeGAN[\blx@tocontentsinit {0}\cite {yoon2019time}].}}{61}{figure.caption.77}%
+\contentsline {figure}{\numberline {\if@rl \I {8.5}\else \textLR {5.8}\fi }{\ignorespaces Architecure de TimeGAN[\blx@tocontentsinit {0}\cite {yoon2019time}].}}{61}{figure.caption.76}%
 \addvspace {10\p@ }
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {1.6}\else \textLR {6.1}\fi }{\ignorespaces Python.}}{62}{figure.caption.78}%
+\contentsline {figure}{\numberline {\if@rl \I {1.6}\else \textLR {6.1}\fi }{\ignorespaces Python.}}{62}{figure.caption.77}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {2.6}\else \textLR {6.2}\fi }{\ignorespaces NumPy.}}{63}{figure.caption.79}%
+\contentsline {figure}{\numberline {\if@rl \I {2.6}\else \textLR {6.2}\fi }{\ignorespaces NumPy.}}{63}{figure.caption.78}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {3.6}\else \textLR {6.3}\fi }{\ignorespaces Pandas.}}{64}{figure.caption.80}%
+\contentsline {figure}{\numberline {\if@rl \I {3.6}\else \textLR {6.3}\fi }{\ignorespaces Pandas.}}{64}{figure.caption.79}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {4.6}\else \textLR {6.4}\fi }{\ignorespaces Plotly.}}{64}{figure.caption.81}%
+\contentsline {figure}{\numberline {\if@rl \I {4.6}\else \textLR {6.4}\fi }{\ignorespaces Plotly.}}{64}{figure.caption.80}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {5.6}\else \textLR {6.5}\fi }{\ignorespaces Pytorch.}}{65}{figure.caption.82}%
+\contentsline {figure}{\numberline {\if@rl \I {5.6}\else \textLR {6.5}\fi }{\ignorespaces Pytorch.}}{65}{figure.caption.81}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {6.6}\else \textLR {6.6}\fi }{\ignorespaces Google Colab.}}{65}{figure.caption.83}%
+\contentsline {figure}{\numberline {\if@rl \I {6.6}\else \textLR {6.6}\fi }{\ignorespaces Google Colab.}}{65}{figure.caption.82}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {7.6}\else \textLR {6.7}\fi }{\ignorespaces Google Drive.}}{66}{figure.caption.84}%
-\setforeignlanguage {french}
-\setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {8.6}\else \textLR {6.8}\fi }{\ignorespaces Seq.}}{68}{figure.caption.88}%
-\setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {9.6}\else \textLR {6.9}\fi }{\ignorespaces Seq.}}{69}{figure.caption.89}%
+\contentsline {figure}{\numberline {\if@rl \I {7.6}\else \textLR {6.7}\fi }{\ignorespaces Google Drive.}}{66}{figure.caption.83}%
 \setforeignlanguage {french}
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {10.6}\else \textLR {6.10}\fi }{\ignorespaces Seq.}}{69}{figure.caption.91}%
+\contentsline {figure}{\numberline {\if@rl \I {8.6}\else \textLR {6.8}\fi }{\ignorespaces Seq.}}{68}{figure.caption.87}%
 \setforeignlanguage {french}
-\contentsline {figure}{\numberline {\if@rl \I {11.6}\else \textLR {6.11}\fi }{\ignorespaces Seq.}}{70}{figure.caption.92}%
+\contentsline {figure}{\numberline {\if@rl \I {9.6}\else \textLR {6.9}\fi }{\ignorespaces Seq.}}{69}{figure.caption.88}%
+\setforeignlanguage {french}
+\setforeignlanguage {french}
+\contentsline {figure}{\numberline {\if@rl \I {10.6}\else \textLR {6.10}\fi }{\ignorespaces Seq.}}{69}{figure.caption.90}%
+\setforeignlanguage {french}
+\contentsline {figure}{\numberline {\if@rl \I {11.6}\else \textLR {6.11}\fi }{\ignorespaces Seq.}}{70}{figure.caption.91}%
 \addvspace {10\p@ }

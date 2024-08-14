@@ -353,28 +353,6 @@ Les couches convolutives sont suivies de fonctions d'activation,et de couches de
 \FloatBarrier
 \medskip
 
-\subsubsection{Couche pooling}
-Le pooling est une opération quie est utilisée pour sous-échantillonner les
-cartes de caractéristiques résultantes des couches convolutives en réduisant
-leurs dimensions spatiales tout en conservant les informations importantes.
-Parmi les types de pooling, on trouve le pooling maximal et le pooling moyen
-	[\cite{Goodfellow-et-al-2016}].
-
-\medskip
-Dans le pooling maximal, la valeur maximale de chaque région est sélectionnée comme valeur représentative, tandis que dans le pooling moyen, la valeur moyenne est calculée à la place. Il en résulte une carte d'entités plus petite avec une résolution spatiale réduite, qui peut être traitée plus efficacement par les couches suivantes du réseau.
-
-\medskip
-Cependant, le pooling excessive peut entraîner une perte d'informations spatiales importantes. Il est donc important d'équilibrer la quantité de pooling avec les besoins du réseau et la nature de la tâche à accomplir.
-
-\begin{figure}[hbt!]
-	\centering
-	\includegraphics[width=9cm]{images_pfe/pooling.png}
-	\caption{Exemples de pooling maximal et pooling moyen [\cite{hu_wu_xu_lai_xia_2022}].}
-	\label{fig:pooling}
-\end{figure}
-\FloatBarrier
-\medskip
-
 \subsection{Réseaux résiduels (ResNet)}
 Les réseaux résiduels ont été conçus par Microsoft afin de résoudre le problème
 des gradients qui disparaissent dans les réseaux de neurones très profonds, ce
@@ -1486,7 +1464,7 @@ déséquilibre dans les courants de phase peut indiquer un défaut mécanique co
 une excentricité de l'entrefer, tandis qu'une augmentation des harmoniques peut
 signaler un court-circuit entre spires.
 
-\subsection*{Signaux Triphasés dans les Moteurs Électriques}
+\subsection{Signaux Triphasés dans les Moteurs Électriques}
 
 Les moteurs électriques triphasés utilisent des signaux électriques triphasés
 [Figure \ref{fig:moteur-asynchrone-tri}] pour fonctionner efficacement. Ces
@@ -1522,7 +1500,7 @@ fréquence.
 \end{figure}
 \FloatBarrier
 
-\subsection*{Motor Current Signature Analysis (MCSA)}
+\subsection{Motor Current Signature Analysis (MCSA)}
 
 L'analyse des signaux de courant et de tension de sortie est cruciale pour la
 maintenance prédictive des moteurs électriques. Une technique particulièrement
@@ -1563,6 +1541,72 @@ comme la MCSA sont essentielles pour assurer le bon fonctionnement et la
 longévité des moteurs électriques. L'analyse proactive des courants et des
 tensions permet de détecter les problèmes potentiels à un stade précoce,
 facilitant ainsi une intervention rapide et réduisant les coûts de maintenance.
+
+\subsection{Transformée de Fourier Rapide (FFT)}
+
+La Transformée de Fourier Rapide (FFT pour Fast Fourier Transform ) est un
+algorithme essentiel dans le traitement des signaux, utilisé pour transformer
+un signal du domaine temporel au domaine fréquentiel. Le principe fondamental
+de la FFT repose sur la décomposition d'un signal complexe en une somme de
+sinusoïdes, chacune correspondant à une fréquence spécifique et une amplitude
+déterminée. Cette capacité à révéler les composantes fréquentielles d'un signal
+en fait un outil crucial pour l'analyse, la filtration et la compression des
+données dans diverses applications scientifiques et industrielles
+	[\cite{duhamel_vetterli_1989}].
+
+Par exemple, si l'on possède un signal dans le domaine temporel, on peut le
+transformer et le visualiser dans le domaine fréquentiel en utilisant la
+Transformée de Fourier Rapide (FFT) [Figure \ref{fig:fft}]. Cette
+transformation permet de représenter les composantes en fréquence du signal, ce
+qui est fondamental pour comprendre sa structure spectrale.
+
+La FFT est basée sur l'équation suivante \ref{equ:fft}:
+
+\begin{equation}
+	X(k) = \sum_{n=0}^{N-1} x(n) \cdot e^{-j \cdot 2\pi \cdot k \cdot n / N}
+	\label{equ:fft}
+\end{equation}
+
+Où :
+\begin{conditions}
+	X(k) & représente l'amplitude de la fréquence \( k \) \\
+	x(n) & est la valeur du signal à l'instant \( n \) \\
+	N & est le nombre total d'échantillons du signal \\
+	j & est l'unité imaginaire
+\end{conditions}
+
+Cette équation permet de calculer les composantes fréquentielles $X(k)$ pour
+chaque fréquence $k$, transformant ainsi le signal du domaine temporel vers le
+domaine fréquentiel.
+
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=14cm]{images_pfe/fft.jpg}
+	\caption{
+		Exemple de transformation d'un signal du domaine temporel au domaine fréquentiel à l'aide de la FFT.}
+	\label{fig:fft}
+\end{figure}
+\FloatBarrier
+
+\subsection*{Importance de la FFT dans l'Analyse des Signaux}
+
+\begin{enumerate}
+	\item \textbf{Identification des Fréquences Dominantes} : La FFT permet de décomposer un signal complexe en ses différentes composantes fréquentielles. Cette décomposition est cruciale pour identifier les fréquences dominantes dans un signal, ce qui est essentiel dans des domaines comme la détection de pannes en ingénierie ou l'analyse du spectre audio.
+
+	\item \textbf{Filtrage et Traitement des Signaux} : En permettant de travailler dans le domaine fréquentiel, la FFT facilite la conception de filtres numériques qui peuvent extraire ou supprimer des fréquences spécifiques d'un signal, améliorant ainsi la qualité du signal ou isolant des caractéristiques particulières.
+
+	\item \textbf{Compression de Données} : La FFT est également utilisée dans des techniques de compression, telles que la compression d'image (JPEG) ou audio (MP3), où elle permet de réduire la quantité de données nécessaires pour représenter un signal tout en conservant ses caractéristiques essentielles.
+\end{enumerate}
+
+Dans le domaine des moteurs électriques, l'analyse fréquentielle des signaux
+est particulièrement cruciale. Les moteurs électriques sont soumis à diverses
+conditions de fonctionnement qui peuvent entraîner des défauts ou des
+dysfonctionnements. L'analyse par FFT des signaux de courant, de tension ou de
+vibration provenant de ces moteurs permet d'identifier les composantes
+fréquentielles associées à ces anomalies. Par exemple, la présence de
+fréquences spécifiques dans le spectre peut indiquer des problèmes tels que le
+déséquilibre, le désalignement, les défauts de roulements ou les
+courts-circuits dans les enroulements.
 
 \section{Donneés: Séries Temporelles}
 
@@ -1653,11 +1697,11 @@ défaillances potentielles. L’objectif principal de cette approche est
 d’améliorer la fiabilité et la durée de vie des moteurs électriques tout en
 réduisant les coûts de maintenance et les interruptions de service.
 
-En intégrant des techniques comme la Motor Current Signature Analysis (MCSA) à
-la maintenance prédictive, nous pouvons détecter précocement les défauts en
-nous basant sur les courants électriques sortant du moteur. Cette combinaison
-simplifie la maintenance, optimise les coûts, et élimine le besoin de capteurs
-externes.
+En intégrant des techniques telles que l'analyse de la signature du courant
+moteur (MCSA) à la maintenance prédictive, et en utilisant la transformation de
+Fourier rapide (FFT), nous pouvons détecter précocement les défauts en analysant les
+courants électriques du moteur. Cette approche combinée simplifie la
+maintenance, optimise les coûts et élimine la nécessité de capteurs externes.
 
 Enfin, l'analyse des séries temporelles, qu'elles soient discrètes ou
 continues, joue un rôle crucial dans ce processus en fournissant des données

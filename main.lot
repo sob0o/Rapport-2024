@@ -8,7 +8,6 @@
 \setforeignlanguage {french}
 \setforeignlanguage {french}
 \setforeignlanguage {french}
-\setforeignlanguage {french}
 \addvspace {10\p@ }
 \setforeignlanguage {french}
 \setforeignlanguage {french}
@@ -20,21 +19,12 @@
 \addvspace {10\p@ }
 \setforeignlanguage {french}
 \setforeignlanguage {french}
-\contentsline {table}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }{\ignorespaces Comparaison entre les Types de Maintenance}}{39}{table.caption.47}%
+\contentsline {table}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }{\ignorespaces Comparaison entre les Types de Maintenance}}{38}{table.caption.46}%
+\setforeignlanguage {french}
 \setforeignlanguage {french}
 \setforeignlanguage {french}
 \setforeignlanguage {french}
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\setforeignlanguage {french}
-\setforeignlanguage {french}
-\setforeignlanguage {french}
-\setforeignlanguage {french}
-\setforeignlanguage {french}
-\setforeignlanguage {french}
-\setforeignlanguage {french}
-\setforeignlanguage {french}
-\setforeignlanguage {french}
 \addvspace {10\p@ }
 \setforeignlanguage {french}
 \setforeignlanguage {french}
@@ -44,11 +34,21 @@
 \setforeignlanguage {french}
 \setforeignlanguage {french}
 \setforeignlanguage {french}
-\contentsline {table}{\numberline {\if@rl \I {1.6}\else \textLR {6.1}\fi }{\ignorespaces Configuration du modèle et du jeu de données}}{68}{table.caption.87}%
+\setforeignlanguage {french}
+\addvspace {10\p@ }
 \setforeignlanguage {french}
 \setforeignlanguage {french}
 \setforeignlanguage {french}
-\contentsline {table}{\numberline {\if@rl \I {2.6}\else \textLR {6.2}\fi }{\ignorespaces Configuration du modèle et du jeu de données}}{69}{table.caption.90}%
+\setforeignlanguage {french}
+\setforeignlanguage {french}
+\setforeignlanguage {french}
+\setforeignlanguage {french}
+\setforeignlanguage {french}
+\contentsline {table}{\numberline {\if@rl \I {1.6}\else \textLR {6.1}\fi }{\ignorespaces Configuration du modèle et du jeu de données}}{68}{table.caption.86}%
+\setforeignlanguage {french}
+\setforeignlanguage {french}
+\setforeignlanguage {french}
+\contentsline {table}{\numberline {\if@rl \I {2.6}\else \textLR {6.2}\fi }{\ignorespaces Configuration du modèle et du jeu de données}}{69}{table.caption.89}%
 \setforeignlanguage {french}
 \setforeignlanguage {french}
 \addvspace {10\p@ }
